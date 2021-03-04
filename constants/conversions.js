@@ -32,5 +32,11 @@ module.exports = {
     32: 118,
     0.25: 38,
     0.5: 50
+  },
+  deck_transform: {
+    "Deck A": "a",
+    "Deck B": "b",
+    "Deck C": "c",
+    "Deck D": "d"
   }
 }
