@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import midi from "midi"
 import { keyBy } from "lodash"
 import fs from "fs-extra"

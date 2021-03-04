@@ -17,6 +17,7 @@
     "midi": "^1.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.0",
     "@babel/core": "^7.13.8",
     "@babel/eslint-parser": "^7.13.8",
     "@babel/node": "^7.13.0",
@@ -29,9 +30,13 @@
   },
   "scripts": {
     "pulldown": "babel-node src/pulldown.js",
-    "listen": "babel-node src/listen.js"
+    "listen": "babel-node src/listen.js",
+    "build": "babel src/listen.js --out-file dist/cli.js && chmod +x dist/cli.js"
   },
   "engines": {
     "node": ">=14.0.0"
+  },
+  "bin": {
+    "purple": "dist/cli.js"
   }
 }
