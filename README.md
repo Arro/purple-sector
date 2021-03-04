@@ -1,3 +1,3 @@
-# Purple Engine
+# Purple Sector
 
 An API for DJ software.

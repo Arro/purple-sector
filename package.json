@@ -1,11 +1,11 @@
 {
-  "name": "purple-engine",
-  "version": "0.0.4",
+  "name": "purple-sector",
+  "version": "0.1.0",
   "description": "An API for DJ software",
   "author": "Phil Deschaine",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Arro/purple-engine"
+    "url": "git+https://github.com/Arro/purple-sector"
   },
   "dependencies": {
     "axios": "^0.21.1",
