@@ -26,5 +26,5 @@ dotenv.config()
     JSON.stringify(commands, null, 2),
     "utf-8"
   )
-  spinner.suceed("Wrote commands to constants folder")
+  spinner.succeed("Wrote commands to constants folder")
 })()

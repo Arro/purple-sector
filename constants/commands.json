@@ -7,6 +7,7 @@
     "CC": "002",
     "Type": "Fader / Knob",
     "Control": "Loop Size Selector",
+    "Short Name": "loop_size__{val}",
     "Id": "In - Deck A - Loop Size Selector"
   },
   {
@@ -17,6 +18,7 @@
     "CC": "003",
     "Type": "Fader / Knob",
     "Control": "Loop Size Selector",
+    "Short Name": "loop_size__{val}",
     "Id": "In - Deck B - Loop Size Selector"
   },
   {
@@ -27,6 +29,7 @@
     "CC": "004",
     "Type": "Fader / Knob",
     "Control": "Size Selector",
+    "Short Name": "size__{val}",
     "Id": "In - Deck A - Size Selector"
   },
   {
@@ -37,6 +40,7 @@
     "CC": "005",
     "Type": "Fader / Knob",
     "Control": "Size Selector",
+    "Short Name": "size__{val}",
     "Id": "In - Deck B - Size Selector"
   },
   {
@@ -47,6 +51,7 @@
     "CC": "006",
     "Type": "Button",
     "Control": "Loop Active On",
+    "Short Name": "loop_active__toggle",
     "Id": "In - Deck A - Loop Active On"
   },
   {
@@ -57,6 +62,7 @@
     "CC": "007",
     "Type": "Button",
     "Control": "Loop Active On",
+    "Short Name": "loop_active__toggle",
     "Id": "In - Deck B - Loop Active On"
   },
   {
@@ -67,6 +73,7 @@
     "CC": "008",
     "Type": "Fader / Knob",
     "Control": "Loop Size Select + Set",
+    "Short Name": "loop_size_alt__{val}",
     "Id": "In - Deck A - Loop Size Select + Set"
   },
   {
@@ -77,6 +84,7 @@
     "CC": "009",
     "Type": "Fader / Knob",
     "Control": "Loop Size Select + Set",
+    "Short Name": "loop_size_alt__{val}",
     "Id": "In - Deck B - Loop Size Select + Set"
   },
   {
@@ -88,6 +96,7 @@
     "Type": "Button",
     "Value": "Back",
     "Control": "Move",
+    "Short Name": "move__back",
     "Id": "In - Deck A - Move - Back"
   },
   {
@@ -99,6 +108,7 @@
     "Type": "Button",
     "Value": "Back",
     "Control": "Move",
+    "Short Name": "move__back",
     "Id": "In - Deck B - Move - Back"
   },
   {
@@ -110,6 +120,7 @@
     "Type": "Button",
     "Value": "Forward",
     "Control": "Move",
+    "Short Name": "move__forward",
     "Id": "In - Deck A - Move - Forward"
   },
   {
@@ -121,6 +132,7 @@
     "Type": "Button",
     "Value": "Forward",
     "Control": "Move",
+    "Short Name": "move__forward",
     "Id": "In - Deck B - Move - Forward"
   },
   {
@@ -132,6 +144,7 @@
     "Type": "Button",
     "Value": "Loop",
     "Control": "Mode Selector",
+    "Short Name": "mode__loop",
     "Id": "In - Deck A - Mode Selector - Loop"
   },
   {
@@ -143,6 +156,7 @@
     "Type": "Button",
     "Value": "Loop",
     "Control": "Mode Selector",
+    "Short Name": "mode__loop",
     "Id": "In - Deck B - Mode Selector - Loop"
   },
   {
@@ -154,6 +168,7 @@
     "Type": "Button",
     "Value": "BeatJump",
     "Control": "Mode Selector",
+    "Short Name": "mode__beatjump",
     "Id": "In - Deck A - Mode Selector - BeatJump"
   },
   {
@@ -165,6 +180,7 @@
     "Type": "Button",
     "Value": "BeatJump",
     "Control": "Mode Selector",
+    "Short Name": "mode__beatjump",
     "Id": "In - Deck B - Mode Selector - BeatJump"
   },
   {
@@ -175,6 +191,7 @@
     "CC": "020",
     "Type": "Button",
     "Control": "Loop Active On",
+    "Short Name": "loop_active__toggle",
     "Id": "In - Deck C - Loop Active On"
   },
   {
@@ -185,6 +202,7 @@
     "CC": "038",
     "Type": "Button",
     "Control": "Load Selected (Deck Common)",
+    "Short Name": "load__trigger",
     "Id": "In - Deck A - Load Selected (Deck Common)"
   },
   {
@@ -195,6 +213,7 @@
     "CC": "039",
     "Type": "Button",
     "Control": "Load Selected (Deck Common)",
+    "Short Name": "load__trigger",
     "Id": "In - Deck B - Load Selected (Deck Common)"
   },
   {
@@ -206,6 +225,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Play/Pause (Deck Common)",
+    "Short Name": "play__start",
     "Id": "In - Deck A - Play/Pause (Deck Common) - 1"
   },
   {
@@ -217,6 +237,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Play/Pause (Deck Common)",
+    "Short Name": "play__start",
     "Id": "In - Deck B - Play/Pause (Deck Common) - 1"
   },
   {
@@ -227,6 +248,7 @@
     "CC": "043",
     "Type": "Fader / Knob",
     "Control": "Seek Position (Deck Common)",
+    "Short Name": "position__{val}",
     "Id": "In - Deck A - Seek Position (Deck Common)"
   },
   {
@@ -237,6 +259,7 @@
     "CC": "044",
     "Type": "Fader / Knob",
     "Control": "Seek Position (Deck Common)",
+    "Short Name": "position__{val}",
     "Id": "In - Deck B - Seek Position (Deck Common)"
   },
   {
@@ -248,6 +271,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Play/Pause (Deck Common)",
+    "Short Name": "play__start",
     "Id": "In - Deck C - Play/Pause (Deck Common) - 1"
   },
   {
@@ -259,6 +283,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Play/Pause (Deck Common)",
+    "Short Name": "play__stop",
     "Id": "In - Deck C - Play/Pause (Deck Common) - 0"
   },
   {
@@ -270,6 +295,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Sync On",
+    "Short Name": "sync__off",
     "Id": "In - Deck A - Sync On - 1"
   },
   {
@@ -281,6 +307,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Sync On",
+    "Short Name": "sync__off",
     "Id": "In - Deck B - Sync On - 1"
   },
   {
@@ -291,6 +318,7 @@
     "CC": "051",
     "Type": "Button",
     "Control": "Load Selected (Deck Common)",
+    "Short Name": "load__trigger",
     "Id": "In - Deck C - Load Selected (Deck Common)"
   },
   {
@@ -303,6 +331,7 @@
     "Value": "Inc",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
+    "Short Name": "tempo__inc",
     "Id": "In - Deck A - Tempo Adjust - Inc"
   },
   {
@@ -315,6 +344,7 @@
     "Value": "Inc",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
+    "Short Name": "tempo__inc",
     "Id": "In - Deck B - Tempo Adjust - Inc"
   },
   {
@@ -327,6 +357,7 @@
     "Value": "Dec",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
+    "Short Name": "tempo__dec",
     "Id": "In - Deck A - Tempo Adjust - Dec"
   },
   {
@@ -339,6 +370,7 @@
     "Value": "Dec",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
+    "Short Name": "tempo__dec",
     "Id": "In - Deck B - Tempo Adjust - Dec"
   },
   {
@@ -349,6 +381,7 @@
     "CC": "056",
     "Type": "Button",
     "Control": "Set as Tempo Master",
+    "Short Name": "master__trigger",
     "Id": "In - Deck A - Set as Tempo Master"
   },
   {
@@ -359,6 +392,7 @@
     "CC": "057",
     "Type": "Button",
     "Control": "Set as Tempo Master",
+    "Short Name": "master__trigger",
     "Id": "In - Deck B - Set as Tempo Master"
   },
   {
@@ -370,6 +404,7 @@
     "Type": "Button",
     "Value": "Next",
     "Control": "Jump to Next/Prev Cue/Loop",
+    "Short Name": "jump_next__trigger",
     "Id": "In - Deck A - Jump to Next/Prev Cue/Loop - Next"
   },
   {
@@ -381,6 +416,7 @@
     "Type": "Button",
     "Value": "Next",
     "Control": "Jump to Next/Prev Cue/Loop",
+    "Short Name": "jump_next__trigger",
     "Id": "In - Deck B - Jump to Next/Prev Cue/Loop - Next"
   },
   {
@@ -392,6 +428,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Sync On",
+    "Short Name": "sync__on",
     "Id": "In - Deck A - Sync On - 0"
   },
   {
@@ -403,6 +440,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Sync On",
+    "Short Name": "sync__on",
     "Id": "In - Deck B - Sync On - 0"
   },
   {
@@ -413,6 +451,7 @@
     "CC": "070",
     "Type": "Fader / Knob",
     "Control": "Seek Position (Deck Common)",
+    "Short Name": "position__{val}",
     "Id": "In - Deck C - Seek Position (Deck Common)"
   },
   {
@@ -424,6 +463,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Play/Pause (Deck Common)",
+    "Short Name": "play__stop",
     "Id": "In - Deck A - Play/Pause (Deck Common) - 0"
   },
   {
@@ -435,6 +475,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Play/Pause (Deck Common)",
+    "Short Name": "play__stop",
     "Id": "In - Deck B - Play/Pause (Deck Common) - 0"
   },
   {
@@ -445,6 +486,7 @@
     "CC": "090",
     "Type": "Button",
     "Control": "Unload (Deck Common)",
+    "Short Name": "unload__trigger",
     "Id": "In - Deck A - Unload (Deck Common)"
   },
   {
@@ -455,6 +497,7 @@
     "CC": "091",
     "Type": "Button",
     "Control": "Unload (Deck Common)",
+    "Short Name": "unload__trigger",
     "Id": "In - Deck B - Unload (Deck Common)"
   },
   {
@@ -465,6 +508,7 @@
     "CC": "092",
     "Type": "Button",
     "Control": "Unload (Deck Common)",
+    "Short Name": "unload__trigger",
     "Id": "In - Deck C - Unload (Deck Common)"
   },
   {
@@ -475,6 +519,7 @@
     "CC": "093",
     "Type": "Button",
     "Control": "Unload (Deck Common)",
+    "Short Name": "unload__trigger",
     "Id": "In - Deck D - Unload (Deck Common)"
   },
   {
@@ -487,6 +532,7 @@
     "Value": "Reset",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
+    "Short Name": "tempo__reset",
     "Id": "In - Deck A - Tempo Adjust - Reset"
   },
   {
@@ -499,6 +545,7 @@
     "Value": "Reset",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
+    "Short Name": "tempo__reset",
     "Id": "In - Deck B - Tempo Adjust - Reset"
   },
   {
@@ -536,6 +583,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Unit On",
+    "Short Name": "unit__on",
     "Id": "In - FX Unit 1 - Unit On - 1"
   },
   {
@@ -547,6 +595,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Unit On",
+    "Short Name": "unit__off",
     "Id": "In - FX Unit 1 - Unit On - 0"
   },
   {
@@ -557,6 +606,7 @@
     "CC": "080",
     "Type": "Fader / Knob",
     "Control": "Gain Adjust (Mixer)",
+    "Short Name": "gain__{val}",
     "Id": "In - Deck C - Gain Adjust (Mixer)"
   },
   {
@@ -568,6 +618,7 @@
     "Type": "Fader / Knob",
     "Note": "x-fader",
     "Control": "Position",
+    "Short Name": "xfader__{val}",
     "Id": "In - Global - Position"
   },
   {
@@ -579,6 +630,7 @@
     "Type": "Button",
     "Value": "Down",
     "Control": "Tempo Bend",
+    "Short Name": "tempo_bend__down",
     "Id": "In - Deck A - Tempo Bend - Down"
   },
   {
@@ -590,6 +642,7 @@
     "Type": "Button",
     "Value": "Down",
     "Control": "Tempo Bend",
+    "Short Name": "tempo_bend__down",
     "Id": "In - Deck B - Tempo Bend - Down"
   },
   {
@@ -601,6 +654,7 @@
     "Type": "Button",
     "Value": "Up",
     "Control": "Tempo Bend",
+    "Short Name": "tempo_bend__up",
     "Id": "In - Deck A - Tempo Bend - Up"
   },
   {
@@ -612,6 +666,7 @@
     "Type": "Button",
     "Value": "Up",
     "Control": "Tempo Bend",
+    "Short Name": "tempo_bend__up",
     "Id": "In - Deck B - Tempo Bend - Up"
   },
   {
@@ -623,6 +678,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 1 On",
+    "Short Name": "fx_1__on",
     "Id": "In - Deck A - FX Unit 1 On - 1"
   },
   {
@@ -634,6 +690,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 1 On",
+    "Short Name": "fx_1__on",
     "Id": "In - Deck B - FX Unit 1 On - 1"
   },
   {
@@ -645,6 +702,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 1 On",
+    "Short Name": "fx_1__on",
     "Id": "In - Deck C - FX Unit 1 On - 1"
   },
   {
@@ -656,6 +714,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 1 On",
+    "Short Name": "fx_1__on",
     "Id": "In - Deck D - FX Unit 1 On - 1"
   },
   {
@@ -667,6 +726,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 1 On",
+    "Short Name": "fx_1__off",
     "Id": "In - Deck A - FX Unit 1 On - 0"
   },
   {
@@ -678,6 +738,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 1 On",
+    "Short Name": "fx_1__off",
     "Id": "In - Deck B - FX Unit 1 On - 0"
   },
   {
@@ -689,6 +750,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 1 On",
+    "Short Name": "fx_1__off",
     "Id": "In - Deck C - FX Unit 1 On - 0"
   },
   {
@@ -700,6 +762,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 1 On",
+    "Short Name": "fx_1__off",
     "Id": "In - Deck D - FX Unit 1 On - 0"
   },
   {
@@ -711,6 +774,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Monitor Cue On",
+    "Short Name": "cue__on",
     "Id": "In - Deck A - Monitor Cue On - 1"
   },
   {
@@ -722,6 +786,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Monitor Cue On",
+    "Short Name": "cue__on",
     "Id": "In - Deck B - Monitor Cue On - 1"
   },
   {
@@ -733,6 +798,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Monitor Cue On",
+    "Short Name": "cue__off",
     "Id": "In - Deck A - Monitor Cue On - 0"
   },
   {
@@ -744,6 +810,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Monitor Cue On",
+    "Short Name": "cue__off",
     "Id": "In - Deck B - Monitor Cue On - 0"
   },
   {
@@ -755,6 +822,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Monitor Cue On",
+    "Short Name": "cue__on",
     "Id": "In - Deck C - Monitor Cue On - 1"
   },
   {
@@ -766,6 +834,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Monitor Cue On",
+    "Short Name": "cue__off",
     "Id": "In - Deck C - Monitor Cue On - 0"
   },
   {
@@ -777,6 +846,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Monitor Cue On",
+    "Short Name": "cue__on",
     "Id": "In - Deck D - Monitor Cue On - 1"
   },
   {
@@ -788,6 +858,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Monitor Cue On",
+    "Short Name": "cue__off",
     "Id": "In - Deck D - Monitor Cue On - 0"
   },
   {
@@ -797,8 +868,9 @@
     "Channel": "02",
     "CC": "111",
     "Type": "Fader / Knob",
-    "Control": "Dry Wet Adjust (FX Unit)",
-    "Id": "In - FX Unit 1 - Dry Wet Adjust (FX Unit)"
+    "Control": "Dry/Wet Adjust (FX Unit)",
+    "Short Name": "dry_wet__{val}",
+    "Id": "In - FX Unit 1 - Dry/Wet Adjust (FX Unit)"
   },
   {
     "IO": "In",
@@ -808,6 +880,7 @@
     "CC": "112",
     "Type": "Fader / Knob",
     "Control": "Knob 1",
+    "Short Name": "knob_1__{val}",
     "Id": "In - FX Unit 1 - Knob 1"
   },
   {
@@ -818,6 +891,7 @@
     "CC": "113",
     "Type": "Fader / Knob",
     "Control": "Knob 2",
+    "Short Name": "knob_2__{val}",
     "Id": "In - FX Unit 1 - Knob 2"
   },
   {
@@ -828,6 +902,7 @@
     "CC": "114",
     "Type": "Fader / Knob",
     "Control": "Knob 3",
+    "Short Name": "knob_3__{val}",
     "Id": "In - FX Unit 1 - Knob 3"
   },
   {
@@ -839,6 +914,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Button 1",
+    "Short Name": "button_1__on",
     "Id": "In - FX Unit 1 - Button 1 - 1"
   },
   {
@@ -850,6 +926,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Button 1",
+    "Short Name": "button_1__off",
     "Id": "In - FX Unit 1 - Button 1 - 0"
   },
   {
@@ -861,6 +938,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Button 2",
+    "Short Name": "button_2__on",
     "Id": "In - FX Unit 1 - Button 2 - 1"
   },
   {
@@ -872,6 +950,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Button 2",
+    "Short Name": "button_2__off",
     "Id": "In - FX Unit 1 - Button 2 - 0"
   },
   {
@@ -883,6 +962,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Button 3",
+    "Short Name": "button_3__on",
     "Id": "In - FX Unit 1 - Button 3 - 1"
   },
   {
@@ -894,6 +974,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Button 3",
+    "Short Name": "button_3__off",
     "Id": "In - FX Unit 1 - Button 3 - 0"
   },
   {
@@ -904,6 +985,7 @@
     "CC": "121",
     "Type": "Fader / Knob",
     "Control": "Effect 1 Selector",
+    "Short Name": "effect_1__{val}",
     "Id": "In - FX Unit 1 - Effect 1 Selector"
   },
   {
@@ -914,6 +996,7 @@
     "CC": "122",
     "Type": "Fader / Knob",
     "Control": "Effect 2 Selector",
+    "Short Name": "effect_2__{val}",
     "Id": "In - FX Unit 1 - Effect 2 Selector"
   },
   {
@@ -924,6 +1007,7 @@
     "CC": "123",
     "Type": "Fader / Knob",
     "Control": "Effect 3 Selector",
+    "Short Name": "effect_3__{val}",
     "Id": "In - FX Unit 1 - Effect 3 Selector"
   },
   {
@@ -935,6 +1019,7 @@
     "Type": "Button",
     "Value": "Single",
     "Control": "FX Unit Mode Selector",
+    "Short Name": "fx_mode__single",
     "Id": "In - FX Unit 1 - FX Unit Mode Selector - Single"
   },
   {
@@ -946,6 +1031,7 @@
     "Type": "Button",
     "Value": "Group",
     "Control": "FX Unit Mode Selector",
+    "Short Name": "fx_mode__group",
     "Id": "In - FX Unit 1 - FX Unit Mode Selector - Group"
   },
   {
@@ -957,6 +1043,7 @@
     "Type": "Button",
     "Value": "Bottom",
     "Control": "Select Top/Bottom",
+    "Short Name": "search_select__top",
     "Id": "In - Global - Select Top/Bottom - Bottom"
   },
   {
@@ -967,6 +1054,7 @@
     "CC": "017",
     "Type": "Button",
     "Control": "Search",
+    "Short Name": "search__trigger",
     "Id": "In - Global - Search"
   },
   {
@@ -977,6 +1065,7 @@
     "CC": "018",
     "Type": "Button",
     "Control": "Search Clear",
+    "Short Name": "search_clear__trigger",
     "Id": "In - Global - Search Clear"
   },
   {
@@ -987,6 +1076,7 @@
     "CC": "030",
     "Type": "Fader / Knob",
     "Control": "Volume Adjust",
+    "Short Name": "volume__{val}",
     "Id": "In - Deck A - Volume Adjust"
   },
   {
@@ -997,6 +1087,7 @@
     "CC": "031",
     "Type": "Fader / Knob",
     "Control": "Volume Adjust",
+    "Short Name": "volume__{val}",
     "Id": "In - Deck B - Volume Adjust"
   },
   {
@@ -1007,6 +1098,7 @@
     "CC": "032",
     "Type": "Fader / Knob",
     "Control": "Volume Adjust",
+    "Short Name": "volume__{val}",
     "Id": "In - Deck C - Volume Adjust"
   },
   {
@@ -1017,6 +1109,7 @@
     "CC": "033",
     "Type": "Fader / Knob",
     "Control": "Volume Adjust",
+    "Short Name": "volume__{val}",
     "Id": "In - Deck D - Volume Adjust"
   },
   {
@@ -1028,6 +1121,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 2 On",
+    "Short Name": "fx_2__on",
     "Id": "In - Deck A - FX Unit 2 On - 1"
   },
   {
@@ -1039,6 +1133,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 2 On",
+    "Short Name": "fx_2__on",
     "Id": "In - Deck B - FX Unit 2 On - 1"
   },
   {
@@ -1050,6 +1145,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 2 On",
+    "Short Name": "fx_2__on",
     "Id": "In - Deck C - FX Unit 2 On - 1"
   },
   {
@@ -1061,6 +1157,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 2 On",
+    "Short Name": "fx_2__on",
     "Id": "In - Deck D - FX Unit 2 On - 1"
   },
   {
@@ -1072,6 +1169,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 2 On",
+    "Short Name": "fx_2__off",
     "Id": "In - Deck A - FX Unit 2 On - 0"
   },
   {
@@ -1083,6 +1181,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 2 On",
+    "Short Name": "fx_2__off",
     "Id": "In - Deck B - FX Unit 2 On - 0"
   },
   {
@@ -1094,6 +1193,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 2 On",
+    "Short Name": "fx_2__off",
     "Id": "In - Deck C - FX Unit 2 On - 0"
   },
   {
@@ -1105,6 +1205,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 2 On",
+    "Short Name": "fx_2__off",
     "Id": "In - Deck D - FX Unit 2 On - 0"
   },
   {
@@ -1116,6 +1217,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Unit On",
+    "Short Name": "unit__on",
     "Id": "In - FX Unit 2 - Unit On - 1"
   },
   {
@@ -1127,6 +1229,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Unit On",
+    "Short Name": "unit__off",
     "Id": "In - FX Unit 2 - Unit On - 0"
   },
   {
@@ -1137,6 +1240,7 @@
     "CC": "044",
     "Type": "Fader / Knob",
     "Control": "Dry/Wet Adjust (FX Unit)",
+    "Short Name": "dry_wet__{val}",
     "Id": "In - FX Unit 2 - Dry/Wet Adjust (FX Unit)"
   },
   {
@@ -1147,6 +1251,7 @@
     "CC": "045",
     "Type": "Fader / Knob",
     "Control": "Knob 1",
+    "Short Name": "knob_1__{val}",
     "Id": "In - FX Unit 2 - Knob 1"
   },
   {
@@ -1157,6 +1262,7 @@
     "CC": "046",
     "Type": "Fader / Knob",
     "Control": "Knob 2",
+    "Short Name": "knob_2__{val}",
     "Id": "In - FX Unit 2 - Knob 2"
   },
   {
@@ -1167,6 +1273,7 @@
     "CC": "047",
     "Type": "Fader / Knob",
     "Control": "Knob 3",
+    "Short Name": "knob_3__{val}",
     "Id": "In - FX Unit 2 - Knob 3"
   },
   {
@@ -1178,6 +1285,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Button 1",
+    "Short Name": "button_1__on",
     "Id": "In - FX Unit 2 - Button 1 - 1"
   },
   {
@@ -1189,6 +1297,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Button 1",
+    "Short Name": "button_1__off",
     "Id": "In - FX Unit 2 - Button 1 - 0"
   },
   {
@@ -1200,6 +1309,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Button 2",
+    "Short Name": "button_2__on",
     "Id": "In - FX Unit 2 - Button 2 - 1"
   },
   {
@@ -1211,6 +1321,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Button 2",
+    "Short Name": "button_2__off",
     "Id": "In - FX Unit 2 - Button 2 - 0"
   },
   {
@@ -1222,6 +1333,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Button 3",
+    "Short Name": "button_3__on",
     "Id": "In - FX Unit 2 - Button 3 - 1"
   },
   {
@@ -1233,6 +1345,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Button 3",
+    "Short Name": "button_3__off",
     "Id": "In - FX Unit 2 - Button 3 - 0"
   },
   {
@@ -1243,6 +1356,7 @@
     "CC": "054",
     "Type": "Fader / Knob",
     "Control": "Effect 1 Selector",
+    "Short Name": "effect_1__{val}",
     "Id": "In - FX Unit 2 - Effect 1 Selector"
   },
   {
@@ -1253,6 +1367,7 @@
     "CC": "055",
     "Type": "Fader / Knob",
     "Control": "Effect 2 Selector",
+    "Short Name": "effect_2__{val}",
     "Id": "In - FX Unit 2 - Effect 2 Selector"
   },
   {
@@ -1263,6 +1378,7 @@
     "CC": "056",
     "Type": "Fader / Knob",
     "Control": "Effect 3 Selector",
+    "Short Name": "effect_3__{val}",
     "Id": "In - FX Unit 2 - Effect 3 Selector"
   },
   {
@@ -1274,6 +1390,7 @@
     "Type": "Button",
     "Value": "Single",
     "Control": "FX Unit Mode Selector",
+    "Short Name": "fx_mode__single",
     "Id": "In - FX Unit 2 - FX Unit Mode Selector - Single"
   },
   {
@@ -1285,6 +1402,7 @@
     "Type": "Button",
     "Value": "Group",
     "Control": "FX Unit Mode Selector",
+    "Short Name": "fx_mode__group",
     "Id": "In - FX Unit 2 - FX Unit Mode Selector - Group"
   },
   {
@@ -1296,6 +1414,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 3 On",
+    "Short Name": "fx_3__off",
     "Id": "In - Deck A - FX Unit 3 On - 1"
   },
   {
@@ -1307,6 +1426,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 3 On",
+    "Short Name": "fx_3__off",
     "Id": "In - Deck B - FX Unit 3 On - 1"
   },
   {
@@ -1318,6 +1438,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 3 On",
+    "Short Name": "fx_3__off",
     "Id": "In - Deck C - FX Unit 3 On - 1"
   },
   {
@@ -1329,6 +1450,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 3 On",
+    "Short Name": "fx_3__off",
     "Id": "In - Deck D - FX Unit 3 On - 1"
   },
   {
@@ -1340,6 +1462,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 3 On",
+    "Short Name": "fx_3__on",
     "Id": "In - Deck A - FX Unit 3 On - 0"
   },
   {
@@ -1351,6 +1474,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 3 On",
+    "Short Name": "fx_3__on",
     "Id": "In - Deck B - FX Unit 3 On - 0"
   },
   {
@@ -1362,6 +1486,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 3 On",
+    "Short Name": "fx_3__on",
     "Id": "In - Deck C - FX Unit 3 On - 0"
   },
   {
@@ -1373,6 +1498,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 3 On",
+    "Short Name": "fx_3__on",
     "Id": "In - Deck D - FX Unit 3 On - 0"
   },
   {
@@ -1384,6 +1510,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Unit On",
+    "Short Name": "unit__on",
     "Id": "In - FX Unit 3 - Unit On - 1"
   },
   {
@@ -1395,6 +1522,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Unit On",
+    "Short Name": "unit__off",
     "Id": "In - FX Unit 3 - Unit On - 0"
   },
   {
@@ -1405,6 +1533,7 @@
     "CC": "069",
     "Type": "Fader / Knob",
     "Control": "Dry/Wet Adjust (FX Unit)",
+    "Short Name": "dry_wet__{val}",
     "Id": "In - FX Unit 3 - Dry/Wet Adjust (FX Unit)"
   },
   {
@@ -1415,6 +1544,7 @@
     "CC": "070",
     "Type": "Fader / Knob",
     "Control": "Knob 1",
+    "Short Name": "knob_1__{val}",
     "Id": "In - FX Unit 3 - Knob 1"
   },
   {
@@ -1425,6 +1555,7 @@
     "CC": "071",
     "Type": "Fader / Knob",
     "Control": "Knob 2",
+    "Short Name": "knob_2__{val}",
     "Id": "In - FX Unit 3 - Knob 2"
   },
   {
@@ -1435,6 +1566,7 @@
     "CC": "072",
     "Type": "Fader / Knob",
     "Control": "Knob 3",
+    "Short Name": "knob_3__{val}",
     "Id": "In - FX Unit 3 - Knob 3"
   },
   {
@@ -1446,6 +1578,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Button 1",
+    "Short Name": "button_1__on",
     "Id": "In - FX Unit 3 - Button 1 - 1"
   },
   {
@@ -1457,6 +1590,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Button 1",
+    "Short Name": "button_1__off",
     "Id": "In - FX Unit 3 - Button 1 - 0"
   },
   {
@@ -1468,6 +1602,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Button 2",
+    "Short Name": "button_2__on",
     "Id": "In - FX Unit 3 - Button 2 - 1"
   },
   {
@@ -1479,6 +1614,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Button 2",
+    "Short Name": "button_2__off",
     "Id": "In - FX Unit 3 - Button 2 - 0"
   },
   {
@@ -1490,6 +1626,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Button 3",
+    "Short Name": "button_3__on",
     "Id": "In - FX Unit 3 - Button 3 - 1"
   },
   {
@@ -1501,6 +1638,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Button 3",
+    "Short Name": "button_3__off",
     "Id": "In - FX Unit 3 - Button 3 - 0"
   },
   {
@@ -1511,6 +1649,7 @@
     "CC": "079",
     "Type": "Fader / Knob",
     "Control": "Effect 1 Selector",
+    "Short Name": "effect_1__{val}",
     "Id": "In - FX Unit 3 - Effect 1 Selector"
   },
   {
@@ -1521,6 +1660,7 @@
     "CC": "080",
     "Type": "Fader / Knob",
     "Control": "Effect 2 Selector",
+    "Short Name": "effect_2__{val}",
     "Id": "In - FX Unit 3 - Effect 2 Selector"
   },
   {
@@ -1531,6 +1671,7 @@
     "CC": "081",
     "Type": "Fader / Knob",
     "Control": "Effect 3 Selector",
+    "Short Name": "effect_3__{val}",
     "Id": "In - FX Unit 3 - Effect 3 Selector"
   },
   {
@@ -1542,6 +1683,7 @@
     "Type": "Button",
     "Value": "Single",
     "Control": "FX Unit Mode Selector",
+    "Short Name": "fx_mode__single",
     "Id": "In - FX Unit 3 - FX Unit Mode Selector - Single"
   },
   {
@@ -1553,6 +1695,7 @@
     "Type": "Button",
     "Value": "Group",
     "Control": "FX Unit Mode Selector",
+    "Short Name": "fx_mode__group",
     "Id": "In - FX Unit 3 - FX Unit Mode Selector - Group"
   },
   {
@@ -1564,6 +1707,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 4 On",
+    "Short Name": "fx_4__on",
     "Id": "In - Deck A - FX Unit 4 On - 1"
   },
   {
@@ -1575,6 +1719,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 4 On",
+    "Short Name": "fx_4__on",
     "Id": "In - Deck B - FX Unit 4 On - 1"
   },
   {
@@ -1586,6 +1731,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 4 On",
+    "Short Name": "fx_4__on",
     "Id": "In - Deck C - FX Unit 4 On - 1"
   },
   {
@@ -1597,6 +1743,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 4 On",
+    "Short Name": "fx_4__on",
     "Id": "In - Deck D - FX Unit 4 On - 1"
   },
   {
@@ -1608,6 +1755,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 4 On",
+    "Short Name": "fx_4__off",
     "Id": "In - Deck A - FX Unit 4 On - 0"
   },
   {
@@ -1619,6 +1767,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 4 On",
+    "Short Name": "fx_4__off",
     "Id": "In - Deck B - FX Unit 4 On - 0"
   },
   {
@@ -1630,6 +1779,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 4 On",
+    "Short Name": "fx_4__off",
     "Id": "In - Deck C - FX Unit 4 On - 0"
   },
   {
@@ -1641,6 +1791,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 4 On",
+    "Short Name": "fx_4__off",
     "Id": "In - Deck D - FX Unit 4 On - 0"
   },
   {
@@ -1652,6 +1803,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Unit On",
+    "Short Name": "unit__on",
     "Id": "In - FX Unit 4 - Unit On - 1"
   },
   {
@@ -1663,6 +1815,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Unit On",
+    "Short Name": "unit__off",
     "Id": "In - FX Unit 4 - Unit On - 0"
   },
   {
@@ -1673,6 +1826,7 @@
     "CC": "094",
     "Type": "Fader / Knob",
     "Control": "Dry/Wet Adjust (FX Unit)",
+    "Short Name": "dry_wet__{val}",
     "Id": "In - FX Unit 4 - Dry/Wet Adjust (FX Unit)"
   },
   {
@@ -1683,6 +1837,7 @@
     "CC": "095",
     "Type": "Fader / Knob",
     "Control": "Knob 1",
+    "Short Name": "knob_1__{val}",
     "Id": "In - FX Unit 4 - Knob 1"
   },
   {
@@ -1693,6 +1848,7 @@
     "CC": "096",
     "Type": "Fader / Knob",
     "Control": "Knob 2",
+    "Short Name": "knob_2__{val}",
     "Id": "In - FX Unit 4 - Knob 2"
   },
   {
@@ -1703,6 +1859,7 @@
     "CC": "097",
     "Type": "Fader / Knob",
     "Control": "Knob 3",
+    "Short Name": "knob_3__{val}",
     "Id": "In - FX Unit 4 - Knob 3"
   },
   {
@@ -1714,6 +1871,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Button 1",
+    "Short Name": "button_1__on",
     "Id": "In - FX Unit 4 - Button 1 - 1"
   },
   {
@@ -1725,6 +1883,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Button 1",
+    "Short Name": "button_1__off",
     "Id": "In - FX Unit 4 - Button 1 - 0"
   },
   {
@@ -1736,6 +1895,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Button 2",
+    "Short Name": "button_2__on",
     "Id": "In - FX Unit 4 - Button 2 - 1"
   },
   {
@@ -1747,6 +1907,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Button 2",
+    "Short Name": "button_2__off",
     "Id": "In - FX Unit 4 - Button 2 - 0"
   },
   {
@@ -1758,6 +1919,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Button 3",
+    "Short Name": "button_3__on",
     "Id": "In - FX Unit 4 - Button 3 - 1"
   },
   {
@@ -1769,6 +1931,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Button 3",
+    "Short Name": "button_3__off",
     "Id": "In - FX Unit 4 - Button 3 - 0"
   },
   {
@@ -1779,6 +1942,7 @@
     "CC": "104",
     "Type": "Fader / Knob",
     "Control": "Effect 1 Selector",
+    "Short Name": "effect_1__{val}",
     "Id": "In - FX Unit 4 - Effect 1 Selector"
   },
   {
@@ -1789,6 +1953,7 @@
     "CC": "105",
     "Type": "Fader / Knob",
     "Control": "Effect 2 Selector",
+    "Short Name": "effect_2__{val}",
     "Id": "In - FX Unit 4 - Effect 2 Selector"
   },
   {
@@ -1799,6 +1964,7 @@
     "CC": "106",
     "Type": "Fader / Knob",
     "Control": "Effect 3 Selector",
+    "Short Name": "effect_3__{val}",
     "Id": "In - FX Unit 4 - Effect 3 Selector"
   },
   {
@@ -1810,6 +1976,7 @@
     "Type": "Button",
     "Value": "Single",
     "Control": "FX Unit Mode Selector",
+    "Short Name": "fx_mode__single",
     "Id": "In - FX Unit 4 - FX Unit Mode Selector - Single"
   },
   {
@@ -1821,6 +1988,7 @@
     "Type": "Button",
     "Value": "Group",
     "Control": "FX Unit Mode Selector",
+    "Short Name": "fx_mode__group",
     "Id": "In - FX Unit 4 - FX Unit Mode Selector - Group"
   },
   {
@@ -1832,7 +2000,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 1 On",
-    "Short Name": "is_fx_unit_1_on",
+    "Short Name": "is_fx_unit_1_enabled",
     "Is Binary": true,
     "Id": "Out - Deck A - FX Unit 1 On"
   },
@@ -1845,7 +2013,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 1 On",
-    "Short Name": "is_fx_unit_1_on",
+    "Short Name": "is_fx_unit_1_enabled",
     "Is Binary": true,
     "Id": "Out - Deck B - FX Unit 1 On"
   },
@@ -1858,7 +2026,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 1 On",
-    "Short Name": "is_fx_unit_1_on",
+    "Short Name": "is_fx_unit_1_enabled",
     "Is Binary": true,
     "Id": "Out - Deck C - FX Unit 1 On"
   },
@@ -1871,7 +2039,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 1 On",
-    "Short Name": "is_fx_unit_1_on",
+    "Short Name": "is_fx_unit_1_enabled",
     "Is Binary": true,
     "Id": "Out - Deck D - FX Unit 1 On"
   },
@@ -1884,7 +2052,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 2 On",
-    "Short Name": "is_fx_unit_2_on",
+    "Short Name": "fx_unit_2_enabled",
     "Is Binary": true,
     "Id": "Out - Deck A - FX Unit 2 On"
   },
@@ -1897,7 +2065,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 2 On",
-    "Short Name": "is_fx_unit_2_on",
+    "Short Name": "fx_unit_2_enabled",
     "Is Binary": true,
     "Id": "Out - Deck B - FX Unit 2 On"
   },
@@ -1910,7 +2078,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 2 On",
-    "Short Name": "is_fx_unit_2_on",
+    "Short Name": "fx_unit_2_enabled",
     "Is Binary": true,
     "Id": "Out - Deck C - FX Unit 2 On"
   },
@@ -1923,7 +2091,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 2 On",
-    "Short Name": "is_fx_unit_2_on",
+    "Short Name": "fx_unit_2_enabled",
     "Is Binary": true,
     "Id": "Out - Deck D - FX Unit 2 On"
   },
@@ -1936,7 +2104,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 3 On",
-    "Short Name": "is_fx_unit_3_on",
+    "Short Name": "fx_unit_3_enabled",
     "Is Binary": true,
     "Id": "Out - Deck A - FX Unit 3 On"
   },
@@ -1949,7 +2117,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 3 On",
-    "Short Name": "is_fx_unit_3_on",
+    "Short Name": "fx_unit_3_enabled",
     "Is Binary": true,
     "Id": "Out - Deck B - FX Unit 3 On"
   },
@@ -1962,7 +2130,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 3 On",
-    "Short Name": "is_fx_unit_3_on",
+    "Short Name": "fx_unit_3_enabled",
     "Is Binary": true,
     "Id": "Out - Deck C - FX Unit 3 On"
   },
@@ -1975,7 +2143,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 3 On",
-    "Short Name": "is_fx_unit_3_on",
+    "Short Name": "fx_unit_3_enabled",
     "Is Binary": true,
     "Id": "Out - Deck D - FX Unit 3 On"
   },
@@ -1988,7 +2156,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 4 On",
-    "Short Name": "is_fx_unit_4_on",
+    "Short Name": "fx_unit_4_enabled",
     "Is Binary": true,
     "Id": "Out - Deck A - FX Unit 4 On"
   },
@@ -2001,7 +2169,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 4 On",
-    "Short Name": "is_fx_unit_4_on",
+    "Short Name": "fx_unit_4_enabled",
     "Is Binary": true,
     "Id": "Out - Deck B - FX Unit 4 On"
   },
@@ -2014,7 +2182,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 4 On",
-    "Short Name": "is_fx_unit_4_on",
+    "Short Name": "fx_unit_4_enabled",
     "Is Binary": true,
     "Id": "Out - Deck C - FX Unit 4 On"
   },
@@ -2027,7 +2195,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 4 On",
-    "Short Name": "is_fx_unit_4_on",
+    "Short Name": "fx_unit_4_enabled",
     "Is Binary": true,
     "Id": "Out - Deck D - FX Unit 4 On"
   },
@@ -2103,7 +2271,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Sync On",
-    "Short Name": "is_sync",
+    "Short Name": "sync",
     "Is Binary": true,
     "Id": "Out - Deck A - Sync On"
   },
@@ -2116,7 +2284,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Sync On",
-    "Short Name": "is_sync",
+    "Short Name": "sync",
     "Is Binary": true,
     "Id": "Out - Deck B - Sync On"
   },
@@ -2129,7 +2297,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Monitor Cue On",
-    "Short Name": "is_monitor",
+    "Short Name": "is_cued",
     "Is Binary": true,
     "Id": "Out - Deck A - Monitor Cue On"
   },
@@ -2142,7 +2310,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Monitor Cue On",
-    "Short Name": "is_monitor",
+    "Short Name": "is_cued",
     "Is Binary": true,
     "Id": "Out - Deck B - Monitor Cue On"
   },
@@ -2180,7 +2348,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Loop Size Selector",
-    "Short Name": "size",
+    "Short Name": "loop_size",
     "Is Convert": true,
     "Id": "Out - Deck A - Loop Size Selector"
   },
@@ -2193,7 +2361,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Loop Size Selector",
-    "Short Name": "size",
+    "Short Name": "loop_size",
     "Id": "Out - Deck B - Loop Size Selector"
   },
   {
@@ -2217,6 +2385,7 @@
     "CC": "001",
     "Type": "Fader / Knob",
     "Control": "Gain Adjust (Mixer)",
+    "Short Name": "gain__{val}",
     "Id": "In - Deck A - Gain Adjust (Mixer)"
   },
   {
@@ -2227,6 +2396,7 @@
     "CC": "000",
     "Type": "Fader / Knob",
     "Control": "Gain Adjust (Mixer)",
+    "Short Name": "gain__{val}",
     "Id": "In - Deck B - Gain Adjust (Mixer)"
   },
   {
@@ -2237,6 +2407,7 @@
     "CC": "018",
     "Type": "Fader / Knob",
     "Control": "Gain Adjust (Mixer)",
+    "Short Name": "gain__{val}",
     "Id": "In - Deck D - Gain Adjust (Mixer)"
   },
   {
@@ -2248,6 +2419,7 @@
     "Type": "Button",
     "Value": "Next",
     "Control": "Jump to Next/Prev Cue/Loop",
+    "Short Name": "jump_next__trigger",
     "Id": "In - Deck C - Jump to Next/Prev Cue/Loop - Next"
   },
   {
@@ -2259,6 +2431,7 @@
     "Type": "Button",
     "Value": "Next",
     "Control": "Jump to Next/Prev Cue/Loop",
+    "Short Name": "jump_next__trigger",
     "Id": "In - Deck D - Jump to Next/Prev Cue/Loop - Next"
   },
   {
@@ -2269,6 +2442,7 @@
     "CC": "022",
     "Type": "Button",
     "Control": "Load Selected (Deck Common)",
+    "Short Name": "load__trigger",
     "Id": "In - Deck D - Load Selected (Deck Common)"
   },
   {
@@ -2279,6 +2453,7 @@
     "CC": "023",
     "Type": "Button",
     "Control": "Loop Active On",
+    "Short Name": "loop_active__toggle",
     "Id": "In - Deck D - Loop Active On"
   },
   {
@@ -2289,6 +2464,7 @@
     "CC": "024",
     "Type": "Fader / Knob",
     "Control": "Loop Size Select + Set",
+    "Short Name": "loop_size_alt__{val}",
     "Id": "In - Deck C - Loop Size Select + Set"
   },
   {
@@ -2299,6 +2475,7 @@
     "CC": "025",
     "Type": "Fader / Knob",
     "Control": "Loop Size Select + Set",
+    "Short Name": "loop_size_alt__{val}",
     "Id": "In - Deck D - Loop Size Select + Set"
   },
   {
@@ -2309,6 +2486,7 @@
     "CC": "026",
     "Type": "Fader / Knob",
     "Control": "Loop Size Selector",
+    "Short Name": "loop_size__{val}",
     "Id": "In - Deck C - Loop Size Selector"
   },
   {
@@ -2319,6 +2497,7 @@
     "CC": "027",
     "Type": "Fader / Knob",
     "Control": "Loop Size Selector",
+    "Short Name": "loop_size__{val}",
     "Id": "In - Deck D - Loop Size Selector"
   },
   {
@@ -2330,6 +2509,7 @@
     "Type": "Button",
     "Value": "BeatJump",
     "Control": "Mode Selector",
+    "Short Name": "mode__beatjump",
     "Id": "In - Deck C - Mode Selector - BeatJump"
   },
   {
@@ -2341,6 +2521,7 @@
     "Type": "Button",
     "Value": "BeatJump",
     "Control": "Mode Selector",
+    "Short Name": "mode__beatjump",
     "Id": "In - Deck D - Mode Selector - BeatJump"
   },
   {
@@ -2352,6 +2533,7 @@
     "Type": "Button",
     "Value": "Loop",
     "Control": "Mode Selector",
+    "Short Name": "mode__loop",
     "Id": "In - Deck C - Mode Selector - Loop"
   },
   {
@@ -2363,6 +2545,7 @@
     "Type": "Button",
     "Value": "Loop",
     "Control": "Mode Selector",
+    "Short Name": "mode__loop",
     "Id": "In - Deck D - Mode Selector - Loop"
   },
   {
@@ -2374,6 +2557,7 @@
     "Type": "Button",
     "Value": "Back",
     "Control": "Move",
+    "Short Name": "move__back",
     "Id": "In - Deck C - Move - Back"
   },
   {
@@ -2385,6 +2569,7 @@
     "Type": "Button",
     "Value": "Back",
     "Control": "Move",
+    "Short Name": "move__back",
     "Id": "In - Deck D - Move - Back"
   },
   {
@@ -2396,6 +2581,7 @@
     "Type": "Button",
     "Value": "Forward",
     "Control": "Move",
+    "Short Name": "move__forward",
     "Id": "In - Deck C - Move - Forward"
   },
   {
@@ -2407,6 +2593,7 @@
     "Type": "Button",
     "Value": "Forward",
     "Control": "Move",
+    "Short Name": "move__forward",
     "Id": "In - Deck D - Move - Forward"
   },
   {
@@ -2418,6 +2605,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Play/Pause (Deck Common)",
+    "Short Name": "play__stop",
     "Id": "In - Deck D - Play/Pause (Deck Common) - 0"
   },
   {
@@ -2429,6 +2617,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Play/Pause (Deck Common)",
+    "Short Name": "play__start",
     "Id": "In - Deck D - Play/Pause (Deck Common) - 1"
   },
   {
@@ -2439,6 +2628,7 @@
     "CC": "042",
     "Type": "Fader / Knob",
     "Control": "Seek Position (Deck Common)",
+    "Short Name": "position__{val}",
     "Id": "In - Deck D - Seek Position (Deck Common)"
   },
   {
@@ -2449,6 +2639,7 @@
     "CC": "058",
     "Type": "Button",
     "Control": "Set as Tempo Master",
+    "Short Name": "master__trigger",
     "Id": "In - Deck C - Set as Tempo Master"
   },
   {
@@ -2459,6 +2650,7 @@
     "CC": "059",
     "Type": "Button",
     "Control": "Set as Tempo Master",
+    "Short Name": "master__trigger",
     "Id": "In - Deck D - Set as Tempo Master"
   },
   {
@@ -2469,6 +2661,7 @@
     "CC": "060",
     "Type": "Fader / Knob",
     "Control": "Size Selector",
+    "Short Name": "size__{val}",
     "Id": "In - Deck C - Size Selector"
   },
   {
@@ -2479,6 +2672,7 @@
     "CC": "061",
     "Type": "Fader / Knob",
     "Control": "Size Selector",
+    "Short Name": "size__{val}",
     "Id": "In - Deck D - Size Selector"
   },
   {
@@ -2490,6 +2684,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Sync On",
+    "Short Name": "sync__on",
     "Id": "In - Deck C - Sync On - 0"
   },
   {
@@ -2501,6 +2696,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Sync On",
+    "Short Name": "sync__off",
     "Id": "In - Deck C - Sync On - 1"
   },
   {
@@ -2512,6 +2708,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Sync On",
+    "Short Name": "sync__on",
     "Id": "In - Deck D - Sync On - 0"
   },
   {
@@ -2523,6 +2720,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Sync On",
+    "Short Name": "sync__off",
     "Id": "In - Deck D - Sync On - 1"
   },
   {
@@ -2535,6 +2733,7 @@
     "Value": "Dec",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
+    "Short Name": "tempo__dec",
     "Id": "In - Deck C - Tempo Adjust - Dec"
   },
   {
@@ -2547,6 +2746,7 @@
     "Value": "Inc",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
+    "Short Name": "tempo__inc",
     "Id": "In - Deck C - Tempo Adjust - Inc"
   },
   {
@@ -2559,6 +2759,7 @@
     "Value": "Reset",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
+    "Short Name": "tempo__reset",
     "Id": "In - Deck C - Tempo Adjust - Reset"
   },
   {
@@ -2571,6 +2772,7 @@
     "Value": "Dec",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
+    "Short Name": "tempo__dec",
     "Id": "In - Deck D - Tempo Adjust - Dec"
   },
   {
@@ -2583,6 +2785,7 @@
     "Value": "Inc",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
+    "Short Name": "tempo__inc",
     "Id": "In - Deck D - Tempo Adjust - Inc"
   },
   {
@@ -2595,6 +2798,7 @@
     "Value": "Reset",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
+    "Short Name": "tempo__reset",
     "Id": "In - Deck D - Tempo Adjust - Reset"
   },
   {
@@ -2606,6 +2810,7 @@
     "Type": "Button",
     "Value": "Down",
     "Control": "Tempo Bend",
+    "Short Name": "tempo_bend__down",
     "Id": "In - Deck C - Tempo Bend - Down"
   },
   {
@@ -2617,6 +2822,7 @@
     "Type": "Button",
     "Value": "Up",
     "Control": "Tempo Bend",
+    "Short Name": "tempo_bend__up",
     "Id": "In - Deck C - Tempo Bend - Up"
   },
   {
@@ -2628,6 +2834,7 @@
     "Type": "Button",
     "Value": "Down",
     "Control": "Tempo Bend",
+    "Short Name": "tempo_bend__down",
     "Id": "In - Deck D - Tempo Bend - Down"
   },
   {
@@ -2639,6 +2846,7 @@
     "Type": "Button",
     "Value": "Up",
     "Control": "Tempo Bend",
+    "Short Name": "tempo_bend__up",
     "Id": "In - Deck D - Tempo Bend - Up"
   },
   {
@@ -2649,6 +2857,7 @@
     "CC": "095",
     "Type": "Fader / Knob",
     "Control": "Filter Adjust",
+    "Short Name": "filter__{val}",
     "Id": "In - Deck A - Filter Adjust"
   },
   {
@@ -2659,6 +2868,7 @@
     "CC": "096",
     "Type": "Fader / Knob",
     "Control": "Filter Adjust",
+    "Short Name": "filter__{val}",
     "Id": "In - Deck B - Filter Adjust"
   },
   {
@@ -2668,8 +2878,9 @@
     "Channel": "01",
     "CC": "097",
     "Type": "Fader / Knob",
-    "Control": "FIlter Adjust",
-    "Id": "In - Deck C - FIlter Adjust"
+    "Control": "Filter Adjust",
+    "Short Name": "filter__{val}",
+    "Id": "In - Deck C - Filter Adjust"
   },
   {
     "IO": "In",
@@ -2679,6 +2890,7 @@
     "CC": "098",
     "Type": "Fader / Knob",
     "Control": "Filter Adjust",
+    "Short Name": "filter__{val}",
     "Id": "In - Deck D - Filter Adjust"
   },
   {
@@ -2781,7 +2993,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Loop Size Selector",
-    "Short Name": "size",
+    "Short Name": "loop_size",
     "Id": "Out - Deck C - Loop Size Selector"
   },
   {
@@ -2793,7 +3005,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Loop Size Selector",
-    "Short Name": "size",
+    "Short Name": "loop_size",
     "Id": "Out - Deck D - Loop Size Selector"
   },
   {
@@ -2805,7 +3017,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Monitor Cue On",
-    "Short Name": "is_monitor",
+    "Short Name": "is_cued",
     "Is Binary": true,
     "Id": "Out - Deck C - Monitor Cue On"
   },
@@ -2818,7 +3030,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Monitor Cue On",
-    "Short Name": "is_monitor",
+    "Short Name": "is_cued",
     "Is Binary": true,
     "Id": "Out - Deck D - Monitor Cue On"
   },
@@ -2868,7 +3080,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Sync On",
-    "Short Name": "is_sync",
+    "Short Name": "sync",
     "Is Binary": true,
     "Id": "Out - Deck C - Sync On"
   },
@@ -2881,7 +3093,7 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Sync On",
-    "Short Name": "is_sync",
+    "Short Name": "sync",
     "Is Binary": true,
     "Id": "Out - Deck D - Sync On"
   },
@@ -2894,6 +3106,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Record/Stop",
+    "Short Name": "record__start",
     "Id": "In - Global - Record/Stop - 1"
   },
   {
@@ -2905,6 +3118,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Record/Stop",
+    "Short Name": "record__stop",
     "Id": "In - Global - Record/Stop - 0"
   },
   {
@@ -2916,6 +3130,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Filter On",
+    "Short Name": "filter__on",
     "Id": "In - Deck A - Filter On - 1"
   },
   {
@@ -2927,6 +3142,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Filter On",
+    "Short Name": "filter__off",
     "Id": "In - Deck A - Filter On - 0"
   },
   {
@@ -2938,6 +3154,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Filter On",
+    "Short Name": "filter__on",
     "Id": "In - Deck B - Filter On - 1"
   },
   {
@@ -2949,6 +3166,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Filter On",
+    "Short Name": "filter__off",
     "Id": "In - Deck B - Filter On - 0"
   },
   {
@@ -2960,6 +3178,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Filter On",
+    "Short Name": "filter__on",
     "Id": "In - Deck C - Filter On - 1"
   },
   {
@@ -2971,6 +3190,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Filter On",
+    "Short Name": "filter__off",
     "Id": "In - Deck C - Filter On - 0"
   },
   {
@@ -2982,6 +3202,7 @@
     "Type": "Button",
     "Value": "1",
     "Control": "Filter On",
+    "Short Name": "filter__on",
     "Id": "In - Deck D - Filter On - 1"
   },
   {
@@ -2993,6 +3214,7 @@
     "Type": "Button",
     "Value": "0",
     "Control": "Filter On",
+    "Short Name": "filter__off",
     "Id": "In - Deck D - Filter On - 0"
   }
 ]
