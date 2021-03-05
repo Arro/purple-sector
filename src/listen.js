@@ -1,19 +1,12 @@
 #!/usr/bin/env node
 import midi from "midi"
-import { keyBy } from "lodash"
 import fs from "fs-extra"
-import { val_to_size, deck_transform } from "constants/conversions"
+import { val_to_size } from "constants/conversions"
 import Redis from "ioredis"
 import ora from "ora"
 ;(async function () {
-  let commands = await fs.readFile("./constants/commands.json", "utf-8")
-  commands = JSON.parse(commands)
-  let out_commands = commands.filter((cmd) => {
-    return cmd.IO === "Out"
-  })
-  out_commands = keyBy(out_commands, (cmd) => {
-    return `${cmd.Channel}-${cmd.CC}`
-  })
+  let statuses = await fs.readFile("./constants/statuses.json", "utf-8")
+  statuses = JSON.parse(statuses)
 
   const input = new midi.Input()
   const redis = new Redis()
@@ -40,47 +33,40 @@ import ora from "ora"
     }
     const key = `${channel}-${cc}`
 
-    const command = out_commands[key]
+    const status = statuses[key]
 
     spinner.info(`Receive midi message ${key}`)
-    if (!command) {
-      spinner.fail(`We don't have a command for that key`)
+    if (!status) {
+      spinner.fail(`We don't have a status for that key`)
       spinner.start(active_message)
       return
     }
 
     let val = message[2]
 
-    if (command[`Is Conversion`]) {
+    if (status[`Is Conversion`]) {
       val = val_to_size[message[2]]
-    } else if (command[`Is Binary`]) {
+    } else if (status[`Is Binary`]) {
       val = message[2] === 127
-    } else if (command[`Is Fraction`]) {
+    } else if (status[`Is Fraction`]) {
       val = message[2] / 127
     }
 
-    const deck = deck_transform[command.Assignment]
-    const short_name = command[`Short Name`]
-    const redis_key = `${deck}__${short_name}`
-    spinner.info(`redis_key: ${redis_key}, val: ${val}`)
+    spinner.info(`id: ${status.Id}, val: ${val}`)
 
-    redis.set(redis_key, val)
+    redis.set(status.Id, val)
   })
 
-  let in_commands = commands.filter((cmd) => {
-    return cmd.IO === "In"
-  })
-  in_commands = keyBy(in_commands, (cmd) => {
-    const deck = deck_transform[cmd.Assignment]
-    return `${deck}__${cmd["Short Name"]}`
-  })
+  let commands = await fs.readFile("./constants/commands.json", "utf-8")
+  commands = JSON.parse(commands)
+
   const output = new midi.Output()
   output.openPort(0)
 
   await redis_sub.subscribe("purple-sector")
   redis_sub.on("message", (channel, key) => {
     spinner.info(`Receive redis message ${key}`)
-    let [deck, control, val] = key.split("__")
+    let [, deck, short_name, val] = key.split("__")
 
     if (val === "{val}") {
       spinner.fail("Don't pass in {val} like that in the key")
@@ -89,16 +75,16 @@ import ora from "ora"
     }
 
     if (parseInt(val)) {
-      key = `${deck}__${control}__{val}`
+      key = `command__${deck}__${short_name}__{val}`
       val = parseInt(val)
     } else {
       val = 127
     }
 
-    const command = in_commands[key]
+    const command = commands[key]
 
     if (!command) {
-      spinner.fail(`We don't have a command for that key`)
+      spinner.fail(`We don't have a command for that redis message`)
       spinner.start(active_message)
       return
     }

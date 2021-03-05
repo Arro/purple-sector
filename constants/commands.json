@@ -1,329 +1,329 @@
-[
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+{
+  "command__a__loop_size__{val}": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "002",
     "Type": "Fader / Knob",
     "Control": "Loop Size Selector",
-    "Short Name": "loop_size__{val}",
-    "Id": "In - Deck A - Loop Size Selector"
+    "ShortName": "loop_size__{val}",
+    "Id": "command__a__loop_size__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__loop_size__{val}": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "003",
     "Type": "Fader / Knob",
     "Control": "Loop Size Selector",
-    "Short Name": "loop_size__{val}",
-    "Id": "In - Deck B - Loop Size Selector"
+    "ShortName": "loop_size__{val}",
+    "Id": "command__b__loop_size__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__size__{val}": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "004",
     "Type": "Fader / Knob",
     "Control": "Size Selector",
-    "Short Name": "size__{val}",
-    "Id": "In - Deck A - Size Selector"
+    "ShortName": "size__{val}",
+    "Id": "command__a__size__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__size__{val}": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "005",
     "Type": "Fader / Knob",
     "Control": "Size Selector",
-    "Short Name": "size__{val}",
-    "Id": "In - Deck B - Size Selector"
+    "ShortName": "size__{val}",
+    "Id": "command__b__size__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__loop_active__toggle": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Toggle",
     "Channel": "01",
     "CC": "006",
     "Type": "Button",
     "Control": "Loop Active On",
-    "Short Name": "loop_active__toggle",
-    "Id": "In - Deck A - Loop Active On"
+    "ShortName": "loop_active__toggle",
+    "Id": "command__a__loop_active__toggle"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__loop_active__toggle": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Toggle",
     "Channel": "01",
     "CC": "007",
     "Type": "Button",
     "Control": "Loop Active On",
-    "Short Name": "loop_active__toggle",
-    "Id": "In - Deck B - Loop Active On"
+    "ShortName": "loop_active__toggle",
+    "Id": "command__b__loop_active__toggle"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__loop_size_alt__{val}": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "008",
     "Type": "Fader / Knob",
     "Control": "Loop Size Select + Set",
-    "Short Name": "loop_size_alt__{val}",
-    "Id": "In - Deck A - Loop Size Select + Set"
+    "ShortName": "loop_size_alt__{val}",
+    "Id": "command__a__loop_size_alt__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__loop_size_alt__{val}": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "009",
     "Type": "Fader / Knob",
     "Control": "Loop Size Select + Set",
-    "Short Name": "loop_size_alt__{val}",
-    "Id": "In - Deck B - Loop Size Select + Set"
+    "ShortName": "loop_size_alt__{val}",
+    "Id": "command__b__loop_size_alt__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__move__back": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "010",
     "Type": "Button",
     "Value": "Back",
     "Control": "Move",
-    "Short Name": "move__back",
-    "Id": "In - Deck A - Move - Back"
+    "ShortName": "move__back",
+    "Id": "command__a__move__back"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__move__back": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "011",
     "Type": "Button",
     "Value": "Back",
     "Control": "Move",
-    "Short Name": "move__back",
-    "Id": "In - Deck B - Move - Back"
+    "ShortName": "move__back",
+    "Id": "command__b__move__back"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__move__forward": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "012",
     "Type": "Button",
     "Value": "Forward",
     "Control": "Move",
-    "Short Name": "move__forward",
-    "Id": "In - Deck A - Move - Forward"
+    "ShortName": "move__forward",
+    "Id": "command__a__move__forward"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__move__forward": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "013",
     "Type": "Button",
     "Value": "Forward",
     "Control": "Move",
-    "Short Name": "move__forward",
-    "Id": "In - Deck B - Move - Forward"
+    "ShortName": "move__forward",
+    "Id": "command__b__move__forward"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__mode__loop": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "014",
     "Type": "Button",
     "Value": "Loop",
     "Control": "Mode Selector",
-    "Short Name": "mode__loop",
-    "Id": "In - Deck A - Mode Selector - Loop"
+    "ShortName": "mode__loop",
+    "Id": "command__a__mode__loop"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__mode__loop": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "015",
     "Type": "Button",
     "Value": "Loop",
     "Control": "Mode Selector",
-    "Short Name": "mode__loop",
-    "Id": "In - Deck B - Mode Selector - Loop"
+    "ShortName": "mode__loop",
+    "Id": "command__b__mode__loop"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__mode__beatjump": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "016",
     "Type": "Button",
     "Value": "BeatJump",
     "Control": "Mode Selector",
-    "Short Name": "mode__beatjump",
-    "Id": "In - Deck A - Mode Selector - BeatJump"
+    "ShortName": "mode__beatjump",
+    "Id": "command__a__mode__beatjump"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__mode__beatjump": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "017",
     "Type": "Button",
     "Value": "BeatJump",
     "Control": "Mode Selector",
-    "Short Name": "mode__beatjump",
-    "Id": "In - Deck B - Mode Selector - BeatJump"
+    "ShortName": "mode__beatjump",
+    "Id": "command__b__mode__beatjump"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__loop_active__toggle": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Toggle",
     "Channel": "01",
     "CC": "020",
     "Type": "Button",
     "Control": "Loop Active On",
-    "Short Name": "loop_active__toggle",
-    "Id": "In - Deck C - Loop Active On"
+    "ShortName": "loop_active__toggle",
+    "Id": "command__c__loop_active__toggle"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__load__trigger": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Trigger",
     "Channel": "01",
     "CC": "038",
     "Type": "Button",
     "Control": "Load Selected (Deck Common)",
-    "Short Name": "load__trigger",
-    "Id": "In - Deck A - Load Selected (Deck Common)"
+    "ShortName": "load__trigger",
+    "Id": "command__a__load__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__load__trigger": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Trigger",
     "Channel": "01",
     "CC": "039",
     "Type": "Button",
     "Control": "Load Selected (Deck Common)",
-    "Short Name": "load__trigger",
-    "Id": "In - Deck B - Load Selected (Deck Common)"
+    "ShortName": "load__trigger",
+    "Id": "command__b__load__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__play__start": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "040",
     "Type": "Button",
     "Value": "1",
     "Control": "Play/Pause (Deck Common)",
-    "Short Name": "play__start",
-    "Id": "In - Deck A - Play/Pause (Deck Common) - 1"
+    "ShortName": "play__start",
+    "Id": "command__a__play__start"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__play__start": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "041",
     "Type": "Button",
     "Value": "1",
     "Control": "Play/Pause (Deck Common)",
-    "Short Name": "play__start",
-    "Id": "In - Deck B - Play/Pause (Deck Common) - 1"
+    "ShortName": "play__start",
+    "Id": "command__b__play__start"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__position__{val}": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "043",
     "Type": "Fader / Knob",
     "Control": "Seek Position (Deck Common)",
-    "Short Name": "position__{val}",
-    "Id": "In - Deck A - Seek Position (Deck Common)"
+    "ShortName": "position__{val}",
+    "Id": "command__a__position__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__position__{val}": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "044",
     "Type": "Fader / Knob",
     "Control": "Seek Position (Deck Common)",
-    "Short Name": "position__{val}",
-    "Id": "In - Deck B - Seek Position (Deck Common)"
+    "ShortName": "position__{val}",
+    "Id": "command__b__position__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__play__start": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "045",
     "Type": "Button",
     "Value": "1",
     "Control": "Play/Pause (Deck Common)",
-    "Short Name": "play__start",
-    "Id": "In - Deck C - Play/Pause (Deck Common) - 1"
+    "ShortName": "play__start",
+    "Id": "command__c__play__start"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__play__stop": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "046",
     "Type": "Button",
     "Value": "0",
     "Control": "Play/Pause (Deck Common)",
-    "Short Name": "play__stop",
-    "Id": "In - Deck C - Play/Pause (Deck Common) - 0"
+    "ShortName": "play__stop",
+    "Id": "command__c__play__stop"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__sync__off": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "047",
     "Type": "Button",
     "Value": "1",
     "Control": "Sync On",
-    "Short Name": "sync__off",
-    "Id": "In - Deck A - Sync On - 1"
+    "ShortName": "sync__off",
+    "Id": "command__a__sync__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__sync__off": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "048",
     "Type": "Button",
     "Value": "1",
     "Control": "Sync On",
-    "Short Name": "sync__off",
-    "Id": "In - Deck B - Sync On - 1"
+    "ShortName": "sync__off",
+    "Id": "command__b__sync__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__load__trigger": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Trigger",
     "Channel": "01",
     "CC": "051",
     "Type": "Button",
     "Control": "Load Selected (Deck Common)",
-    "Short Name": "load__trigger",
-    "Id": "In - Deck C - Load Selected (Deck Common)"
+    "ShortName": "load__trigger",
+    "Id": "command__c__load__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__tempo__inc": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Inc",
     "Channel": "01",
     "CC": "052",
@@ -331,12 +331,12 @@
     "Value": "Inc",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
-    "Short Name": "tempo__inc",
-    "Id": "In - Deck A - Tempo Adjust - Inc"
+    "ShortName": "tempo__inc",
+    "Id": "command__a__tempo__inc"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__tempo__inc": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Inc",
     "Channel": "01",
     "CC": "053",
@@ -344,12 +344,12 @@
     "Value": "Inc",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
-    "Short Name": "tempo__inc",
-    "Id": "In - Deck B - Tempo Adjust - Inc"
+    "ShortName": "tempo__inc",
+    "Id": "command__b__tempo__inc"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__tempo__dec": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Dec",
     "Channel": "01",
     "CC": "054",
@@ -357,12 +357,12 @@
     "Value": "Dec",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
-    "Short Name": "tempo__dec",
-    "Id": "In - Deck A - Tempo Adjust - Dec"
+    "ShortName": "tempo__dec",
+    "Id": "command__a__tempo__dec"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__tempo__dec": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Dec",
     "Channel": "01",
     "CC": "055",
@@ -370,161 +370,161 @@
     "Value": "Dec",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
-    "Short Name": "tempo__dec",
-    "Id": "In - Deck B - Tempo Adjust - Dec"
+    "ShortName": "tempo__dec",
+    "Id": "command__b__tempo__dec"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__master__trigger": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Trigger",
     "Channel": "01",
     "CC": "056",
     "Type": "Button",
     "Control": "Set as Tempo Master",
-    "Short Name": "master__trigger",
-    "Id": "In - Deck A - Set as Tempo Master"
+    "ShortName": "master__trigger",
+    "Id": "command__a__master__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__master__trigger": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Trigger",
     "Channel": "01",
     "CC": "057",
     "Type": "Button",
     "Control": "Set as Tempo Master",
-    "Short Name": "master__trigger",
-    "Id": "In - Deck B - Set as Tempo Master"
+    "ShortName": "master__trigger",
+    "Id": "command__b__master__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__jump_next__trigger": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "064",
     "Type": "Button",
     "Value": "Next",
     "Control": "Jump to Next/Prev Cue/Loop",
-    "Short Name": "jump_next__trigger",
-    "Id": "In - Deck A - Jump to Next/Prev Cue/Loop - Next"
+    "ShortName": "jump_next__trigger",
+    "Id": "command__a__jump_next__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__jump_next__trigger": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "065",
     "Type": "Button",
     "Value": "Next",
     "Control": "Jump to Next/Prev Cue/Loop",
-    "Short Name": "jump_next__trigger",
-    "Id": "In - Deck B - Jump to Next/Prev Cue/Loop - Next"
+    "ShortName": "jump_next__trigger",
+    "Id": "command__b__jump_next__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__sync__on": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "067",
     "Type": "Button",
     "Value": "0",
     "Control": "Sync On",
-    "Short Name": "sync__on",
-    "Id": "In - Deck A - Sync On - 0"
+    "ShortName": "sync__on",
+    "Id": "command__a__sync__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__sync__on": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "068",
     "Type": "Button",
     "Value": "0",
     "Control": "Sync On",
-    "Short Name": "sync__on",
-    "Id": "In - Deck B - Sync On - 0"
+    "ShortName": "sync__on",
+    "Id": "command__b__sync__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__position__{val}": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "070",
     "Type": "Fader / Knob",
     "Control": "Seek Position (Deck Common)",
-    "Short Name": "position__{val}",
-    "Id": "In - Deck C - Seek Position (Deck Common)"
+    "ShortName": "position__{val}",
+    "Id": "command__c__position__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__play__stop": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "080",
     "Type": "Button",
     "Value": "0",
     "Control": "Play/Pause (Deck Common)",
-    "Short Name": "play__stop",
-    "Id": "In - Deck A - Play/Pause (Deck Common) - 0"
+    "ShortName": "play__stop",
+    "Id": "command__a__play__stop"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__play__stop": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "081",
     "Type": "Button",
     "Value": "0",
     "Control": "Play/Pause (Deck Common)",
-    "Short Name": "play__stop",
-    "Id": "In - Deck B - Play/Pause (Deck Common) - 0"
+    "ShortName": "play__stop",
+    "Id": "command__b__play__stop"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__unload__trigger": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Trigger",
     "Channel": "01",
     "CC": "090",
     "Type": "Button",
     "Control": "Unload (Deck Common)",
-    "Short Name": "unload__trigger",
-    "Id": "In - Deck A - Unload (Deck Common)"
+    "ShortName": "unload__trigger",
+    "Id": "command__a__unload__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__unload__trigger": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Trigger",
     "Channel": "01",
     "CC": "091",
     "Type": "Button",
     "Control": "Unload (Deck Common)",
-    "Short Name": "unload__trigger",
-    "Id": "In - Deck B - Unload (Deck Common)"
+    "ShortName": "unload__trigger",
+    "Id": "command__b__unload__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__unload__trigger": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Trigger",
     "Channel": "01",
     "CC": "092",
     "Type": "Button",
     "Control": "Unload (Deck Common)",
-    "Short Name": "unload__trigger",
-    "Id": "In - Deck C - Unload (Deck Common)"
+    "ShortName": "unload__trigger",
+    "Id": "command__c__unload__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__unload__trigger": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Trigger",
     "Channel": "01",
     "CC": "093",
     "Type": "Button",
     "Control": "Unload (Deck Common)",
-    "Short Name": "unload__trigger",
-    "Id": "In - Deck D - Unload (Deck Common)"
+    "ShortName": "unload__trigger",
+    "Id": "command__d__unload__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__tempo__reset": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Reset",
     "Channel": "01",
     "CC": "100",
@@ -532,12 +532,12 @@
     "Value": "Reset",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
-    "Short Name": "tempo__reset",
-    "Id": "In - Deck A - Tempo Adjust - Reset"
+    "ShortName": "tempo__reset",
+    "Id": "command__a__tempo__reset"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__tempo__reset": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Reset",
     "Channel": "01",
     "CC": "101",
@@ -545,2187 +545,1775 @@
     "Value": "Reset",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
-    "Short Name": "tempo__reset",
-    "Id": "In - Deck B - Tempo Adjust - Reset"
+    "ShortName": "tempo__reset",
+    "Id": "command__b__tempo__reset"
   },
-  {
-    "IO": "Out",
-    "Assignment": "Deck A",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "120",
-    "Type": "LED",
-    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
-    "Control": "Deck Is Loaded",
-    "Short Name": "is_loaded",
-    "Is Binary": true,
-    "Id": "Out - Deck A - Deck Is Loaded"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck B",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "121",
-    "Type": "LED",
-    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
-    "Control": "Deck Is Loaded",
-    "Short Name": "is_loaded",
-    "Is Binary": true,
-    "Id": "Out - Deck B - Deck Is Loaded"
-  },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__unit__on": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "070",
     "Type": "Button",
     "Value": "1",
     "Control": "Unit On",
-    "Short Name": "unit__on",
-    "Id": "In - FX Unit 1 - Unit On - 1"
+    "ShortName": "unit__on",
+    "Id": "command__fx1__unit__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__unit__off": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "071",
     "Type": "Button",
     "Value": "0",
     "Control": "Unit On",
-    "Short Name": "unit__off",
-    "Id": "In - FX Unit 1 - Unit On - 0"
+    "ShortName": "unit__off",
+    "Id": "command__fx1__unit__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__gain__{val}": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "080",
     "Type": "Fader / Knob",
     "Control": "Gain Adjust (Mixer)",
-    "Short Name": "gain__{val}",
-    "Id": "In - Deck C - Gain Adjust (Mixer)"
+    "ShortName": "gain__{val}",
+    "Id": "command__c__gain__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Global",
+  "command__global__xfader__{val}": {
+    "IO": "command",
+    "Deck": "global",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "086",
     "Type": "Fader / Knob",
     "Note": "x-fader",
     "Control": "Position",
-    "Short Name": "xfader__{val}",
-    "Id": "In - Global - Position"
+    "ShortName": "xfader__{val}",
+    "Id": "command__global__xfader__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__tempo_bend__down": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Hold",
     "Channel": "02",
     "CC": "090",
     "Type": "Button",
     "Value": "Down",
     "Control": "Tempo Bend",
-    "Short Name": "tempo_bend__down",
-    "Id": "In - Deck A - Tempo Bend - Down"
+    "ShortName": "tempo_bend__down",
+    "Id": "command__a__tempo_bend__down"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__tempo_bend__down": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Hold",
     "Channel": "02",
     "CC": "091",
     "Type": "Button",
     "Value": "Down",
     "Control": "Tempo Bend",
-    "Short Name": "tempo_bend__down",
-    "Id": "In - Deck B - Tempo Bend - Down"
+    "ShortName": "tempo_bend__down",
+    "Id": "command__b__tempo_bend__down"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__tempo_bend__up": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Hold",
     "Channel": "02",
     "CC": "092",
     "Type": "Button",
     "Value": "Up",
     "Control": "Tempo Bend",
-    "Short Name": "tempo_bend__up",
-    "Id": "In - Deck A - Tempo Bend - Up"
+    "ShortName": "tempo_bend__up",
+    "Id": "command__a__tempo_bend__up"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__tempo_bend__up": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Hold",
     "Channel": "02",
     "CC": "093",
     "Type": "Button",
     "Value": "Up",
     "Control": "Tempo Bend",
-    "Short Name": "tempo_bend__up",
-    "Id": "In - Deck B - Tempo Bend - Up"
+    "ShortName": "tempo_bend__up",
+    "Id": "command__b__tempo_bend__up"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__fx_1__on": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "095",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 1 On",
-    "Short Name": "fx_1__on",
-    "Id": "In - Deck A - FX Unit 1 On - 1"
+    "ShortName": "fx_1__on",
+    "Id": "command__a__fx_1__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__fx_1__on": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "096",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 1 On",
-    "Short Name": "fx_1__on",
-    "Id": "In - Deck B - FX Unit 1 On - 1"
+    "ShortName": "fx_1__on",
+    "Id": "command__b__fx_1__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__fx_1__on": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "097",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 1 On",
-    "Short Name": "fx_1__on",
-    "Id": "In - Deck C - FX Unit 1 On - 1"
+    "ShortName": "fx_1__on",
+    "Id": "command__c__fx_1__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__fx_1__on": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "098",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 1 On",
-    "Short Name": "fx_1__on",
-    "Id": "In - Deck D - FX Unit 1 On - 1"
+    "ShortName": "fx_1__on",
+    "Id": "command__d__fx_1__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__fx_1__off": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "099",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 1 On",
-    "Short Name": "fx_1__off",
-    "Id": "In - Deck A - FX Unit 1 On - 0"
+    "ShortName": "fx_1__off",
+    "Id": "command__a__fx_1__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__fx_1__off": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "100",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 1 On",
-    "Short Name": "fx_1__off",
-    "Id": "In - Deck B - FX Unit 1 On - 0"
+    "ShortName": "fx_1__off",
+    "Id": "command__b__fx_1__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__fx_1__off": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "101",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 1 On",
-    "Short Name": "fx_1__off",
-    "Id": "In - Deck C - FX Unit 1 On - 0"
+    "ShortName": "fx_1__off",
+    "Id": "command__c__fx_1__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__fx_1__off": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "102",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 1 On",
-    "Short Name": "fx_1__off",
-    "Id": "In - Deck D - FX Unit 1 On - 0"
+    "ShortName": "fx_1__off",
+    "Id": "command__d__fx_1__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__cue__on": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "103",
     "Type": "Button",
     "Value": "1",
     "Control": "Monitor Cue On",
-    "Short Name": "cue__on",
-    "Id": "In - Deck A - Monitor Cue On - 1"
+    "ShortName": "cue__on",
+    "Id": "command__a__cue__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__cue__on": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "104",
     "Type": "Button",
     "Value": "1",
     "Control": "Monitor Cue On",
-    "Short Name": "cue__on",
-    "Id": "In - Deck B - Monitor Cue On - 1"
+    "ShortName": "cue__on",
+    "Id": "command__b__cue__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__cue__off": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "105",
     "Type": "Button",
     "Value": "0",
     "Control": "Monitor Cue On",
-    "Short Name": "cue__off",
-    "Id": "In - Deck A - Monitor Cue On - 0"
+    "ShortName": "cue__off",
+    "Id": "command__a__cue__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__cue__off": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "106",
     "Type": "Button",
     "Value": "0",
     "Control": "Monitor Cue On",
-    "Short Name": "cue__off",
-    "Id": "In - Deck B - Monitor Cue On - 0"
+    "ShortName": "cue__off",
+    "Id": "command__b__cue__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__cue__on": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "107",
     "Type": "Button",
     "Value": "1",
     "Control": "Monitor Cue On",
-    "Short Name": "cue__on",
-    "Id": "In - Deck C - Monitor Cue On - 1"
+    "ShortName": "cue__on",
+    "Id": "command__c__cue__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__cue__off": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "108",
     "Type": "Button",
     "Value": "0",
     "Control": "Monitor Cue On",
-    "Short Name": "cue__off",
-    "Id": "In - Deck C - Monitor Cue On - 0"
+    "ShortName": "cue__off",
+    "Id": "command__c__cue__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__cue__on": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "109",
     "Type": "Button",
     "Value": "1",
     "Control": "Monitor Cue On",
-    "Short Name": "cue__on",
-    "Id": "In - Deck D - Monitor Cue On - 1"
+    "ShortName": "cue__on",
+    "Id": "command__d__cue__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__cue__off": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "110",
     "Type": "Button",
     "Value": "0",
     "Control": "Monitor Cue On",
-    "Short Name": "cue__off",
-    "Id": "In - Deck D - Monitor Cue On - 0"
+    "ShortName": "cue__off",
+    "Id": "command__d__cue__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__dry_wet__{val}": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "111",
     "Type": "Fader / Knob",
     "Control": "Dry/Wet Adjust (FX Unit)",
-    "Short Name": "dry_wet__{val}",
-    "Id": "In - FX Unit 1 - Dry/Wet Adjust (FX Unit)"
+    "ShortName": "dry_wet__{val}",
+    "Id": "command__fx1__dry_wet__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__knob_1__{val}": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "112",
     "Type": "Fader / Knob",
     "Control": "Knob 1",
-    "Short Name": "knob_1__{val}",
-    "Id": "In - FX Unit 1 - Knob 1"
+    "ShortName": "knob_1__{val}",
+    "Id": "command__fx1__knob_1__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__knob_2__{val}": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "113",
     "Type": "Fader / Knob",
     "Control": "Knob 2",
-    "Short Name": "knob_2__{val}",
-    "Id": "In - FX Unit 1 - Knob 2"
+    "ShortName": "knob_2__{val}",
+    "Id": "command__fx1__knob_2__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__knob_3__{val}": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "114",
     "Type": "Fader / Knob",
     "Control": "Knob 3",
-    "Short Name": "knob_3__{val}",
-    "Id": "In - FX Unit 1 - Knob 3"
+    "ShortName": "knob_3__{val}",
+    "Id": "command__fx1__knob_3__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__button_1__on": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "115",
     "Type": "Button",
     "Value": "1",
     "Control": "Button 1",
-    "Short Name": "button_1__on",
-    "Id": "In - FX Unit 1 - Button 1 - 1"
+    "ShortName": "button_1__on",
+    "Id": "command__fx1__button_1__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__button_1__off": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "116",
     "Type": "Button",
     "Value": "0",
     "Control": "Button 1",
-    "Short Name": "button_1__off",
-    "Id": "In - FX Unit 1 - Button 1 - 0"
+    "ShortName": "button_1__off",
+    "Id": "command__fx1__button_1__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__button_2__on": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "117",
     "Type": "Button",
     "Value": "1",
     "Control": "Button 2",
-    "Short Name": "button_2__on",
-    "Id": "In - FX Unit 1 - Button 2 - 1"
+    "ShortName": "button_2__on",
+    "Id": "command__fx1__button_2__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__button_2__off": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "118",
     "Type": "Button",
     "Value": "0",
     "Control": "Button 2",
-    "Short Name": "button_2__off",
-    "Id": "In - FX Unit 1 - Button 2 - 0"
+    "ShortName": "button_2__off",
+    "Id": "command__fx1__button_2__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__button_3__on": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "119",
     "Type": "Button",
     "Value": "1",
     "Control": "Button 3",
-    "Short Name": "button_3__on",
-    "Id": "In - FX Unit 1 - Button 3 - 1"
+    "ShortName": "button_3__on",
+    "Id": "command__fx1__button_3__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__button_3__off": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "120",
     "Type": "Button",
     "Value": "0",
     "Control": "Button 3",
-    "Short Name": "button_3__off",
-    "Id": "In - FX Unit 1 - Button 3 - 0"
+    "ShortName": "button_3__off",
+    "Id": "command__fx1__button_3__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__effect_1__{val}": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "121",
     "Type": "Fader / Knob",
     "Control": "Effect 1 Selector",
-    "Short Name": "effect_1__{val}",
-    "Id": "In - FX Unit 1 - Effect 1 Selector"
+    "ShortName": "effect_1__{val}",
+    "Id": "command__fx1__effect_1__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__effect_2__{val}": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "122",
     "Type": "Fader / Knob",
     "Control": "Effect 2 Selector",
-    "Short Name": "effect_2__{val}",
-    "Id": "In - FX Unit 1 - Effect 2 Selector"
+    "ShortName": "effect_2__{val}",
+    "Id": "command__fx1__effect_2__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__effect_3__{val}": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "123",
     "Type": "Fader / Knob",
     "Control": "Effect 3 Selector",
-    "Short Name": "effect_3__{val}",
-    "Id": "In - FX Unit 1 - Effect 3 Selector"
+    "ShortName": "effect_3__{val}",
+    "Id": "command__fx1__effect_3__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__fx_mode__single": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "124",
     "Type": "Button",
     "Value": "Single",
     "Control": "FX Unit Mode Selector",
-    "Short Name": "fx_mode__single",
-    "Id": "In - FX Unit 1 - FX Unit Mode Selector - Single"
+    "ShortName": "fx_mode__single",
+    "Id": "command__fx1__fx_mode__single"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 1",
+  "command__fx1__fx_mode__group": {
+    "IO": "command",
+    "Deck": "fx1",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "125",
     "Type": "Button",
     "Value": "Group",
     "Control": "FX Unit Mode Selector",
-    "Short Name": "fx_mode__group",
-    "Id": "In - FX Unit 1 - FX Unit Mode Selector - Group"
+    "ShortName": "fx_mode__group",
+    "Id": "command__fx1__fx_mode__group"
   },
-  {
-    "IO": "In",
-    "Assignment": "Global",
+  "command__global__search_select__top": {
+    "IO": "command",
+    "Deck": "global",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "011",
     "Type": "Button",
     "Value": "Bottom",
     "Control": "Select Top/Bottom",
-    "Short Name": "search_select__top",
-    "Id": "In - Global - Select Top/Bottom - Bottom"
+    "ShortName": "search_select__top",
+    "Id": "command__global__search_select__top"
   },
-  {
-    "IO": "In",
-    "Assignment": "Global",
+  "command__global__search__trigger": {
+    "IO": "command",
+    "Deck": "global",
     "Mode": "Trigger",
     "Channel": "03",
     "CC": "017",
     "Type": "Button",
     "Control": "Search",
-    "Short Name": "search__trigger",
-    "Id": "In - Global - Search"
+    "ShortName": "search__trigger",
+    "Id": "command__global__search__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Global",
+  "command__global__search_clear__trigger": {
+    "IO": "command",
+    "Deck": "global",
     "Mode": "Trigger",
     "Channel": "03",
     "CC": "018",
     "Type": "Button",
     "Control": "Search Clear",
-    "Short Name": "search_clear__trigger",
-    "Id": "In - Global - Search Clear"
+    "ShortName": "search_clear__trigger",
+    "Id": "command__global__search_clear__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__volume__{val}": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "030",
     "Type": "Fader / Knob",
     "Control": "Volume Adjust",
-    "Short Name": "volume__{val}",
-    "Id": "In - Deck A - Volume Adjust"
+    "ShortName": "volume__{val}",
+    "Id": "command__a__volume__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__volume__{val}": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "031",
     "Type": "Fader / Knob",
     "Control": "Volume Adjust",
-    "Short Name": "volume__{val}",
-    "Id": "In - Deck B - Volume Adjust"
+    "ShortName": "volume__{val}",
+    "Id": "command__b__volume__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__volume__{val}": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "032",
     "Type": "Fader / Knob",
     "Control": "Volume Adjust",
-    "Short Name": "volume__{val}",
-    "Id": "In - Deck C - Volume Adjust"
+    "ShortName": "volume__{val}",
+    "Id": "command__c__volume__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__volume__{val}": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "033",
     "Type": "Fader / Knob",
     "Control": "Volume Adjust",
-    "Short Name": "volume__{val}",
-    "Id": "In - Deck D - Volume Adjust"
+    "ShortName": "volume__{val}",
+    "Id": "command__d__volume__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__fx_2__on": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "034",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 2 On",
-    "Short Name": "fx_2__on",
-    "Id": "In - Deck A - FX Unit 2 On - 1"
+    "ShortName": "fx_2__on",
+    "Id": "command__a__fx_2__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__fx_2__on": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "035",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 2 On",
-    "Short Name": "fx_2__on",
-    "Id": "In - Deck B - FX Unit 2 On - 1"
+    "ShortName": "fx_2__on",
+    "Id": "command__b__fx_2__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__fx_2__on": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "036",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 2 On",
-    "Short Name": "fx_2__on",
-    "Id": "In - Deck C - FX Unit 2 On - 1"
+    "ShortName": "fx_2__on",
+    "Id": "command__c__fx_2__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__fx_2__on": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "037",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 2 On",
-    "Short Name": "fx_2__on",
-    "Id": "In - Deck D - FX Unit 2 On - 1"
+    "ShortName": "fx_2__on",
+    "Id": "command__d__fx_2__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__fx_2__off": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "038",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 2 On",
-    "Short Name": "fx_2__off",
-    "Id": "In - Deck A - FX Unit 2 On - 0"
+    "ShortName": "fx_2__off",
+    "Id": "command__a__fx_2__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__fx_2__off": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "039",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 2 On",
-    "Short Name": "fx_2__off",
-    "Id": "In - Deck B - FX Unit 2 On - 0"
+    "ShortName": "fx_2__off",
+    "Id": "command__b__fx_2__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__fx_2__off": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "040",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 2 On",
-    "Short Name": "fx_2__off",
-    "Id": "In - Deck C - FX Unit 2 On - 0"
+    "ShortName": "fx_2__off",
+    "Id": "command__c__fx_2__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__fx_2__off": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "041",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 2 On",
-    "Short Name": "fx_2__off",
-    "Id": "In - Deck D - FX Unit 2 On - 0"
+    "ShortName": "fx_2__off",
+    "Id": "command__d__fx_2__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__unit__on": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "042",
     "Type": "Button",
     "Value": "1",
     "Control": "Unit On",
-    "Short Name": "unit__on",
-    "Id": "In - FX Unit 2 - Unit On - 1"
+    "ShortName": "unit__on",
+    "Id": "command__fx2__unit__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__unit__off": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "043",
     "Type": "Button",
     "Value": "0",
     "Control": "Unit On",
-    "Short Name": "unit__off",
-    "Id": "In - FX Unit 2 - Unit On - 0"
+    "ShortName": "unit__off",
+    "Id": "command__fx2__unit__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__dry_wet__{val}": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "044",
     "Type": "Fader / Knob",
     "Control": "Dry/Wet Adjust (FX Unit)",
-    "Short Name": "dry_wet__{val}",
-    "Id": "In - FX Unit 2 - Dry/Wet Adjust (FX Unit)"
+    "ShortName": "dry_wet__{val}",
+    "Id": "command__fx2__dry_wet__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__knob_1__{val}": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "045",
     "Type": "Fader / Knob",
     "Control": "Knob 1",
-    "Short Name": "knob_1__{val}",
-    "Id": "In - FX Unit 2 - Knob 1"
+    "ShortName": "knob_1__{val}",
+    "Id": "command__fx2__knob_1__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__knob_2__{val}": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "046",
     "Type": "Fader / Knob",
     "Control": "Knob 2",
-    "Short Name": "knob_2__{val}",
-    "Id": "In - FX Unit 2 - Knob 2"
+    "ShortName": "knob_2__{val}",
+    "Id": "command__fx2__knob_2__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__knob_3__{val}": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "047",
     "Type": "Fader / Knob",
     "Control": "Knob 3",
-    "Short Name": "knob_3__{val}",
-    "Id": "In - FX Unit 2 - Knob 3"
+    "ShortName": "knob_3__{val}",
+    "Id": "command__fx2__knob_3__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__button_1__on": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "048",
     "Type": "Button",
     "Value": "1",
     "Control": "Button 1",
-    "Short Name": "button_1__on",
-    "Id": "In - FX Unit 2 - Button 1 - 1"
+    "ShortName": "button_1__on",
+    "Id": "command__fx2__button_1__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__button_1__off": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "049",
     "Type": "Button",
     "Value": "0",
     "Control": "Button 1",
-    "Short Name": "button_1__off",
-    "Id": "In - FX Unit 2 - Button 1 - 0"
+    "ShortName": "button_1__off",
+    "Id": "command__fx2__button_1__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__button_2__on": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "050",
     "Type": "Button",
     "Value": "1",
     "Control": "Button 2",
-    "Short Name": "button_2__on",
-    "Id": "In - FX Unit 2 - Button 2 - 1"
+    "ShortName": "button_2__on",
+    "Id": "command__fx2__button_2__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__button_2__off": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "051",
     "Type": "Button",
     "Value": "0",
     "Control": "Button 2",
-    "Short Name": "button_2__off",
-    "Id": "In - FX Unit 2 - Button 2 - 0"
+    "ShortName": "button_2__off",
+    "Id": "command__fx2__button_2__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__button_3__on": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "052",
     "Type": "Button",
     "Value": "1",
     "Control": "Button 3",
-    "Short Name": "button_3__on",
-    "Id": "In - FX Unit 2 - Button 3 - 1"
+    "ShortName": "button_3__on",
+    "Id": "command__fx2__button_3__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__button_3__off": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "053",
     "Type": "Button",
     "Value": "0",
     "Control": "Button 3",
-    "Short Name": "button_3__off",
-    "Id": "In - FX Unit 2 - Button 3 - 0"
+    "ShortName": "button_3__off",
+    "Id": "command__fx2__button_3__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__effect_1__{val}": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "054",
     "Type": "Fader / Knob",
     "Control": "Effect 1 Selector",
-    "Short Name": "effect_1__{val}",
-    "Id": "In - FX Unit 2 - Effect 1 Selector"
+    "ShortName": "effect_1__{val}",
+    "Id": "command__fx2__effect_1__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__effect_2__{val}": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "055",
     "Type": "Fader / Knob",
     "Control": "Effect 2 Selector",
-    "Short Name": "effect_2__{val}",
-    "Id": "In - FX Unit 2 - Effect 2 Selector"
+    "ShortName": "effect_2__{val}",
+    "Id": "command__fx2__effect_2__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__effect_3__{val}": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "056",
     "Type": "Fader / Knob",
     "Control": "Effect 3 Selector",
-    "Short Name": "effect_3__{val}",
-    "Id": "In - FX Unit 2 - Effect 3 Selector"
+    "ShortName": "effect_3__{val}",
+    "Id": "command__fx2__effect_3__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__fx_mode__single": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "057",
     "Type": "Button",
     "Value": "Single",
     "Control": "FX Unit Mode Selector",
-    "Short Name": "fx_mode__single",
-    "Id": "In - FX Unit 2 - FX Unit Mode Selector - Single"
+    "ShortName": "fx_mode__single",
+    "Id": "command__fx2__fx_mode__single"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 2",
+  "command__fx2__fx_mode__group": {
+    "IO": "command",
+    "Deck": "fx2",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "058",
     "Type": "Button",
     "Value": "Group",
     "Control": "FX Unit Mode Selector",
-    "Short Name": "fx_mode__group",
-    "Id": "In - FX Unit 2 - FX Unit Mode Selector - Group"
+    "ShortName": "fx_mode__group",
+    "Id": "command__fx2__fx_mode__group"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__fx_3__off": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "059",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 3 On",
-    "Short Name": "fx_3__off",
-    "Id": "In - Deck A - FX Unit 3 On - 1"
+    "ShortName": "fx_3__off",
+    "Id": "command__a__fx_3__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__fx_3__off": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "060",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 3 On",
-    "Short Name": "fx_3__off",
-    "Id": "In - Deck B - FX Unit 3 On - 1"
+    "ShortName": "fx_3__off",
+    "Id": "command__b__fx_3__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__fx_3__off": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "061",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 3 On",
-    "Short Name": "fx_3__off",
-    "Id": "In - Deck C - FX Unit 3 On - 1"
+    "ShortName": "fx_3__off",
+    "Id": "command__c__fx_3__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__fx_3__off": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "062",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 3 On",
-    "Short Name": "fx_3__off",
-    "Id": "In - Deck D - FX Unit 3 On - 1"
+    "ShortName": "fx_3__off",
+    "Id": "command__d__fx_3__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__fx_3__on": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "063",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 3 On",
-    "Short Name": "fx_3__on",
-    "Id": "In - Deck A - FX Unit 3 On - 0"
+    "ShortName": "fx_3__on",
+    "Id": "command__a__fx_3__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__fx_3__on": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "064",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 3 On",
-    "Short Name": "fx_3__on",
-    "Id": "In - Deck B - FX Unit 3 On - 0"
+    "ShortName": "fx_3__on",
+    "Id": "command__b__fx_3__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__fx_3__on": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "065",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 3 On",
-    "Short Name": "fx_3__on",
-    "Id": "In - Deck C - FX Unit 3 On - 0"
+    "ShortName": "fx_3__on",
+    "Id": "command__c__fx_3__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__fx_3__on": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "066",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 3 On",
-    "Short Name": "fx_3__on",
-    "Id": "In - Deck D - FX Unit 3 On - 0"
+    "ShortName": "fx_3__on",
+    "Id": "command__d__fx_3__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__unit__on": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "067",
     "Type": "Button",
     "Value": "1",
     "Control": "Unit On",
-    "Short Name": "unit__on",
-    "Id": "In - FX Unit 3 - Unit On - 1"
+    "ShortName": "unit__on",
+    "Id": "command__fx3__unit__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__unit__off": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "068",
     "Type": "Button",
     "Value": "0",
     "Control": "Unit On",
-    "Short Name": "unit__off",
-    "Id": "In - FX Unit 3 - Unit On - 0"
+    "ShortName": "unit__off",
+    "Id": "command__fx3__unit__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__dry_wet__{val}": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "069",
     "Type": "Fader / Knob",
     "Control": "Dry/Wet Adjust (FX Unit)",
-    "Short Name": "dry_wet__{val}",
-    "Id": "In - FX Unit 3 - Dry/Wet Adjust (FX Unit)"
+    "ShortName": "dry_wet__{val}",
+    "Id": "command__fx3__dry_wet__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__knob_1__{val}": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "070",
     "Type": "Fader / Knob",
     "Control": "Knob 1",
-    "Short Name": "knob_1__{val}",
-    "Id": "In - FX Unit 3 - Knob 1"
+    "ShortName": "knob_1__{val}",
+    "Id": "command__fx3__knob_1__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__knob_2__{val}": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "071",
     "Type": "Fader / Knob",
     "Control": "Knob 2",
-    "Short Name": "knob_2__{val}",
-    "Id": "In - FX Unit 3 - Knob 2"
+    "ShortName": "knob_2__{val}",
+    "Id": "command__fx3__knob_2__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__knob_3__{val}": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "072",
     "Type": "Fader / Knob",
     "Control": "Knob 3",
-    "Short Name": "knob_3__{val}",
-    "Id": "In - FX Unit 3 - Knob 3"
+    "ShortName": "knob_3__{val}",
+    "Id": "command__fx3__knob_3__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__button_1__on": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "073",
     "Type": "Button",
     "Value": "1",
     "Control": "Button 1",
-    "Short Name": "button_1__on",
-    "Id": "In - FX Unit 3 - Button 1 - 1"
+    "ShortName": "button_1__on",
+    "Id": "command__fx3__button_1__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__button_1__off": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "074",
     "Type": "Button",
     "Value": "0",
     "Control": "Button 1",
-    "Short Name": "button_1__off",
-    "Id": "In - FX Unit 3 - Button 1 - 0"
+    "ShortName": "button_1__off",
+    "Id": "command__fx3__button_1__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__button_2__on": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "075",
     "Type": "Button",
     "Value": "1",
     "Control": "Button 2",
-    "Short Name": "button_2__on",
-    "Id": "In - FX Unit 3 - Button 2 - 1"
+    "ShortName": "button_2__on",
+    "Id": "command__fx3__button_2__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__button_2__off": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "076",
     "Type": "Button",
     "Value": "0",
     "Control": "Button 2",
-    "Short Name": "button_2__off",
-    "Id": "In - FX Unit 3 - Button 2 - 0"
+    "ShortName": "button_2__off",
+    "Id": "command__fx3__button_2__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__button_3__on": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "077",
     "Type": "Button",
     "Value": "1",
     "Control": "Button 3",
-    "Short Name": "button_3__on",
-    "Id": "In - FX Unit 3 - Button 3 - 1"
+    "ShortName": "button_3__on",
+    "Id": "command__fx3__button_3__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__button_3__off": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "078",
     "Type": "Button",
     "Value": "0",
     "Control": "Button 3",
-    "Short Name": "button_3__off",
-    "Id": "In - FX Unit 3 - Button 3 - 0"
+    "ShortName": "button_3__off",
+    "Id": "command__fx3__button_3__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__effect_1__{val}": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "079",
     "Type": "Fader / Knob",
     "Control": "Effect 1 Selector",
-    "Short Name": "effect_1__{val}",
-    "Id": "In - FX Unit 3 - Effect 1 Selector"
+    "ShortName": "effect_1__{val}",
+    "Id": "command__fx3__effect_1__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__effect_2__{val}": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "080",
     "Type": "Fader / Knob",
     "Control": "Effect 2 Selector",
-    "Short Name": "effect_2__{val}",
-    "Id": "In - FX Unit 3 - Effect 2 Selector"
+    "ShortName": "effect_2__{val}",
+    "Id": "command__fx3__effect_2__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__effect_3__{val}": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "081",
     "Type": "Fader / Knob",
     "Control": "Effect 3 Selector",
-    "Short Name": "effect_3__{val}",
-    "Id": "In - FX Unit 3 - Effect 3 Selector"
+    "ShortName": "effect_3__{val}",
+    "Id": "command__fx3__effect_3__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__fx_mode__single": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "082",
     "Type": "Button",
     "Value": "Single",
     "Control": "FX Unit Mode Selector",
-    "Short Name": "fx_mode__single",
-    "Id": "In - FX Unit 3 - FX Unit Mode Selector - Single"
+    "ShortName": "fx_mode__single",
+    "Id": "command__fx3__fx_mode__single"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 3",
+  "command__fx3__fx_mode__group": {
+    "IO": "command",
+    "Deck": "fx3",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "083",
     "Type": "Button",
     "Value": "Group",
     "Control": "FX Unit Mode Selector",
-    "Short Name": "fx_mode__group",
-    "Id": "In - FX Unit 3 - FX Unit Mode Selector - Group"
+    "ShortName": "fx_mode__group",
+    "Id": "command__fx3__fx_mode__group"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__fx_4__on": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "084",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 4 On",
-    "Short Name": "fx_4__on",
-    "Id": "In - Deck A - FX Unit 4 On - 1"
+    "ShortName": "fx_4__on",
+    "Id": "command__a__fx_4__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__fx_4__on": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "085",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 4 On",
-    "Short Name": "fx_4__on",
-    "Id": "In - Deck B - FX Unit 4 On - 1"
+    "ShortName": "fx_4__on",
+    "Id": "command__b__fx_4__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__fx_4__on": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "086",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 4 On",
-    "Short Name": "fx_4__on",
-    "Id": "In - Deck C - FX Unit 4 On - 1"
+    "ShortName": "fx_4__on",
+    "Id": "command__c__fx_4__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__fx_4__on": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "087",
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 4 On",
-    "Short Name": "fx_4__on",
-    "Id": "In - Deck D - FX Unit 4 On - 1"
+    "ShortName": "fx_4__on",
+    "Id": "command__d__fx_4__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__fx_4__off": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "088",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 4 On",
-    "Short Name": "fx_4__off",
-    "Id": "In - Deck A - FX Unit 4 On - 0"
+    "ShortName": "fx_4__off",
+    "Id": "command__a__fx_4__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__fx_4__off": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "089",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 4 On",
-    "Short Name": "fx_4__off",
-    "Id": "In - Deck B - FX Unit 4 On - 0"
+    "ShortName": "fx_4__off",
+    "Id": "command__b__fx_4__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__fx_4__off": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "090",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 4 On",
-    "Short Name": "fx_4__off",
-    "Id": "In - Deck C - FX Unit 4 On - 0"
+    "ShortName": "fx_4__off",
+    "Id": "command__c__fx_4__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__fx_4__off": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "091",
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 4 On",
-    "Short Name": "fx_4__off",
-    "Id": "In - Deck D - FX Unit 4 On - 0"
+    "ShortName": "fx_4__off",
+    "Id": "command__d__fx_4__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__unit__on": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "092",
     "Type": "Button",
     "Value": "1",
     "Control": "Unit On",
-    "Short Name": "unit__on",
-    "Id": "In - FX Unit 4 - Unit On - 1"
+    "ShortName": "unit__on",
+    "Id": "command__fx4__unit__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__unit__off": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "093",
     "Type": "Button",
     "Value": "0",
     "Control": "Unit On",
-    "Short Name": "unit__off",
-    "Id": "In - FX Unit 4 - Unit On - 0"
+    "ShortName": "unit__off",
+    "Id": "command__fx4__unit__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__dry_wet__{val}": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "094",
     "Type": "Fader / Knob",
     "Control": "Dry/Wet Adjust (FX Unit)",
-    "Short Name": "dry_wet__{val}",
-    "Id": "In - FX Unit 4 - Dry/Wet Adjust (FX Unit)"
+    "ShortName": "dry_wet__{val}",
+    "Id": "command__fx4__dry_wet__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__knob_1__{val}": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "095",
     "Type": "Fader / Knob",
     "Control": "Knob 1",
-    "Short Name": "knob_1__{val}",
-    "Id": "In - FX Unit 4 - Knob 1"
+    "ShortName": "knob_1__{val}",
+    "Id": "command__fx4__knob_1__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__knob_2__{val}": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "096",
     "Type": "Fader / Knob",
     "Control": "Knob 2",
-    "Short Name": "knob_2__{val}",
-    "Id": "In - FX Unit 4 - Knob 2"
+    "ShortName": "knob_2__{val}",
+    "Id": "command__fx4__knob_2__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__knob_3__{val}": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "097",
     "Type": "Fader / Knob",
     "Control": "Knob 3",
-    "Short Name": "knob_3__{val}",
-    "Id": "In - FX Unit 4 - Knob 3"
+    "ShortName": "knob_3__{val}",
+    "Id": "command__fx4__knob_3__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__button_1__on": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "098",
     "Type": "Button",
     "Value": "1",
     "Control": "Button 1",
-    "Short Name": "button_1__on",
-    "Id": "In - FX Unit 4 - Button 1 - 1"
+    "ShortName": "button_1__on",
+    "Id": "command__fx4__button_1__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__button_1__off": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "099",
     "Type": "Button",
     "Value": "0",
     "Control": "Button 1",
-    "Short Name": "button_1__off",
-    "Id": "In - FX Unit 4 - Button 1 - 0"
+    "ShortName": "button_1__off",
+    "Id": "command__fx4__button_1__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__button_2__on": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "100",
     "Type": "Button",
     "Value": "1",
     "Control": "Button 2",
-    "Short Name": "button_2__on",
-    "Id": "In - FX Unit 4 - Button 2 - 1"
+    "ShortName": "button_2__on",
+    "Id": "command__fx4__button_2__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__button_2__off": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "101",
     "Type": "Button",
     "Value": "0",
     "Control": "Button 2",
-    "Short Name": "button_2__off",
-    "Id": "In - FX Unit 4 - Button 2 - 0"
+    "ShortName": "button_2__off",
+    "Id": "command__fx4__button_2__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__button_3__on": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "102",
     "Type": "Button",
     "Value": "1",
     "Control": "Button 3",
-    "Short Name": "button_3__on",
-    "Id": "In - FX Unit 4 - Button 3 - 1"
+    "ShortName": "button_3__on",
+    "Id": "command__fx4__button_3__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__button_3__off": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "103",
     "Type": "Button",
     "Value": "0",
     "Control": "Button 3",
-    "Short Name": "button_3__off",
-    "Id": "In - FX Unit 4 - Button 3 - 0"
+    "ShortName": "button_3__off",
+    "Id": "command__fx4__button_3__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__effect_1__{val}": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "104",
     "Type": "Fader / Knob",
     "Control": "Effect 1 Selector",
-    "Short Name": "effect_1__{val}",
-    "Id": "In - FX Unit 4 - Effect 1 Selector"
+    "ShortName": "effect_1__{val}",
+    "Id": "command__fx4__effect_1__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__effect_2__{val}": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "105",
     "Type": "Fader / Knob",
     "Control": "Effect 2 Selector",
-    "Short Name": "effect_2__{val}",
-    "Id": "In - FX Unit 4 - Effect 2 Selector"
+    "ShortName": "effect_2__{val}",
+    "Id": "command__fx4__effect_2__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__effect_3__{val}": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "106",
     "Type": "Fader / Knob",
     "Control": "Effect 3 Selector",
-    "Short Name": "effect_3__{val}",
-    "Id": "In - FX Unit 4 - Effect 3 Selector"
+    "ShortName": "effect_3__{val}",
+    "Id": "command__fx4__effect_3__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__fx_mode__single": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "107",
     "Type": "Button",
     "Value": "Single",
     "Control": "FX Unit Mode Selector",
-    "Short Name": "fx_mode__single",
-    "Id": "In - FX Unit 4 - FX Unit Mode Selector - Single"
+    "ShortName": "fx_mode__single",
+    "Id": "command__fx4__fx_mode__single"
   },
-  {
-    "IO": "In",
-    "Assignment": "FX Unit 4",
+  "command__fx4__fx_mode__group": {
+    "IO": "command",
+    "Deck": "fx4",
     "Mode": "Direct",
     "Channel": "03",
     "CC": "108",
     "Type": "Button",
     "Value": "Group",
     "Control": "FX Unit Mode Selector",
-    "Short Name": "fx_mode__group",
-    "Id": "In - FX Unit 4 - FX Unit Mode Selector - Group"
+    "ShortName": "fx_mode__group",
+    "Id": "command__fx4__fx_mode__group"
   },
-  {
-    "IO": "Out",
-    "Assignment": "Deck A",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "000",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 1 On",
-    "Short Name": "is_fx_unit_1_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck A - FX Unit 1 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck B",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "001",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 1 On",
-    "Short Name": "is_fx_unit_1_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck B - FX Unit 1 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck C",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "002",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 1 On",
-    "Short Name": "is_fx_unit_1_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck C - FX Unit 1 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck D",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "003",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 1 On",
-    "Short Name": "is_fx_unit_1_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck D - FX Unit 1 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck A",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "004",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 2 On",
-    "Short Name": "fx_unit_2_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck A - FX Unit 2 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck B",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "005",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 2 On",
-    "Short Name": "fx_unit_2_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck B - FX Unit 2 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck C",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "006",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 2 On",
-    "Short Name": "fx_unit_2_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck C - FX Unit 2 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck D",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "007",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 2 On",
-    "Short Name": "fx_unit_2_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck D - FX Unit 2 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck A",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "008",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 3 On",
-    "Short Name": "fx_unit_3_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck A - FX Unit 3 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck B",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "009",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 3 On",
-    "Short Name": "fx_unit_3_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck B - FX Unit 3 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck C",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "010",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 3 On",
-    "Short Name": "fx_unit_3_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck C - FX Unit 3 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck D",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "011",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 3 On",
-    "Short Name": "fx_unit_3_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck D - FX Unit 3 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck A",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "012",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 4 On",
-    "Short Name": "fx_unit_4_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck A - FX Unit 4 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck B",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "013",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 4 On",
-    "Short Name": "fx_unit_4_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck B - FX Unit 4 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck C",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "014",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 4 On",
-    "Short Name": "fx_unit_4_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck C - FX Unit 4 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck D",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "015",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "FX Unit 4 On",
-    "Short Name": "fx_unit_4_enabled",
-    "Is Binary": true,
-    "Id": "Out - Deck D - FX Unit 4 On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck C",
-    "Mode": "Output",
-    "Channel": "05",
-    "CC": "080",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127, Blend On",
-    "Control": "Gain Adjust (Mixer)",
-    "Short Name": "gain_adjust",
-    "Is Fraction": true,
-    "Id": "Out - Deck C - Gain Adjust (Mixer)"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck A",
-    "Mode": "Output",
-    "Channel": "09",
-    "CC": "000",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127, Blend On",
-    "Control": "Seek Position (Deck Common)",
-    "Short Name": "position",
-    "Id": "Out - Deck A - Seek Position (Deck Common)"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck B",
-    "Mode": "Output",
-    "Channel": "09",
-    "CC": "001",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127, Blend On",
-    "Control": "Seek Position (Deck Common)",
-    "Short Name": "position",
-    "Id": "Out - Deck B - Seek Position (Deck Common)"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck A",
-    "Mode": "Output",
-    "Channel": "09",
-    "CC": "002",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Play/Pause (Deck Common)",
-    "Short Name": "is_playing",
-    "Is Binary": true,
-    "Id": "Out - Deck A - Play/Pause (Deck Common)"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck B",
-    "Mode": "Output",
-    "Channel": "09",
-    "CC": "003",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Play/Pause (Deck Common)",
-    "Short Name": "is_playing",
-    "Is Binary": true,
-    "Id": "Out - Deck B - Play/Pause (Deck Common)"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck A",
-    "Mode": "Output",
-    "Channel": "09",
-    "CC": "004",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Sync On",
-    "Short Name": "sync",
-    "Is Binary": true,
-    "Id": "Out - Deck A - Sync On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck B",
-    "Mode": "Output",
-    "Channel": "09",
-    "CC": "005",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Sync On",
-    "Short Name": "sync",
-    "Is Binary": true,
-    "Id": "Out - Deck B - Sync On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck A",
-    "Mode": "Output",
-    "Channel": "09",
-    "CC": "006",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Monitor Cue On",
-    "Short Name": "is_cued",
-    "Is Binary": true,
-    "Id": "Out - Deck A - Monitor Cue On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck B",
-    "Mode": "Output",
-    "Channel": "09",
-    "CC": "007",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Monitor Cue On",
-    "Short Name": "is_cued",
-    "Is Binary": true,
-    "Id": "Out - Deck B - Monitor Cue On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck A",
-    "Mode": "Output",
-    "Channel": "09",
-    "CC": "008",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Loop Active On",
-    "Short Name": "is_looping",
-    "Id": "Out - Deck A - Loop Active On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck B",
-    "Mode": "Output",
-    "Channel": "09",
-    "CC": "009",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Loop Active On",
-    "Short Name": "is_looping",
-    "Is Binary": true,
-    "Id": "Out - Deck B - Loop Active On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck A",
-    "Mode": "Output",
-    "Channel": "09",
-    "CC": "010",
-    "Type": "LED",
-    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
-    "Control": "Loop Size Selector",
-    "Short Name": "loop_size",
-    "Is Convert": true,
-    "Id": "Out - Deck A - Loop Size Selector"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck B",
-    "Mode": "Output",
-    "Channel": "09",
-    "CC": "011",
-    "Type": "LED",
-    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
-    "Control": "Loop Size Selector",
-    "Short Name": "loop_size",
-    "Id": "Out - Deck B - Loop Size Selector"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck C",
-    "Mode": "Output",
-    "Channel": "09",
-    "CC": "022",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Play/Pause (Deck Common)",
-    "Short Name": "is_playing",
-    "Is Binary": true,
-    "Id": "Out - Deck C - Play/Pause (Deck Common)"
-  },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__gain__{val}": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "001",
     "Type": "Fader / Knob",
     "Control": "Gain Adjust (Mixer)",
-    "Short Name": "gain__{val}",
-    "Id": "In - Deck A - Gain Adjust (Mixer)"
+    "ShortName": "gain__{val}",
+    "Id": "command__a__gain__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__gain__{val}": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "000",
     "Type": "Fader / Knob",
     "Control": "Gain Adjust (Mixer)",
-    "Short Name": "gain__{val}",
-    "Id": "In - Deck B - Gain Adjust (Mixer)"
+    "ShortName": "gain__{val}",
+    "Id": "command__b__gain__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__gain__{val}": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "018",
     "Type": "Fader / Knob",
     "Control": "Gain Adjust (Mixer)",
-    "Short Name": "gain__{val}",
-    "Id": "In - Deck D - Gain Adjust (Mixer)"
+    "ShortName": "gain__{val}",
+    "Id": "command__d__gain__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__jump_next__trigger": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "019",
     "Type": "Button",
     "Value": "Next",
     "Control": "Jump to Next/Prev Cue/Loop",
-    "Short Name": "jump_next__trigger",
-    "Id": "In - Deck C - Jump to Next/Prev Cue/Loop - Next"
+    "ShortName": "jump_next__trigger",
+    "Id": "command__c__jump_next__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__jump_next__trigger": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "021",
     "Type": "Button",
     "Value": "Next",
     "Control": "Jump to Next/Prev Cue/Loop",
-    "Short Name": "jump_next__trigger",
-    "Id": "In - Deck D - Jump to Next/Prev Cue/Loop - Next"
+    "ShortName": "jump_next__trigger",
+    "Id": "command__d__jump_next__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__load__trigger": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Trigger",
     "Channel": "01",
     "CC": "022",
     "Type": "Button",
     "Control": "Load Selected (Deck Common)",
-    "Short Name": "load__trigger",
-    "Id": "In - Deck D - Load Selected (Deck Common)"
+    "ShortName": "load__trigger",
+    "Id": "command__d__load__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__loop_active__toggle": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Toggle",
     "Channel": "01",
     "CC": "023",
     "Type": "Button",
     "Control": "Loop Active On",
-    "Short Name": "loop_active__toggle",
-    "Id": "In - Deck D - Loop Active On"
+    "ShortName": "loop_active__toggle",
+    "Id": "command__d__loop_active__toggle"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__loop_size_alt__{val}": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "024",
     "Type": "Fader / Knob",
     "Control": "Loop Size Select + Set",
-    "Short Name": "loop_size_alt__{val}",
-    "Id": "In - Deck C - Loop Size Select + Set"
+    "ShortName": "loop_size_alt__{val}",
+    "Id": "command__c__loop_size_alt__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__loop_size_alt__{val}": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "025",
     "Type": "Fader / Knob",
     "Control": "Loop Size Select + Set",
-    "Short Name": "loop_size_alt__{val}",
-    "Id": "In - Deck D - Loop Size Select + Set"
+    "ShortName": "loop_size_alt__{val}",
+    "Id": "command__d__loop_size_alt__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__loop_size__{val}": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "026",
     "Type": "Fader / Knob",
     "Control": "Loop Size Selector",
-    "Short Name": "loop_size__{val}",
-    "Id": "In - Deck C - Loop Size Selector"
+    "ShortName": "loop_size__{val}",
+    "Id": "command__c__loop_size__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__loop_size__{val}": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "027",
     "Type": "Fader / Knob",
     "Control": "Loop Size Selector",
-    "Short Name": "loop_size__{val}",
-    "Id": "In - Deck D - Loop Size Selector"
+    "ShortName": "loop_size__{val}",
+    "Id": "command__d__loop_size__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__mode__beatjump": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "028",
     "Type": "Button",
     "Value": "BeatJump",
     "Control": "Mode Selector",
-    "Short Name": "mode__beatjump",
-    "Id": "In - Deck C - Mode Selector - BeatJump"
+    "ShortName": "mode__beatjump",
+    "Id": "command__c__mode__beatjump"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__mode__beatjump": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "029",
     "Type": "Button",
     "Value": "BeatJump",
     "Control": "Mode Selector",
-    "Short Name": "mode__beatjump",
-    "Id": "In - Deck D - Mode Selector - BeatJump"
+    "ShortName": "mode__beatjump",
+    "Id": "command__d__mode__beatjump"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__mode__loop": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "030",
     "Type": "Button",
     "Value": "Loop",
     "Control": "Mode Selector",
-    "Short Name": "mode__loop",
-    "Id": "In - Deck C - Mode Selector - Loop"
+    "ShortName": "mode__loop",
+    "Id": "command__c__mode__loop"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__mode__loop": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "031",
     "Type": "Button",
     "Value": "Loop",
     "Control": "Mode Selector",
-    "Short Name": "mode__loop",
-    "Id": "In - Deck D - Mode Selector - Loop"
+    "ShortName": "mode__loop",
+    "Id": "command__d__mode__loop"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__move__back": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "032",
     "Type": "Button",
     "Value": "Back",
     "Control": "Move",
-    "Short Name": "move__back",
-    "Id": "In - Deck C - Move - Back"
+    "ShortName": "move__back",
+    "Id": "command__c__move__back"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__move__back": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "033",
     "Type": "Button",
     "Value": "Back",
     "Control": "Move",
-    "Short Name": "move__back",
-    "Id": "In - Deck D - Move - Back"
+    "ShortName": "move__back",
+    "Id": "command__d__move__back"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__move__forward": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "034",
     "Type": "Button",
     "Value": "Forward",
     "Control": "Move",
-    "Short Name": "move__forward",
-    "Id": "In - Deck C - Move - Forward"
+    "ShortName": "move__forward",
+    "Id": "command__c__move__forward"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__move__forward": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "035",
     "Type": "Button",
     "Value": "Forward",
     "Control": "Move",
-    "Short Name": "move__forward",
-    "Id": "In - Deck D - Move - Forward"
+    "ShortName": "move__forward",
+    "Id": "command__d__move__forward"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__play__stop": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "036",
     "Type": "Button",
     "Value": "0",
     "Control": "Play/Pause (Deck Common)",
-    "Short Name": "play__stop",
-    "Id": "In - Deck D - Play/Pause (Deck Common) - 0"
+    "ShortName": "play__stop",
+    "Id": "command__d__play__stop"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__play__start": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "037",
     "Type": "Button",
     "Value": "1",
     "Control": "Play/Pause (Deck Common)",
-    "Short Name": "play__start",
-    "Id": "In - Deck D - Play/Pause (Deck Common) - 1"
+    "ShortName": "play__start",
+    "Id": "command__d__play__start"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__position__{val}": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "042",
     "Type": "Fader / Knob",
     "Control": "Seek Position (Deck Common)",
-    "Short Name": "position__{val}",
-    "Id": "In - Deck D - Seek Position (Deck Common)"
+    "ShortName": "position__{val}",
+    "Id": "command__d__position__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__master__trigger": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Trigger",
     "Channel": "01",
     "CC": "058",
     "Type": "Button",
     "Control": "Set as Tempo Master",
-    "Short Name": "master__trigger",
-    "Id": "In - Deck C - Set as Tempo Master"
+    "ShortName": "master__trigger",
+    "Id": "command__c__master__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__master__trigger": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Trigger",
     "Channel": "01",
     "CC": "059",
     "Type": "Button",
     "Control": "Set as Tempo Master",
-    "Short Name": "master__trigger",
-    "Id": "In - Deck D - Set as Tempo Master"
+    "ShortName": "master__trigger",
+    "Id": "command__d__master__trigger"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__size__{val}": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "060",
     "Type": "Fader / Knob",
     "Control": "Size Selector",
-    "Short Name": "size__{val}",
-    "Id": "In - Deck C - Size Selector"
+    "ShortName": "size__{val}",
+    "Id": "command__c__size__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__size__{val}": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "061",
     "Type": "Fader / Knob",
     "Control": "Size Selector",
-    "Short Name": "size__{val}",
-    "Id": "In - Deck D - Size Selector"
+    "ShortName": "size__{val}",
+    "Id": "command__d__size__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__sync__on": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "062",
     "Type": "Button",
     "Value": "0",
     "Control": "Sync On",
-    "Short Name": "sync__on",
-    "Id": "In - Deck C - Sync On - 0"
+    "ShortName": "sync__on",
+    "Id": "command__c__sync__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__sync__off": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "063",
     "Type": "Button",
     "Value": "1",
     "Control": "Sync On",
-    "Short Name": "sync__off",
-    "Id": "In - Deck C - Sync On - 1"
+    "ShortName": "sync__off",
+    "Id": "command__c__sync__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__sync__on": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "069",
     "Type": "Button",
     "Value": "0",
     "Control": "Sync On",
-    "Short Name": "sync__on",
-    "Id": "In - Deck D - Sync On - 0"
+    "ShortName": "sync__on",
+    "Id": "command__d__sync__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__sync__off": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "071",
     "Type": "Button",
     "Value": "1",
     "Control": "Sync On",
-    "Short Name": "sync__off",
-    "Id": "In - Deck D - Sync On - 1"
+    "ShortName": "sync__off",
+    "Id": "command__d__sync__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__tempo__dec": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Dec",
     "Channel": "01",
     "CC": "066",
@@ -2733,12 +2321,12 @@
     "Value": "Dec",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
-    "Short Name": "tempo__dec",
-    "Id": "In - Deck C - Tempo Adjust - Dec"
+    "ShortName": "tempo__dec",
+    "Id": "command__c__tempo__dec"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__tempo__inc": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Inc",
     "Channel": "01",
     "CC": "082",
@@ -2746,12 +2334,12 @@
     "Value": "Inc",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
-    "Short Name": "tempo__inc",
-    "Id": "In - Deck C - Tempo Adjust - Inc"
+    "ShortName": "tempo__inc",
+    "Id": "command__c__tempo__inc"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__tempo__reset": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Reset",
     "Channel": "01",
     "CC": "083",
@@ -2759,12 +2347,12 @@
     "Value": "Reset",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
-    "Short Name": "tempo__reset",
-    "Id": "In - Deck C - Tempo Adjust - Reset"
+    "ShortName": "tempo__reset",
+    "Id": "command__c__tempo__reset"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__tempo__dec": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Dec",
     "Channel": "01",
     "CC": "084",
@@ -2772,12 +2360,12 @@
     "Value": "Dec",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
-    "Short Name": "tempo__dec",
-    "Id": "In - Deck D - Tempo Adjust - Dec"
+    "ShortName": "tempo__dec",
+    "Id": "command__d__tempo__dec"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__tempo__inc": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Inc",
     "Channel": "01",
     "CC": "085",
@@ -2785,12 +2373,12 @@
     "Value": "Inc",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
-    "Short Name": "tempo__inc",
-    "Id": "In - Deck D - Tempo Adjust - Inc"
+    "ShortName": "tempo__inc",
+    "Id": "command__d__tempo__inc"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__tempo__reset": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Reset",
     "Channel": "01",
     "CC": "086",
@@ -2798,423 +2386,219 @@
     "Value": "Reset",
     "Note": "Mode not Value",
     "Control": "Tempo Adjust",
-    "Short Name": "tempo__reset",
-    "Id": "In - Deck D - Tempo Adjust - Reset"
+    "ShortName": "tempo__reset",
+    "Id": "command__d__tempo__reset"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__tempo_bend__down": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Hold",
     "Channel": "01",
     "CC": "087",
     "Type": "Button",
     "Value": "Down",
     "Control": "Tempo Bend",
-    "Short Name": "tempo_bend__down",
-    "Id": "In - Deck C - Tempo Bend - Down"
+    "ShortName": "tempo_bend__down",
+    "Id": "command__c__tempo_bend__down"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__tempo_bend__up": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Hold",
     "Channel": "01",
     "CC": "088",
     "Type": "Button",
     "Value": "Up",
     "Control": "Tempo Bend",
-    "Short Name": "tempo_bend__up",
-    "Id": "In - Deck C - Tempo Bend - Up"
+    "ShortName": "tempo_bend__up",
+    "Id": "command__c__tempo_bend__up"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__tempo_bend__down": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Hold",
     "Channel": "01",
     "CC": "089",
     "Type": "Button",
     "Value": "Down",
     "Control": "Tempo Bend",
-    "Short Name": "tempo_bend__down",
-    "Id": "In - Deck D - Tempo Bend - Down"
+    "ShortName": "tempo_bend__down",
+    "Id": "command__d__tempo_bend__down"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__tempo_bend__up": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Hold",
     "Channel": "01",
     "CC": "094",
     "Type": "Button",
     "Value": "Up",
     "Control": "Tempo Bend",
-    "Short Name": "tempo_bend__up",
-    "Id": "In - Deck D - Tempo Bend - Up"
+    "ShortName": "tempo_bend__up",
+    "Id": "command__d__tempo_bend__up"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__filter__{val}": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "095",
     "Type": "Fader / Knob",
     "Control": "Filter Adjust",
-    "Short Name": "filter__{val}",
-    "Id": "In - Deck A - Filter Adjust"
+    "ShortName": "filter__{val}",
+    "Id": "command__a__filter__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__filter__{val}": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "096",
     "Type": "Fader / Knob",
     "Control": "Filter Adjust",
-    "Short Name": "filter__{val}",
-    "Id": "In - Deck B - Filter Adjust"
+    "ShortName": "filter__{val}",
+    "Id": "command__b__filter__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__filter__{val}": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "097",
     "Type": "Fader / Knob",
     "Control": "Filter Adjust",
-    "Short Name": "filter__{val}",
-    "Id": "In - Deck C - Filter Adjust"
+    "ShortName": "filter__{val}",
+    "Id": "command__c__filter__{val}"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__filter__{val}": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "098",
     "Type": "Fader / Knob",
     "Control": "Filter Adjust",
-    "Short Name": "filter__{val}",
-    "Id": "In - Deck D - Filter Adjust"
+    "ShortName": "filter__{val}",
+    "Id": "command__d__filter__{val}"
   },
-  {
-    "IO": "Out",
-    "Assignment": "Deck C",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "104",
-    "Type": "LED",
-    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
-    "Control": "Deck Is Loaded",
-    "Short Name": "is_loaded",
-    "Is Binary": true,
-    "Id": "Out - Deck C - Deck Is Loaded"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck D",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "105",
-    "Type": "LED",
-    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
-    "Control": "Deck Is Loaded",
-    "Short Name": "is_loaded",
-    "Is Binary": true,
-    "Id": "Out - Deck D - Deck Is Loaded"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck C",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "106",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Loop Active On",
-    "Short Name": "is_looping",
-    "Is Binary": true,
-    "Id": "Out - Deck C - Loop Active On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck D",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "107",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Loop Active On",
-    "Short Name": "is_looping",
-    "Is Binary": true,
-    "Id": "Out - Deck D - Loop Active On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck A",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "108",
-    "Type": "LED",
-    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
-    "Control": "Gain Adjust (Mixer)",
-    "Short Name": "gain_adjust",
-    "Is Fraction": true,
-    "Id": "Out - Deck A - Gain Adjust (Mixer)"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck B",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "109",
-    "Type": "LED",
-    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
-    "Control": "Gain Adjust (Mixer)",
-    "Short Name": "gain_adjust",
-    "Is Fraction": true,
-    "Id": "Out - Deck B - Gain Adjust (Mixer)"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck D",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "110",
-    "Type": "LED",
-    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
-    "Control": "Gain Adjust (Mixer)",
-    "Short Name": "gain_adjust",
-    "Is Fraction": true,
-    "Id": "Out - Deck D - Gain Adjust (Mixer)"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck C",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "111",
-    "Type": "LED",
-    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
-    "Control": "Loop Size Selector",
-    "Short Name": "loop_size",
-    "Id": "Out - Deck C - Loop Size Selector"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck D",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "112",
-    "Type": "LED",
-    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
-    "Control": "Loop Size Selector",
-    "Short Name": "loop_size",
-    "Id": "Out - Deck D - Loop Size Selector"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck C",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "113",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Monitor Cue On",
-    "Short Name": "is_cued",
-    "Is Binary": true,
-    "Id": "Out - Deck C - Monitor Cue On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck D",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "114",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Monitor Cue On",
-    "Short Name": "is_cued",
-    "Is Binary": true,
-    "Id": "Out - Deck D - Monitor Cue On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck D",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "115",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Play/Pause (Deck Common)",
-    "Short Name": "is_playing",
-    "Is Binary": true,
-    "Id": "Out - Deck D - Play/Pause (Deck Common)"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck C",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "116",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127, Blend On",
-    "Control": "Seek Position (Deck Common)",
-    "Short Name": "position",
-    "Id": "Out - Deck C - Seek Position (Deck Common)"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck D",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "117",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127, Blend On",
-    "Control": "Seek Position (Deck Common)",
-    "Short Name": "position",
-    "Id": "Out - Deck D - Seek Position (Deck Common)"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck C",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "118",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Sync On",
-    "Short Name": "sync",
-    "Is Binary": true,
-    "Id": "Out - Deck C - Sync On"
-  },
-  {
-    "IO": "Out",
-    "Assignment": "Deck D",
-    "Mode": "Output",
-    "Channel": "01",
-    "CC": "119",
-    "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
-    "Control": "Sync On",
-    "Short Name": "sync",
-    "Is Binary": true,
-    "Id": "Out - Deck D - Sync On"
-  },
-  {
-    "IO": "In",
-    "Assignment": "Global",
+  "command__global__record__start": {
+    "IO": "command",
+    "Deck": "global",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "087",
     "Type": "Button",
     "Value": "1",
     "Control": "Record/Stop",
-    "Short Name": "record__start",
-    "Id": "In - Global - Record/Stop - 1"
+    "ShortName": "record__start",
+    "Id": "command__global__record__start"
   },
-  {
-    "IO": "In",
-    "Assignment": "Global",
+  "command__global__record__stop": {
+    "IO": "command",
+    "Deck": "global",
     "Mode": "Direct",
     "Channel": "02",
     "CC": "088",
     "Type": "Button",
     "Value": "0",
     "Control": "Record/Stop",
-    "Short Name": "record__stop",
-    "Id": "In - Global - Record/Stop - 0"
+    "ShortName": "record__stop",
+    "Id": "command__global__record__stop"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__filter__on": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "099",
     "Type": "Button",
     "Value": "1",
     "Control": "Filter On",
-    "Short Name": "filter__on",
-    "Id": "In - Deck A - Filter On - 1"
+    "ShortName": "filter__on",
+    "Id": "command__a__filter__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck A",
+  "command__a__filter__off": {
+    "IO": "command",
+    "Deck": "a",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "102",
     "Type": "Button",
     "Value": "0",
     "Control": "Filter On",
-    "Short Name": "filter__off",
-    "Id": "In - Deck A - Filter On - 0"
+    "ShortName": "filter__off",
+    "Id": "command__a__filter__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__filter__on": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "103",
     "Type": "Button",
     "Value": "1",
     "Control": "Filter On",
-    "Short Name": "filter__on",
-    "Id": "In - Deck B - Filter On - 1"
+    "ShortName": "filter__on",
+    "Id": "command__b__filter__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck B",
+  "command__b__filter__off": {
+    "IO": "command",
+    "Deck": "b",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "122",
     "Type": "Button",
     "Value": "0",
     "Control": "Filter On",
-    "Short Name": "filter__off",
-    "Id": "In - Deck B - Filter On - 0"
+    "ShortName": "filter__off",
+    "Id": "command__b__filter__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__filter__on": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "123",
     "Type": "Button",
     "Value": "1",
     "Control": "Filter On",
-    "Short Name": "filter__on",
-    "Id": "In - Deck C - Filter On - 1"
+    "ShortName": "filter__on",
+    "Id": "command__c__filter__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck C",
+  "command__c__filter__off": {
+    "IO": "command",
+    "Deck": "c",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "124",
     "Type": "Button",
     "Value": "0",
     "Control": "Filter On",
-    "Short Name": "filter__off",
-    "Id": "In - Deck C - Filter On - 0"
+    "ShortName": "filter__off",
+    "Id": "command__c__filter__off"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__filter__on": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "125",
     "Type": "Button",
     "Value": "1",
     "Control": "Filter On",
-    "Short Name": "filter__on",
-    "Id": "In - Deck D - Filter On - 1"
+    "ShortName": "filter__on",
+    "Id": "command__d__filter__on"
   },
-  {
-    "IO": "In",
-    "Assignment": "Deck D",
+  "command__d__filter__off": {
+    "IO": "command",
+    "Deck": "d",
     "Mode": "Direct",
     "Channel": "01",
     "CC": "126",
     "Type": "Button",
     "Value": "0",
     "Control": "Filter On",
-    "Short Name": "filter__off",
-    "Id": "In - Deck D - Filter On - 0"
+    "ShortName": "filter__off",
+    "Id": "command__d__filter__off"
   }
-]
+}
