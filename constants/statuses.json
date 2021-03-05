@@ -242,9 +242,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127, Blend On",
     "Control": "Gain Adjust (Mixer)",
-    "ShortName": "gain_adjust",
+    "ShortName": "gain",
     "Is Fraction": true,
-    "Id": "status__c__gain_adjust"
+    "Id": "status__c__gain"
   },
   "09-000": {
     "IO": "status",
@@ -472,9 +472,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Gain Adjust (Mixer)",
-    "ShortName": "gain_adjust",
+    "ShortName": "gain",
     "Is Fraction": true,
-    "Id": "status__a__gain_adjust"
+    "Id": "status__a__gain"
   },
   "01-109": {
     "IO": "status",
@@ -485,9 +485,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Gain Adjust (Mixer)",
-    "ShortName": "gain_adjust",
+    "ShortName": "gain",
     "Is Fraction": true,
-    "Id": "status__b__gain_adjust"
+    "Id": "status__b__gain"
   },
   "01-110": {
     "IO": "status",
@@ -498,9 +498,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Gain Adjust (Mixer)",
-    "ShortName": "gain_adjust",
+    "ShortName": "gain",
     "Is Fraction": true,
-    "Id": "status__d__gain_adjust"
+    "Id": "status__d__gain"
   },
   "01-111": {
     "IO": "status",
@@ -616,17 +616,17 @@
     "Id": "status__d__sync"
   },
   "03-000": {
-    "Control": "FX Unit Mode Selector",
-    "Id": "status__fx1__fx_mode",
-    "ShortName": "fx_mode",
     "IO": "status",
     "Deck": "fx1",
-    "Type": "LED",
     "Mode": "Output",
     "Channel": "03",
     "CC": "000",
+    "Type": "LED",
+    "Note": "Controller Range 0-1, Midi Range 0-127",
+    "Control": "FX Unit Mode Selector",
+    "ShortName": "fx_mode",
     "Is Binary": true,
-    "Note": "Controller Range 0-1, Midi Range 0-127"
+    "Id": "status__fx1__fx_mode"
   },
   "03-001": {
     "IO": "status",

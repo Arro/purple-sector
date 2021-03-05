@@ -49,14 +49,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       return;
     }
 
+    console.log(message);
     let val = message[2];
 
     if (status[`Is Conversion`]) {
       val = _conversions.val_to_size[message[2]];
     } else if (status[`Is Binary`]) {
       val = message[2] === 127;
-    } else if (status[`Is Fraction`]) {
-      val = message[2] / 127;
     }
 
     spinner.info(`id: ${status.Id}, val: ${val}`);

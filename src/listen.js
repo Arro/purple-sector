@@ -49,8 +49,6 @@ import ora from "ora"
       val = val_to_size[message[2]]
     } else if (status[`Is Binary`]) {
       val = message[2] === 127
-    } else if (status[`Is Fraction`]) {
-      val = message[2] / 127
     }
 
     spinner.info(`id: ${status.Id}, val: ${val}`)
