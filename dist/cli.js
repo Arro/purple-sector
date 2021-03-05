@@ -22,7 +22,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   const spinner = (0, _ora.default)();
   const active_message = "listening for midi / redis";
   spinner.start(active_message);
-  input.openPort(1);
+  input.openPort(0);
   input.on(`message`, (delta_time, message) => {
     let channel = message[0] - 175;
     let cc = message[1];
@@ -65,7 +65,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   let commands = await _fsExtra.default.readFile("./constants/commands.json", "utf-8");
   commands = JSON.parse(commands);
   const output = new _midi.default.Output();
-  output.openPort(0);
+  output.openPort(1);
   await redis_sub.subscribe("purple-sector");
   redis_sub.on("message", (channel, key) => {
     spinner.info(`Receive redis message ${key}`);

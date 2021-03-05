@@ -16,7 +16,7 @@ import ora from "ora"
   const active_message = "listening for midi / redis"
   spinner.start(active_message)
 
-  input.openPort(1)
+  input.openPort(0)
   input.on(`message`, (delta_time, message) => {
     let channel = message[0] - 175
     let cc = message[1]
@@ -61,7 +61,7 @@ import ora from "ora"
   commands = JSON.parse(commands)
 
   const output = new midi.Output()
-  output.openPort(0)
+  output.openPort(1)
 
   await redis_sub.subscribe("purple-sector")
   redis_sub.on("message", (channel, key) => {
