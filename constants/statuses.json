@@ -34,9 +34,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 1 On",
-    "ShortName": "fx_1",
+    "ShortName": "fx1",
     "Is Binary": true,
-    "Id": "status__a__fx_1"
+    "Id": "status__a__fx1"
   },
   "05-001": {
     "IO": "status",
@@ -47,9 +47,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 1 On",
-    "ShortName": "fx_1",
+    "ShortName": "fx1",
     "Is Binary": true,
-    "Id": "status__b__fx_1"
+    "Id": "status__b__fx1"
   },
   "05-002": {
     "IO": "status",
@@ -60,9 +60,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 1 On",
-    "ShortName": "fx_1",
+    "ShortName": "fx1",
     "Is Binary": true,
-    "Id": "status__c__fx_1"
+    "Id": "status__c__fx1"
   },
   "05-003": {
     "IO": "status",
@@ -73,9 +73,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 1 On",
-    "ShortName": "fx_1",
+    "ShortName": "fx1",
     "Is Binary": true,
-    "Id": "status__d__fx_1"
+    "Id": "status__d__fx1"
   },
   "05-004": {
     "IO": "status",
@@ -86,9 +86,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 2 On",
-    "ShortName": "fx_2",
+    "ShortName": "fx2",
     "Is Binary": true,
-    "Id": "status__a__fx_2"
+    "Id": "status__a__fx2"
   },
   "05-005": {
     "IO": "status",
@@ -99,9 +99,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 2 On",
-    "ShortName": "fx_2",
+    "ShortName": "fx2",
     "Is Binary": true,
-    "Id": "status__b__fx_2"
+    "Id": "status__b__fx2"
   },
   "05-006": {
     "IO": "status",
@@ -112,9 +112,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 2 On",
-    "ShortName": "fx_2",
+    "ShortName": "fx2",
     "Is Binary": true,
-    "Id": "status__c__fx_2"
+    "Id": "status__c__fx2"
   },
   "05-007": {
     "IO": "status",
@@ -125,9 +125,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 2 On",
-    "ShortName": "fx_2",
+    "ShortName": "fx2",
     "Is Binary": true,
-    "Id": "status__d__fx_2"
+    "Id": "status__d__fx2"
   },
   "05-008": {
     "IO": "status",
@@ -138,9 +138,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 3 On",
-    "ShortName": "fx_3",
+    "ShortName": "fx3",
     "Is Binary": true,
-    "Id": "status__a__fx_3"
+    "Id": "status__a__fx3"
   },
   "05-009": {
     "IO": "status",
@@ -151,9 +151,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 3 On",
-    "ShortName": "fx_3",
+    "ShortName": "fx3",
     "Is Binary": true,
-    "Id": "status__b__fx_3"
+    "Id": "status__b__fx3"
   },
   "05-010": {
     "IO": "status",
@@ -164,9 +164,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 3 On",
-    "ShortName": "fx_3",
+    "ShortName": "fx3",
     "Is Binary": true,
-    "Id": "status__c__fx_3"
+    "Id": "status__c__fx3"
   },
   "05-011": {
     "IO": "status",
@@ -177,9 +177,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 3 On",
-    "ShortName": "fx_3",
+    "ShortName": "fx3",
     "Is Binary": true,
-    "Id": "status__d__fx_3"
+    "Id": "status__d__fx3"
   },
   "05-012": {
     "IO": "status",
@@ -190,9 +190,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 4 On",
-    "ShortName": "fx_4",
+    "ShortName": "fx4",
     "Is Binary": true,
-    "Id": "status__a__fx_4"
+    "Id": "status__a__fx4"
   },
   "05-013": {
     "IO": "status",
@@ -203,9 +203,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 4 On",
-    "ShortName": "fx_4",
+    "ShortName": "fx4",
     "Is Binary": true,
-    "Id": "status__b__fx_4"
+    "Id": "status__b__fx4"
   },
   "05-014": {
     "IO": "status",
@@ -216,9 +216,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 4 On",
-    "ShortName": "fx_4",
+    "ShortName": "fx4",
     "Is Binary": true,
-    "Id": "status__c__fx_4"
+    "Id": "status__c__fx4"
   },
   "05-015": {
     "IO": "status",
@@ -229,9 +229,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "FX Unit 4 On",
-    "ShortName": "fx_4",
+    "ShortName": "fx4",
     "Is Binary": true,
-    "Id": "status__d__fx_4"
+    "Id": "status__d__fx4"
   },
   "05-080": {
     "IO": "status",
@@ -614,5 +614,57 @@
     "ShortName": "sync",
     "Is Binary": true,
     "Id": "status__d__sync"
+  },
+  "03-000": {
+    "Control": "FX Unit Mode Selector",
+    "Id": "status__fx1__fx_mode",
+    "ShortName": "fx_mode",
+    "IO": "status",
+    "Deck": "fx1",
+    "Type": "LED",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "000",
+    "Is Binary": true,
+    "Note": "Controller Range 0-1, Midi Range 0-127"
+  },
+  "03-001": {
+    "IO": "status",
+    "Deck": "fx2",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "001",
+    "Type": "LED",
+    "Note": "Controller Range 0-1, Midi Range 0-127",
+    "Control": "FX Unit Mode Selector",
+    "ShortName": "fx_mode",
+    "Is Binary": true,
+    "Id": "status__fx2__fx_mode"
+  },
+  "03-002": {
+    "IO": "status",
+    "Deck": "fx3",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "002",
+    "Type": "LED",
+    "Note": "Controller Range 0-1, Midi Range 0-127",
+    "Control": "FX Unit Mode Selector",
+    "ShortName": "fx_mode",
+    "Is Binary": true,
+    "Id": "status__fx3__fx_mode"
+  },
+  "03-003": {
+    "IO": "status",
+    "Deck": "fx4",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "003",
+    "Type": "LED",
+    "Note": "Controller Range 0-1, Midi Range 0-127",
+    "Control": "FX Unit Mode Selector",
+    "ShortName": "fx_mode",
+    "Is Binary": true,
+    "Id": "status__fx4__fx_mode"
   }
 }

@@ -42,6 +42,7 @@ import ora from "ora"
       return
     }
 
+    console.log(message)
     let val = message[2]
 
     if (status[`Is Conversion`]) {

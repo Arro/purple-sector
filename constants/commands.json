@@ -643,7 +643,7 @@
     "ShortName": "tempo_bend__up",
     "Id": "command__b__tempo_bend__up"
   },
-  "command__a__fx_1__on": {
+  "command__a__fx1__on": {
     "IO": "command",
     "Deck": "a",
     "Mode": "Direct",
@@ -652,10 +652,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 1 On",
-    "ShortName": "fx_1__on",
-    "Id": "command__a__fx_1__on"
+    "ShortName": "fx1__on",
+    "Id": "command__a__fx1__on"
   },
-  "command__b__fx_1__on": {
+  "command__b__fx1__on": {
     "IO": "command",
     "Deck": "b",
     "Mode": "Direct",
@@ -664,10 +664,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 1 On",
-    "ShortName": "fx_1__on",
-    "Id": "command__b__fx_1__on"
+    "ShortName": "fx1__on",
+    "Id": "command__b__fx1__on"
   },
-  "command__c__fx_1__on": {
+  "command__c__fx1__on": {
     "IO": "command",
     "Deck": "c",
     "Mode": "Direct",
@@ -676,10 +676,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 1 On",
-    "ShortName": "fx_1__on",
-    "Id": "command__c__fx_1__on"
+    "ShortName": "fx1__on",
+    "Id": "command__c__fx1__on"
   },
-  "command__d__fx_1__on": {
+  "command__d__fx1__on": {
     "IO": "command",
     "Deck": "d",
     "Mode": "Direct",
@@ -688,10 +688,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 1 On",
-    "ShortName": "fx_1__on",
-    "Id": "command__d__fx_1__on"
+    "ShortName": "fx1__on",
+    "Id": "command__d__fx1__on"
   },
-  "command__a__fx_1__off": {
+  "command__a__fx1__off": {
     "IO": "command",
     "Deck": "a",
     "Mode": "Direct",
@@ -700,10 +700,10 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 1 On",
-    "ShortName": "fx_1__off",
-    "Id": "command__a__fx_1__off"
+    "ShortName": "fx1__off",
+    "Id": "command__a__fx1__off"
   },
-  "command__b__fx_1__off": {
+  "command__b__fx1__off": {
     "IO": "command",
     "Deck": "b",
     "Mode": "Direct",
@@ -712,10 +712,10 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 1 On",
-    "ShortName": "fx_1__off",
-    "Id": "command__b__fx_1__off"
+    "ShortName": "fx1__off",
+    "Id": "command__b__fx1__off"
   },
-  "command__c__fx_1__off": {
+  "command__c__fx1__off": {
     "IO": "command",
     "Deck": "c",
     "Mode": "Direct",
@@ -724,10 +724,10 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 1 On",
-    "ShortName": "fx_1__off",
-    "Id": "command__c__fx_1__off"
+    "ShortName": "fx1__off",
+    "Id": "command__c__fx1__off"
   },
-  "command__d__fx_1__off": {
+  "command__d__fx1__off": {
     "IO": "command",
     "Deck": "d",
     "Mode": "Direct",
@@ -736,8 +736,8 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 1 On",
-    "ShortName": "fx_1__off",
-    "Id": "command__d__fx_1__off"
+    "ShortName": "fx1__off",
+    "Id": "command__d__fx1__off"
   },
   "command__a__cue__on": {
     "IO": "command",
@@ -1086,7 +1086,7 @@
     "ShortName": "volume__{val}",
     "Id": "command__d__volume__{val}"
   },
-  "command__a__fx_2__on": {
+  "command__a__fx2__on": {
     "IO": "command",
     "Deck": "a",
     "Mode": "Direct",
@@ -1095,10 +1095,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 2 On",
-    "ShortName": "fx_2__on",
-    "Id": "command__a__fx_2__on"
+    "ShortName": "fx2__on",
+    "Id": "command__a__fx2__on"
   },
-  "command__b__fx_2__on": {
+  "command__b__fx2__on": {
     "IO": "command",
     "Deck": "b",
     "Mode": "Direct",
@@ -1107,10 +1107,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 2 On",
-    "ShortName": "fx_2__on",
-    "Id": "command__b__fx_2__on"
+    "ShortName": "fx2__on",
+    "Id": "command__b__fx2__on"
   },
-  "command__c__fx_2__on": {
+  "command__c__fx2__on": {
     "IO": "command",
     "Deck": "c",
     "Mode": "Direct",
@@ -1119,10 +1119,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 2 On",
-    "ShortName": "fx_2__on",
-    "Id": "command__c__fx_2__on"
+    "ShortName": "fx2__on",
+    "Id": "command__c__fx2__on"
   },
-  "command__d__fx_2__on": {
+  "command__d__fx2__on": {
     "IO": "command",
     "Deck": "d",
     "Mode": "Direct",
@@ -1131,10 +1131,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 2 On",
-    "ShortName": "fx_2__on",
-    "Id": "command__d__fx_2__on"
+    "ShortName": "fx2__on",
+    "Id": "command__d__fx2__on"
   },
-  "command__a__fx_2__off": {
+  "command__a__fx2__off": {
     "IO": "command",
     "Deck": "a",
     "Mode": "Direct",
@@ -1143,10 +1143,10 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 2 On",
-    "ShortName": "fx_2__off",
-    "Id": "command__a__fx_2__off"
+    "ShortName": "fx2__off",
+    "Id": "command__a__fx2__off"
   },
-  "command__b__fx_2__off": {
+  "command__b__fx2__off": {
     "IO": "command",
     "Deck": "b",
     "Mode": "Direct",
@@ -1155,10 +1155,10 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 2 On",
-    "ShortName": "fx_2__off",
-    "Id": "command__b__fx_2__off"
+    "ShortName": "fx2__off",
+    "Id": "command__b__fx2__off"
   },
-  "command__c__fx_2__off": {
+  "command__c__fx2__off": {
     "IO": "command",
     "Deck": "c",
     "Mode": "Direct",
@@ -1167,10 +1167,10 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 2 On",
-    "ShortName": "fx_2__off",
-    "Id": "command__c__fx_2__off"
+    "ShortName": "fx2__off",
+    "Id": "command__c__fx2__off"
   },
-  "command__d__fx_2__off": {
+  "command__d__fx2__off": {
     "IO": "command",
     "Deck": "d",
     "Mode": "Direct",
@@ -1179,8 +1179,8 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 2 On",
-    "ShortName": "fx_2__off",
-    "Id": "command__d__fx_2__off"
+    "ShortName": "fx2__off",
+    "Id": "command__d__fx2__off"
   },
   "command__fx2__unit__on": {
     "IO": "command",
@@ -1379,7 +1379,7 @@
     "ShortName": "fx_mode__group",
     "Id": "command__fx2__fx_mode__group"
   },
-  "command__a__fx_3__off": {
+  "command__a__fx3__on": {
     "IO": "command",
     "Deck": "a",
     "Mode": "Direct",
@@ -1388,10 +1388,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 3 On",
-    "ShortName": "fx_3__off",
-    "Id": "command__a__fx_3__off"
+    "ShortName": "fx3__on",
+    "Id": "command__a__fx3__on"
   },
-  "command__b__fx_3__off": {
+  "command__b__fx3__on": {
     "IO": "command",
     "Deck": "b",
     "Mode": "Direct",
@@ -1400,10 +1400,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 3 On",
-    "ShortName": "fx_3__off",
-    "Id": "command__b__fx_3__off"
+    "ShortName": "fx3__on",
+    "Id": "command__b__fx3__on"
   },
-  "command__c__fx_3__off": {
+  "command__c__fx3__on": {
     "IO": "command",
     "Deck": "c",
     "Mode": "Direct",
@@ -1412,10 +1412,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 3 On",
-    "ShortName": "fx_3__off",
-    "Id": "command__c__fx_3__off"
+    "ShortName": "fx3__on",
+    "Id": "command__c__fx3__on"
   },
-  "command__d__fx_3__off": {
+  "command__d__fx3__on": {
     "IO": "command",
     "Deck": "d",
     "Mode": "Direct",
@@ -1424,10 +1424,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 3 On",
-    "ShortName": "fx_3__off",
-    "Id": "command__d__fx_3__off"
+    "ShortName": "fx3__on",
+    "Id": "command__d__fx3__on"
   },
-  "command__a__fx_3__on": {
+  "command__a__fx3__off": {
     "IO": "command",
     "Deck": "a",
     "Mode": "Direct",
@@ -1436,10 +1436,10 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 3 On",
-    "ShortName": "fx_3__on",
-    "Id": "command__a__fx_3__on"
+    "ShortName": "fx3__off",
+    "Id": "command__a__fx3__off"
   },
-  "command__b__fx_3__on": {
+  "command__b__fx3__off": {
     "IO": "command",
     "Deck": "b",
     "Mode": "Direct",
@@ -1448,10 +1448,10 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 3 On",
-    "ShortName": "fx_3__on",
-    "Id": "command__b__fx_3__on"
+    "ShortName": "fx3__off",
+    "Id": "command__b__fx3__off"
   },
-  "command__c__fx_3__on": {
+  "command__c__fx3__off": {
     "IO": "command",
     "Deck": "c",
     "Mode": "Direct",
@@ -1460,10 +1460,10 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 3 On",
-    "ShortName": "fx_3__on",
-    "Id": "command__c__fx_3__on"
+    "ShortName": "fx3__off",
+    "Id": "command__c__fx3__off"
   },
-  "command__d__fx_3__on": {
+  "command__d__fx3__off": {
     "IO": "command",
     "Deck": "d",
     "Mode": "Direct",
@@ -1472,8 +1472,8 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 3 On",
-    "ShortName": "fx_3__on",
-    "Id": "command__d__fx_3__on"
+    "ShortName": "fx3__off",
+    "Id": "command__d__fx3__off"
   },
   "command__fx3__unit__on": {
     "IO": "command",
@@ -1672,7 +1672,7 @@
     "ShortName": "fx_mode__group",
     "Id": "command__fx3__fx_mode__group"
   },
-  "command__a__fx_4__on": {
+  "command__a__fx4__on": {
     "IO": "command",
     "Deck": "a",
     "Mode": "Direct",
@@ -1681,10 +1681,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 4 On",
-    "ShortName": "fx_4__on",
-    "Id": "command__a__fx_4__on"
+    "ShortName": "fx4__on",
+    "Id": "command__a__fx4__on"
   },
-  "command__b__fx_4__on": {
+  "command__b__fx4__on": {
     "IO": "command",
     "Deck": "b",
     "Mode": "Direct",
@@ -1693,10 +1693,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 4 On",
-    "ShortName": "fx_4__on",
-    "Id": "command__b__fx_4__on"
+    "ShortName": "fx4__on",
+    "Id": "command__b__fx4__on"
   },
-  "command__c__fx_4__on": {
+  "command__c__fx4__on": {
     "IO": "command",
     "Deck": "c",
     "Mode": "Direct",
@@ -1705,10 +1705,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 4 On",
-    "ShortName": "fx_4__on",
-    "Id": "command__c__fx_4__on"
+    "ShortName": "fx4__on",
+    "Id": "command__c__fx4__on"
   },
-  "command__d__fx_4__on": {
+  "command__d__fx4__on": {
     "IO": "command",
     "Deck": "d",
     "Mode": "Direct",
@@ -1717,10 +1717,10 @@
     "Type": "Button",
     "Value": "1",
     "Control": "FX Unit 4 On",
-    "ShortName": "fx_4__on",
-    "Id": "command__d__fx_4__on"
+    "ShortName": "fx4__on",
+    "Id": "command__d__fx4__on"
   },
-  "command__a__fx_4__off": {
+  "command__a__fx4__off": {
     "IO": "command",
     "Deck": "a",
     "Mode": "Direct",
@@ -1729,10 +1729,10 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 4 On",
-    "ShortName": "fx_4__off",
-    "Id": "command__a__fx_4__off"
+    "ShortName": "fx4__off",
+    "Id": "command__a__fx4__off"
   },
-  "command__b__fx_4__off": {
+  "command__b__fx4__off": {
     "IO": "command",
     "Deck": "b",
     "Mode": "Direct",
@@ -1741,10 +1741,10 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 4 On",
-    "ShortName": "fx_4__off",
-    "Id": "command__b__fx_4__off"
+    "ShortName": "fx4__off",
+    "Id": "command__b__fx4__off"
   },
-  "command__c__fx_4__off": {
+  "command__c__fx4__off": {
     "IO": "command",
     "Deck": "c",
     "Mode": "Direct",
@@ -1753,10 +1753,10 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 4 On",
-    "ShortName": "fx_4__off",
-    "Id": "command__c__fx_4__off"
+    "ShortName": "fx4__off",
+    "Id": "command__c__fx4__off"
   },
-  "command__d__fx_4__off": {
+  "command__d__fx4__off": {
     "IO": "command",
     "Deck": "d",
     "Mode": "Direct",
@@ -1765,8 +1765,8 @@
     "Type": "Button",
     "Value": "0",
     "Control": "FX Unit 4 On",
-    "ShortName": "fx_4__off",
-    "Id": "command__d__fx_4__off"
+    "ShortName": "fx4__off",
+    "Id": "command__d__fx4__off"
   },
   "command__fx4__unit__on": {
     "IO": "command",
