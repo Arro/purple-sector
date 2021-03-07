@@ -700,6 +700,7 @@
     "Type": "LED",
     "Control": "Knob 1",
     "ShortName": "knob_1",
+    "Tested": true,
     "Id": "status__fx1__knob_1"
   },
   "03-005": {
@@ -711,6 +712,7 @@
     "Type": "LED",
     "Control": "Knob 1",
     "ShortName": "knob_1",
+    "Tested": true,
     "Id": "status__fx2__knob_1"
   },
   "03-006": {
@@ -722,6 +724,7 @@
     "Type": "LED",
     "Control": "Knob 1",
     "ShortName": "knob_1",
+    "Tested": true,
     "Id": "status__fx3__knob_1"
   },
   "03-007": {
@@ -733,6 +736,7 @@
     "Type": "LED",
     "Control": "Knob 1",
     "ShortName": "knob_1",
+    "Tested": true,
     "Id": "status__fx4__knob_1"
   },
   "03-008": {
@@ -744,6 +748,7 @@
     "Type": "LED",
     "Control": "Knob 2",
     "ShortName": "knob_2",
+    "Tested": true,
     "Id": "status__fx1__knob_2"
   },
   "03-009": {
@@ -755,6 +760,7 @@
     "Type": "LED",
     "Control": "Knob 2",
     "ShortName": "knob_2",
+    "Tested": true,
     "Id": "status__fx2__knob_2"
   },
   "03-010": {
@@ -766,6 +772,7 @@
     "Type": "LED",
     "Control": "Knob 2",
     "ShortName": "knob_2",
+    "Tested": true,
     "Id": "status__fx3__knob_2"
   },
   "03-012": {
@@ -777,6 +784,7 @@
     "Type": "LED",
     "Control": "Knob 2",
     "ShortName": "knob_2",
+    "Tested": true,
     "Id": "status__fx4__knob_2"
   },
   "03-013": {
@@ -788,6 +796,7 @@
     "Type": "LED",
     "Control": "Knob 3",
     "ShortName": "knob_3",
+    "Tested": true,
     "Id": "status__fx1__knob_3"
   },
   "03-014": {
@@ -799,6 +808,7 @@
     "Type": "LED",
     "Control": "Knob 3",
     "ShortName": "knob_3",
+    "Tested": true,
     "Id": "status__fx2__knob_3"
   },
   "03-015": {
@@ -810,6 +820,7 @@
     "Type": "LED",
     "Control": "Knob 3",
     "ShortName": "knob_3",
+    "Tested": true,
     "Id": "status__fx3__knob_3"
   },
   "03-016": {
@@ -821,6 +832,7 @@
     "Type": "LED",
     "Control": "Knob 3",
     "ShortName": "knob_3",
+    "Tested": true,
     "Id": "status__fx4__knob_3"
   },
   "03-019": {
@@ -933,6 +945,7 @@
     "Control": "Button 2",
     "ShortName": "button_2",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__fx1__button_2"
   },
   "03-028": {
@@ -945,6 +958,7 @@
     "Control": "Button 2",
     "ShortName": "button_2",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__fx2__button_2"
   },
   "03-029": {
@@ -957,6 +971,7 @@
     "Control": "Button 2",
     "ShortName": "button_2",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__fx3__button_2"
   },
   "03-109": {
@@ -969,54 +984,151 @@
     "Control": "Button 2",
     "ShortName": "button_2",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__fx4__button_2"
   },
   "03-110": {
-    "Control": "Button 3",
-    "Id": "status__fx1__button_3",
-    "ShortName": "button_3",
-    "Deck": "fx1",
     "IO": "status",
-    "Type": "LED",
+    "Deck": "fx1",
     "Mode": "Output",
     "Channel": "03",
     "CC": "110",
-    "Is Binary": true
+    "Type": "LED",
+    "Control": "Button 3",
+    "ShortName": "button_3",
+    "Is Binary": true,
+    "Tested": true,
+    "Id": "status__fx1__button_3"
   },
   "03-111": {
-    "Control": "Button 3",
-    "Id": "status__fx2__button_3",
-    "ShortName": "button_3",
-    "Deck": "fx2",
     "IO": "status",
-    "Type": "LED",
+    "Deck": "fx2",
     "Mode": "Output",
     "Channel": "03",
     "CC": "111",
-    "Is Binary": true
+    "Type": "LED",
+    "Control": "Button 3",
+    "ShortName": "button_3",
+    "Is Binary": true,
+    "Tested": true,
+    "Id": "status__fx2__button_3"
   },
   "03-112": {
-    "Control": "Button 3",
-    "Id": "status__fx3__button_3",
-    "ShortName": "button_3",
-    "Deck": "fx3",
     "IO": "status",
-    "Type": "LED",
+    "Deck": "fx3",
     "Mode": "Output",
     "Channel": "03",
     "CC": "112",
-    "Is Binary": true
+    "Type": "LED",
+    "Control": "Button 3",
+    "ShortName": "button_3",
+    "Is Binary": true,
+    "Tested": true,
+    "Id": "status__fx3__button_3"
   },
   "03-113": {
-    "Control": "Button 3",
-    "Id": "status__fx4__button_3",
-    "ShortName": "button_3",
-    "Deck": "fx4",
     "IO": "status",
-    "Type": "LED",
+    "Deck": "fx4",
     "Mode": "Output",
     "Channel": "03",
     "CC": "113",
-    "Is Binary": true
+    "Type": "LED",
+    "Control": "Button 3",
+    "ShortName": "button_3",
+    "Is Binary": true,
+    "Tested": true,
+    "Id": "status__fx4__button_3"
+  },
+  "03-114": {
+    "IO": "status",
+    "Deck": "fx1",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "114",
+    "Type": "LED",
+    "Control": "Dry/Wet Adjust (FX Unit)",
+    "ShortName": "dry_wet",
+    "Tested": true,
+    "Id": "status__fx1__dry_wet"
+  },
+  "03-115": {
+    "IO": "status",
+    "Deck": "fx2",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "115",
+    "Type": "LED",
+    "Control": "Dry/Wet Adjust (FX Unit)",
+    "ShortName": "dry_wet",
+    "Tested": true,
+    "Id": "status__fx2__dry_wet"
+  },
+  "03-116": {
+    "IO": "status",
+    "Deck": "fx3",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "116",
+    "Type": "LED",
+    "Control": "Dry/Wet Adjust (FX Unit)",
+    "ShortName": "dry_wet",
+    "Tested": true,
+    "Id": "status__fx3__dry_wet"
+  },
+  "03-117": {
+    "IO": "status",
+    "Deck": "fx4",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "117",
+    "Type": "LED",
+    "Control": "Dry/Wet Adjust (FX Unit)",
+    "ShortName": "dry_wet",
+    "Tested": true,
+    "Id": "status__fx4__dry_wet"
+  },
+  "03-118": {
+    "IO": "status",
+    "Deck": "a",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "118",
+    "Type": "LED",
+    "Control": "Volume Adjust",
+    "ShortName": "volume",
+    "Id": "status__a__volume"
+  },
+  "03-119": {
+    "IO": "status",
+    "Deck": "b",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "119",
+    "Type": "LED",
+    "Control": "Volume Adjust",
+    "ShortName": "volume",
+    "Id": "status__b__volume"
+  },
+  "03-120": {
+    "IO": "status",
+    "Deck": "c",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "120",
+    "Type": "LED",
+    "Control": "Volume Adjust",
+    "ShortName": "volume",
+    "Id": "status__c__volume"
+  },
+  "03-121": {
+    "IO": "status",
+    "Deck": "d",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "121",
+    "Type": "LED",
+    "Control": "Volume Adjust",
+    "ShortName": "volume",
+    "Id": "status__d__volume"
   }
 }

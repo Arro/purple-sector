@@ -853,6 +853,7 @@
     "Type": "Fader / Knob",
     "Control": "Dry/Wet Adjust (FX Unit)",
     "ShortName": "dry_wet__{val}",
+    "Tested": true,
     "Id": "command__fx1__dry_wet__{val}"
   },
   "command__fx1__knob_1__{val}": {
@@ -864,6 +865,7 @@
     "Type": "Fader / Knob",
     "Control": "Knob 1",
     "ShortName": "knob_1__{val}",
+    "Tested": true,
     "Id": "command__fx1__knob_1__{val}"
   },
   "command__fx1__knob_2__{val}": {
@@ -875,6 +877,7 @@
     "Type": "Fader / Knob",
     "Control": "Knob 2",
     "ShortName": "knob_2__{val}",
+    "Tested": true,
     "Id": "command__fx1__knob_2__{val}"
   },
   "command__fx1__knob_3__{val}": {
@@ -886,6 +889,7 @@
     "Type": "Fader / Knob",
     "Control": "Knob 3",
     "ShortName": "knob_3__{val}",
+    "Tested": true,
     "Id": "command__fx1__knob_3__{val}"
   },
   "command__fx1__button_1__on": {
@@ -922,6 +926,7 @@
     "Value": "1",
     "Control": "Button 2",
     "ShortName": "button_2__on",
+    "Tested": true,
     "Id": "command__fx1__button_2__on"
   },
   "command__fx1__button_2__off": {
@@ -934,6 +939,7 @@
     "Value": "0",
     "Control": "Button 2",
     "ShortName": "button_2__off",
+    "Tested": true,
     "Id": "command__fx1__button_2__off"
   },
   "command__fx1__button_3__on": {
@@ -946,6 +952,7 @@
     "Value": "1",
     "Control": "Button 3",
     "ShortName": "button_3__on",
+    "Tested": true,
     "Id": "command__fx1__button_3__on"
   },
   "command__fx1__button_3__off": {
@@ -958,6 +965,7 @@
     "Value": "0",
     "Control": "Button 3",
     "ShortName": "button_3__off",
+    "Tested": true,
     "Id": "command__fx1__button_3__off"
   },
   "command__fx1__effect_1__{val}": {
@@ -1234,6 +1242,7 @@
     "Type": "Fader / Knob",
     "Control": "Dry/Wet Adjust (FX Unit)",
     "ShortName": "dry_wet__{val}",
+    "Tested": true,
     "Id": "command__fx2__dry_wet__{val}"
   },
   "command__fx2__knob_1__{val}": {
@@ -1245,6 +1254,7 @@
     "Type": "Fader / Knob",
     "Control": "Knob 1",
     "ShortName": "knob_1__{val}",
+    "Tested": true,
     "Id": "command__fx2__knob_1__{val}"
   },
   "command__fx2__knob_2__{val}": {
@@ -1256,6 +1266,7 @@
     "Type": "Fader / Knob",
     "Control": "Knob 2",
     "ShortName": "knob_2__{val}",
+    "Tested": true,
     "Id": "command__fx2__knob_2__{val}"
   },
   "command__fx2__knob_3__{val}": {
@@ -1267,6 +1278,7 @@
     "Type": "Fader / Knob",
     "Control": "Knob 3",
     "ShortName": "knob_3__{val}",
+    "Tested": true,
     "Id": "command__fx2__knob_3__{val}"
   },
   "command__fx2__button_1__on": {
@@ -1303,6 +1315,7 @@
     "Value": "1",
     "Control": "Button 2",
     "ShortName": "button_2__on",
+    "Tested": true,
     "Id": "command__fx2__button_2__on"
   },
   "command__fx2__button_2__off": {
@@ -1315,6 +1328,7 @@
     "Value": "0",
     "Control": "Button 2",
     "ShortName": "button_2__off",
+    "Tested": true,
     "Id": "command__fx2__button_2__off"
   },
   "command__fx2__button_3__on": {
@@ -1327,6 +1341,7 @@
     "Value": "1",
     "Control": "Button 3",
     "ShortName": "button_3__on",
+    "Tested": true,
     "Id": "command__fx2__button_3__on"
   },
   "command__fx2__button_3__off": {
@@ -1339,6 +1354,7 @@
     "Value": "0",
     "Control": "Button 3",
     "ShortName": "button_3__off",
+    "Tested": true,
     "Id": "command__fx2__button_3__off"
   },
   "command__fx2__effect_1__{val}": {
@@ -1537,6 +1553,7 @@
     "Type": "Fader / Knob",
     "Control": "Dry/Wet Adjust (FX Unit)",
     "ShortName": "dry_wet__{val}",
+    "Tested": true,
     "Id": "command__fx3__dry_wet__{val}"
   },
   "command__fx3__knob_1__{val}": {
@@ -1548,6 +1565,7 @@
     "Type": "Fader / Knob",
     "Control": "Knob 1",
     "ShortName": "knob_1__{val}",
+    "Tested": true,
     "Id": "command__fx3__knob_1__{val}"
   },
   "command__fx3__knob_2__{val}": {
@@ -1559,6 +1577,7 @@
     "Type": "Fader / Knob",
     "Control": "Knob 2",
     "ShortName": "knob_2__{val}",
+    "Tested": true,
     "Id": "command__fx3__knob_2__{val}"
   },
   "command__fx3__knob_3__{val}": {
@@ -1570,6 +1589,7 @@
     "Type": "Fader / Knob",
     "Control": "Knob 3",
     "ShortName": "knob_3__{val}",
+    "Tested": true,
     "Id": "command__fx3__knob_3__{val}"
   },
   "command__fx3__button_1__on": {
@@ -1606,6 +1626,7 @@
     "Value": "1",
     "Control": "Button 2",
     "ShortName": "button_2__on",
+    "Tested": true,
     "Id": "command__fx3__button_2__on"
   },
   "command__fx3__button_2__off": {
@@ -1618,6 +1639,7 @@
     "Value": "0",
     "Control": "Button 2",
     "ShortName": "button_2__off",
+    "Tested": true,
     "Id": "command__fx3__button_2__off"
   },
   "command__fx3__button_3__on": {
@@ -1630,6 +1652,7 @@
     "Value": "1",
     "Control": "Button 3",
     "ShortName": "button_3__on",
+    "Tested": true,
     "Id": "command__fx3__button_3__on"
   },
   "command__fx3__button_3__off": {
@@ -1642,6 +1665,7 @@
     "Value": "0",
     "Control": "Button 3",
     "ShortName": "button_3__off",
+    "Tested": true,
     "Id": "command__fx3__button_3__off"
   },
   "command__fx3__effect_1__{val}": {
@@ -1840,6 +1864,7 @@
     "Type": "Fader / Knob",
     "Control": "Dry/Wet Adjust (FX Unit)",
     "ShortName": "dry_wet__{val}",
+    "Tested": true,
     "Id": "command__fx4__dry_wet__{val}"
   },
   "command__fx4__knob_1__{val}": {
@@ -1851,6 +1876,7 @@
     "Type": "Fader / Knob",
     "Control": "Knob 1",
     "ShortName": "knob_1__{val}",
+    "Tested": true,
     "Id": "command__fx4__knob_1__{val}"
   },
   "command__fx4__knob_2__{val}": {
@@ -1862,6 +1888,7 @@
     "Type": "Fader / Knob",
     "Control": "Knob 2",
     "ShortName": "knob_2__{val}",
+    "Tested": true,
     "Id": "command__fx4__knob_2__{val}"
   },
   "command__fx4__knob_3__{val}": {
@@ -1873,6 +1900,7 @@
     "Type": "Fader / Knob",
     "Control": "Knob 3",
     "ShortName": "knob_3__{val}",
+    "Tested": true,
     "Id": "command__fx4__knob_3__{val}"
   },
   "command__fx4__button_1__on": {
@@ -1909,6 +1937,7 @@
     "Value": "1",
     "Control": "Button 2",
     "ShortName": "button_2__on",
+    "Tested": true,
     "Id": "command__fx4__button_2__on"
   },
   "command__fx4__button_2__off": {
@@ -1921,6 +1950,7 @@
     "Value": "0",
     "Control": "Button 2",
     "ShortName": "button_2__off",
+    "Tested": true,
     "Id": "command__fx4__button_2__off"
   },
   "command__fx4__button_3__on": {
@@ -1933,6 +1963,7 @@
     "Value": "1",
     "Control": "Button 3",
     "ShortName": "button_3__on",
+    "Tested": true,
     "Id": "command__fx4__button_3__on"
   },
   "command__fx4__button_3__off": {
@@ -1945,6 +1976,7 @@
     "Value": "0",
     "Control": "Button 3",
     "ShortName": "button_3__off",
+    "Tested": true,
     "Id": "command__fx4__button_3__off"
   },
   "command__fx4__effect_1__{val}": {
