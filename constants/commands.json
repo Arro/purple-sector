@@ -1027,7 +1027,7 @@
     "Tested": true,
     "Id": "command__fx1__fx_mode__group"
   },
-  "command__global__search_select__top": {
+  "command__global__select__top": {
     "IO": "command",
     "Deck": "global",
     "Mode": "Direct",
@@ -1036,8 +1036,8 @@
     "Type": "Button",
     "Value": "Bottom",
     "Control": "Select Top/Bottom",
-    "ShortName": "search_select__top",
-    "Id": "command__global__search_select__top"
+    "ShortName": "select__top",
+    "Id": "command__global__select__top"
   },
   "command__global__search__trigger": {
     "IO": "command",
@@ -2688,5 +2688,41 @@
     "ShortName": "filter__off",
     "Tested": true,
     "Id": "command__d__filter__off"
+  },
+  "command__global__select__bottom": {
+    "IO": "command",
+    "Deck": "global",
+    "Mode": "Direct",
+    "Channel": "03",
+    "CC": "122",
+    "Type": "Button",
+    "Value": "Top",
+    "Control": "Select Top/Bottom",
+    "ShortName": "select__bottom",
+    "Id": "command__global__select__bottom"
+  },
+  "command__global__select__down": {
+    "IO": "command",
+    "Deck": "global",
+    "Mode": "Direct",
+    "Channel": "03",
+    "CC": "124",
+    "Type": "Button",
+    "Value": "Down",
+    "Control": "Select Top/Bottom",
+    "ShortName": "select__down",
+    "Id": "command__global__select__down"
+  },
+  "command__global__select__up": {
+    "IO": "command",
+    "Deck": "global",
+    "Mode": "Direct",
+    "Channel": "03",
+    "CC": "123",
+    "Type": "Button",
+    "Value": "Up",
+    "Control": "Select Top/Bottom",
+    "ShortName": "select__up",
+    "Id": "command__global__select__up"
   }
 }
