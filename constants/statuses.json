@@ -36,6 +36,7 @@
     "Control": "FX Unit 1 On",
     "ShortName": "fx1",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__a__fx1"
   },
   "05-001": {
@@ -49,6 +50,7 @@
     "Control": "FX Unit 1 On",
     "ShortName": "fx1",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__b__fx1"
   },
   "05-002": {
@@ -62,6 +64,7 @@
     "Control": "FX Unit 1 On",
     "ShortName": "fx1",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__c__fx1"
   },
   "05-003": {
@@ -75,6 +78,7 @@
     "Control": "FX Unit 1 On",
     "ShortName": "fx1",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__d__fx1"
   },
   "05-004": {
@@ -88,6 +92,7 @@
     "Control": "FX Unit 2 On",
     "ShortName": "fx2",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__a__fx2"
   },
   "05-005": {
@@ -101,6 +106,7 @@
     "Control": "FX Unit 2 On",
     "ShortName": "fx2",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__b__fx2"
   },
   "05-006": {
@@ -114,6 +120,7 @@
     "Control": "FX Unit 2 On",
     "ShortName": "fx2",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__c__fx2"
   },
   "05-007": {
@@ -127,6 +134,7 @@
     "Control": "FX Unit 2 On",
     "ShortName": "fx2",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__d__fx2"
   },
   "05-008": {
@@ -140,6 +148,7 @@
     "Control": "FX Unit 3 On",
     "ShortName": "fx3",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__a__fx3"
   },
   "05-009": {
@@ -153,6 +162,7 @@
     "Control": "FX Unit 3 On",
     "ShortName": "fx3",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__b__fx3"
   },
   "05-010": {
@@ -166,6 +176,7 @@
     "Control": "FX Unit 3 On",
     "ShortName": "fx3",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__c__fx3"
   },
   "05-011": {
@@ -179,6 +190,7 @@
     "Control": "FX Unit 3 On",
     "ShortName": "fx3",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__d__fx3"
   },
   "05-012": {
@@ -192,6 +204,7 @@
     "Control": "FX Unit 4 On",
     "ShortName": "fx4",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__a__fx4"
   },
   "05-013": {
@@ -205,6 +218,7 @@
     "Control": "FX Unit 4 On",
     "ShortName": "fx4",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__b__fx4"
   },
   "05-014": {
@@ -218,6 +232,7 @@
     "Control": "FX Unit 4 On",
     "ShortName": "fx4",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__c__fx4"
   },
   "05-015": {
@@ -231,6 +246,7 @@
     "Control": "FX Unit 4 On",
     "ShortName": "fx4",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__d__fx4"
   },
   "05-080": {
@@ -244,6 +260,7 @@
     "Control": "Gain Adjust (Mixer)",
     "ShortName": "gain",
     "Is Fraction": true,
+    "Tested": true,
     "Id": "status__c__gain"
   },
   "09-000": {
@@ -474,6 +491,7 @@
     "Control": "Gain Adjust (Mixer)",
     "ShortName": "gain",
     "Is Fraction": true,
+    "Tested": true,
     "Id": "status__a__gain"
   },
   "01-109": {
@@ -487,6 +505,7 @@
     "Control": "Gain Adjust (Mixer)",
     "ShortName": "gain",
     "Is Fraction": true,
+    "Tested": true,
     "Id": "status__b__gain"
   },
   "01-110": {
@@ -500,6 +519,7 @@
     "Control": "Gain Adjust (Mixer)",
     "ShortName": "gain",
     "Is Fraction": true,
+    "Tested": true,
     "Id": "status__d__gain"
   },
   "01-111": {
@@ -626,6 +646,7 @@
     "Control": "FX Unit Mode Selector",
     "ShortName": "fx_mode",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__fx1__fx_mode"
   },
   "03-001": {
@@ -639,6 +660,7 @@
     "Control": "FX Unit Mode Selector",
     "ShortName": "fx_mode",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__fx2__fx_mode"
   },
   "03-002": {
@@ -652,6 +674,7 @@
     "Control": "FX Unit Mode Selector",
     "ShortName": "fx_mode",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__fx3__fx_mode"
   },
   "03-003": {
@@ -665,6 +688,335 @@
     "Control": "FX Unit Mode Selector",
     "ShortName": "fx_mode",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__fx4__fx_mode"
+  },
+  "03-004": {
+    "IO": "status",
+    "Deck": "fx1",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "004",
+    "Type": "LED",
+    "Control": "Knob 1",
+    "ShortName": "knob_1",
+    "Id": "status__fx1__knob_1"
+  },
+  "03-005": {
+    "IO": "status",
+    "Deck": "fx2",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "005",
+    "Type": "LED",
+    "Control": "Knob 1",
+    "ShortName": "knob_1",
+    "Id": "status__fx2__knob_1"
+  },
+  "03-006": {
+    "IO": "status",
+    "Deck": "fx3",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "006",
+    "Type": "LED",
+    "Control": "Knob 1",
+    "ShortName": "knob_1",
+    "Id": "status__fx3__knob_1"
+  },
+  "03-007": {
+    "IO": "status",
+    "Deck": "fx4",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "007",
+    "Type": "LED",
+    "Control": "Knob 1",
+    "ShortName": "knob_1",
+    "Id": "status__fx4__knob_1"
+  },
+  "03-008": {
+    "IO": "status",
+    "Deck": "fx1",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "008",
+    "Type": "LED",
+    "Control": "Knob 2",
+    "ShortName": "knob_2",
+    "Id": "status__fx1__knob_2"
+  },
+  "03-009": {
+    "IO": "status",
+    "Deck": "fx2",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "009",
+    "Type": "LED",
+    "Control": "Knob 2",
+    "ShortName": "knob_2",
+    "Id": "status__fx2__knob_2"
+  },
+  "03-010": {
+    "IO": "status",
+    "Deck": "fx3",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "010",
+    "Type": "LED",
+    "Control": "Knob 2",
+    "ShortName": "knob_2",
+    "Id": "status__fx3__knob_2"
+  },
+  "03-012": {
+    "IO": "status",
+    "Deck": "fx4",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "012",
+    "Type": "LED",
+    "Control": "Knob 2",
+    "ShortName": "knob_2",
+    "Id": "status__fx4__knob_2"
+  },
+  "03-013": {
+    "IO": "status",
+    "Deck": "fx1",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "013",
+    "Type": "LED",
+    "Control": "Knob 3",
+    "ShortName": "knob_3",
+    "Id": "status__fx1__knob_3"
+  },
+  "03-014": {
+    "IO": "status",
+    "Deck": "fx2",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "014",
+    "Type": "LED",
+    "Control": "Knob 3",
+    "ShortName": "knob_3",
+    "Id": "status__fx2__knob_3"
+  },
+  "03-015": {
+    "IO": "status",
+    "Deck": "fx3",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "015",
+    "Type": "LED",
+    "Control": "Knob 3",
+    "ShortName": "knob_3",
+    "Id": "status__fx3__knob_3"
+  },
+  "03-016": {
+    "IO": "status",
+    "Deck": "fx4",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "016",
+    "Type": "LED",
+    "Control": "Knob 3",
+    "ShortName": "knob_3",
+    "Id": "status__fx4__knob_3"
+  },
+  "03-019": {
+    "IO": "status",
+    "Deck": "a",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "019",
+    "Type": "LED",
+    "Control": "Filter On",
+    "ShortName": "filter_on_off",
+    "Is Binary": true,
+    "Tested": true,
+    "Id": "status__a__filter_on_off"
+  },
+  "03-020": {
+    "IO": "status",
+    "Deck": "b",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "020",
+    "Type": "LED",
+    "Control": "Filter On",
+    "ShortName": "filter_on_off",
+    "Is Binary": true,
+    "Tested": true,
+    "Id": "status__b__filter_on_off"
+  },
+  "03-021": {
+    "IO": "status",
+    "Deck": "c",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "021",
+    "Type": "LED",
+    "Control": "Filter On",
+    "ShortName": "filter_on_off",
+    "Is Binary": true,
+    "Tested": true,
+    "Id": "status__c__filter_on_off"
+  },
+  "03-022": {
+    "IO": "status",
+    "Deck": "d",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "022",
+    "Type": "LED",
+    "Control": "Filter On",
+    "ShortName": "filter_on_off",
+    "Is Binary": true,
+    "Tested": true,
+    "Id": "status__d__filter_on_off"
+  },
+  "03-023": {
+    "IO": "status",
+    "Deck": "a",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "023",
+    "Type": "LED",
+    "Control": "Filter Adjust",
+    "ShortName": "filter",
+    "Tested": true,
+    "Id": "status__a__filter"
+  },
+  "03-024": {
+    "IO": "status",
+    "Deck": "b",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "024",
+    "Type": "LED",
+    "Control": "Filter Adjust",
+    "ShortName": "filter",
+    "Tested": true,
+    "Id": "status__b__filter"
+  },
+  "03-025": {
+    "IO": "status",
+    "Deck": "c",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "025",
+    "Type": "LED",
+    "Control": "Filter Adjust",
+    "ShortName": "filter",
+    "Tested": true,
+    "Id": "status__c__filter"
+  },
+  "03-026": {
+    "IO": "status",
+    "Deck": "d",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "026",
+    "Type": "LED",
+    "Control": "Filter Adjust",
+    "ShortName": "filter",
+    "Tested": true,
+    "Id": "status__d__filter"
+  },
+  "03-027": {
+    "IO": "status",
+    "Deck": "fx1",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "027",
+    "Type": "LED",
+    "Control": "Button 2",
+    "ShortName": "button_2",
+    "Is Binary": true,
+    "Id": "status__fx1__button_2"
+  },
+  "03-028": {
+    "IO": "status",
+    "Deck": "fx2",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "028",
+    "Type": "LED",
+    "Control": "Button 2",
+    "ShortName": "button_2",
+    "Is Binary": true,
+    "Id": "status__fx2__button_2"
+  },
+  "03-029": {
+    "IO": "status",
+    "Deck": "fx3",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "029",
+    "Type": "LED",
+    "Control": "Button 2",
+    "ShortName": "button_2",
+    "Is Binary": true,
+    "Id": "status__fx3__button_2"
+  },
+  "03-109": {
+    "IO": "status",
+    "Deck": "fx4",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "109",
+    "Type": "LED",
+    "Control": "Button 2",
+    "ShortName": "button_2",
+    "Is Binary": true,
+    "Id": "status__fx4__button_2"
+  },
+  "03-110": {
+    "Control": "Button 3",
+    "Id": "status__fx1__button_3",
+    "ShortName": "button_3",
+    "Deck": "fx1",
+    "IO": "status",
+    "Type": "LED",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "110",
+    "Is Binary": true
+  },
+  "03-111": {
+    "Control": "Button 3",
+    "Id": "status__fx2__button_3",
+    "ShortName": "button_3",
+    "Deck": "fx2",
+    "IO": "status",
+    "Type": "LED",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "111",
+    "Is Binary": true
+  },
+  "03-112": {
+    "Control": "Button 3",
+    "Id": "status__fx3__button_3",
+    "ShortName": "button_3",
+    "Deck": "fx3",
+    "IO": "status",
+    "Type": "LED",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "112",
+    "Is Binary": true
+  },
+  "03-113": {
+    "Control": "Button 3",
+    "Id": "status__fx4__button_3",
+    "ShortName": "button_3",
+    "Deck": "fx4",
+    "IO": "status",
+    "Type": "LED",
+    "Mode": "Output",
+    "Channel": "03",
+    "CC": "113",
+    "Is Binary": true
   }
 }

@@ -581,6 +581,7 @@
     "Type": "Fader / Knob",
     "Control": "Gain Adjust (Mixer)",
     "ShortName": "gain__{val}",
+    "Tested": true,
     "Id": "command__c__gain__{val}"
   },
   "command__global__xfader__{val}": {
@@ -653,6 +654,7 @@
     "Value": "1",
     "Control": "FX Unit 1 On",
     "ShortName": "fx1__on",
+    "Tested": true,
     "Id": "command__a__fx1__on"
   },
   "command__b__fx1__on": {
@@ -665,6 +667,7 @@
     "Value": "1",
     "Control": "FX Unit 1 On",
     "ShortName": "fx1__on",
+    "Tested": true,
     "Id": "command__b__fx1__on"
   },
   "command__c__fx1__on": {
@@ -677,6 +680,7 @@
     "Value": "1",
     "Control": "FX Unit 1 On",
     "ShortName": "fx1__on",
+    "Tested": true,
     "Id": "command__c__fx1__on"
   },
   "command__d__fx1__on": {
@@ -689,6 +693,7 @@
     "Value": "1",
     "Control": "FX Unit 1 On",
     "ShortName": "fx1__on",
+    "Tested": true,
     "Id": "command__d__fx1__on"
   },
   "command__a__fx1__off": {
@@ -701,6 +706,7 @@
     "Value": "0",
     "Control": "FX Unit 1 On",
     "ShortName": "fx1__off",
+    "Tested": true,
     "Id": "command__a__fx1__off"
   },
   "command__b__fx1__off": {
@@ -713,6 +719,7 @@
     "Value": "0",
     "Control": "FX Unit 1 On",
     "ShortName": "fx1__off",
+    "Tested": true,
     "Id": "command__b__fx1__off"
   },
   "command__c__fx1__off": {
@@ -725,6 +732,7 @@
     "Value": "0",
     "Control": "FX Unit 1 On",
     "ShortName": "fx1__off",
+    "Tested": true,
     "Id": "command__c__fx1__off"
   },
   "command__d__fx1__off": {
@@ -737,6 +745,7 @@
     "Value": "0",
     "Control": "FX Unit 1 On",
     "ShortName": "fx1__off",
+    "Tested": true,
     "Id": "command__d__fx1__off"
   },
   "command__a__cue__on": {
@@ -994,6 +1003,7 @@
     "Value": "Single",
     "Control": "FX Unit Mode Selector",
     "ShortName": "fx_mode__single",
+    "Tested": true,
     "Id": "command__fx1__fx_mode__single"
   },
   "command__fx1__fx_mode__group": {
@@ -1006,6 +1016,7 @@
     "Value": "Group",
     "Control": "FX Unit Mode Selector",
     "ShortName": "fx_mode__group",
+    "Tested": true,
     "Id": "command__fx1__fx_mode__group"
   },
   "command__global__search_select__top": {
@@ -1096,6 +1107,7 @@
     "Value": "1",
     "Control": "FX Unit 2 On",
     "ShortName": "fx2__on",
+    "Tested": true,
     "Id": "command__a__fx2__on"
   },
   "command__b__fx2__on": {
@@ -1108,6 +1120,7 @@
     "Value": "1",
     "Control": "FX Unit 2 On",
     "ShortName": "fx2__on",
+    "Tested": true,
     "Id": "command__b__fx2__on"
   },
   "command__c__fx2__on": {
@@ -1120,6 +1133,7 @@
     "Value": "1",
     "Control": "FX Unit 2 On",
     "ShortName": "fx2__on",
+    "Tested": true,
     "Id": "command__c__fx2__on"
   },
   "command__d__fx2__on": {
@@ -1132,6 +1146,7 @@
     "Value": "1",
     "Control": "FX Unit 2 On",
     "ShortName": "fx2__on",
+    "Tested": true,
     "Id": "command__d__fx2__on"
   },
   "command__a__fx2__off": {
@@ -1144,6 +1159,7 @@
     "Value": "0",
     "Control": "FX Unit 2 On",
     "ShortName": "fx2__off",
+    "Tested": true,
     "Id": "command__a__fx2__off"
   },
   "command__b__fx2__off": {
@@ -1156,6 +1172,7 @@
     "Value": "0",
     "Control": "FX Unit 2 On",
     "ShortName": "fx2__off",
+    "Tested": true,
     "Id": "command__b__fx2__off"
   },
   "command__c__fx2__off": {
@@ -1168,6 +1185,7 @@
     "Value": "0",
     "Control": "FX Unit 2 On",
     "ShortName": "fx2__off",
+    "Tested": true,
     "Id": "command__c__fx2__off"
   },
   "command__d__fx2__off": {
@@ -1180,6 +1198,7 @@
     "Value": "0",
     "Control": "FX Unit 2 On",
     "ShortName": "fx2__off",
+    "Tested": true,
     "Id": "command__d__fx2__off"
   },
   "command__fx2__unit__on": {
@@ -1365,6 +1384,7 @@
     "Value": "Single",
     "Control": "FX Unit Mode Selector",
     "ShortName": "fx_mode__single",
+    "Tested": true,
     "Id": "command__fx2__fx_mode__single"
   },
   "command__fx2__fx_mode__group": {
@@ -1377,6 +1397,7 @@
     "Value": "Group",
     "Control": "FX Unit Mode Selector",
     "ShortName": "fx_mode__group",
+    "Tested": true,
     "Id": "command__fx2__fx_mode__group"
   },
   "command__a__fx3__on": {
@@ -1389,6 +1410,7 @@
     "Value": "1",
     "Control": "FX Unit 3 On",
     "ShortName": "fx3__on",
+    "Tested": true,
     "Id": "command__a__fx3__on"
   },
   "command__b__fx3__on": {
@@ -1401,6 +1423,7 @@
     "Value": "1",
     "Control": "FX Unit 3 On",
     "ShortName": "fx3__on",
+    "Tested": true,
     "Id": "command__b__fx3__on"
   },
   "command__c__fx3__on": {
@@ -1413,6 +1436,7 @@
     "Value": "1",
     "Control": "FX Unit 3 On",
     "ShortName": "fx3__on",
+    "Tested": true,
     "Id": "command__c__fx3__on"
   },
   "command__d__fx3__on": {
@@ -1425,6 +1449,7 @@
     "Value": "1",
     "Control": "FX Unit 3 On",
     "ShortName": "fx3__on",
+    "Tested": true,
     "Id": "command__d__fx3__on"
   },
   "command__a__fx3__off": {
@@ -1437,6 +1462,7 @@
     "Value": "0",
     "Control": "FX Unit 3 On",
     "ShortName": "fx3__off",
+    "Tested": true,
     "Id": "command__a__fx3__off"
   },
   "command__b__fx3__off": {
@@ -1449,6 +1475,7 @@
     "Value": "0",
     "Control": "FX Unit 3 On",
     "ShortName": "fx3__off",
+    "Tested": true,
     "Id": "command__b__fx3__off"
   },
   "command__c__fx3__off": {
@@ -1461,6 +1488,7 @@
     "Value": "0",
     "Control": "FX Unit 3 On",
     "ShortName": "fx3__off",
+    "Tested": true,
     "Id": "command__c__fx3__off"
   },
   "command__d__fx3__off": {
@@ -1473,6 +1501,7 @@
     "Value": "0",
     "Control": "FX Unit 3 On",
     "ShortName": "fx3__off",
+    "Tested": true,
     "Id": "command__d__fx3__off"
   },
   "command__fx3__unit__on": {
@@ -1658,6 +1687,7 @@
     "Value": "Single",
     "Control": "FX Unit Mode Selector",
     "ShortName": "fx_mode__single",
+    "Tested": true,
     "Id": "command__fx3__fx_mode__single"
   },
   "command__fx3__fx_mode__group": {
@@ -1670,6 +1700,7 @@
     "Value": "Group",
     "Control": "FX Unit Mode Selector",
     "ShortName": "fx_mode__group",
+    "Tested": true,
     "Id": "command__fx3__fx_mode__group"
   },
   "command__a__fx4__on": {
@@ -1682,6 +1713,7 @@
     "Value": "1",
     "Control": "FX Unit 4 On",
     "ShortName": "fx4__on",
+    "Tested": true,
     "Id": "command__a__fx4__on"
   },
   "command__b__fx4__on": {
@@ -1694,6 +1726,7 @@
     "Value": "1",
     "Control": "FX Unit 4 On",
     "ShortName": "fx4__on",
+    "Tested": true,
     "Id": "command__b__fx4__on"
   },
   "command__c__fx4__on": {
@@ -1706,6 +1739,7 @@
     "Value": "1",
     "Control": "FX Unit 4 On",
     "ShortName": "fx4__on",
+    "Tested": true,
     "Id": "command__c__fx4__on"
   },
   "command__d__fx4__on": {
@@ -1718,6 +1752,7 @@
     "Value": "1",
     "Control": "FX Unit 4 On",
     "ShortName": "fx4__on",
+    "Tested": true,
     "Id": "command__d__fx4__on"
   },
   "command__a__fx4__off": {
@@ -1730,6 +1765,7 @@
     "Value": "0",
     "Control": "FX Unit 4 On",
     "ShortName": "fx4__off",
+    "Tested": true,
     "Id": "command__a__fx4__off"
   },
   "command__b__fx4__off": {
@@ -1742,6 +1778,7 @@
     "Value": "0",
     "Control": "FX Unit 4 On",
     "ShortName": "fx4__off",
+    "Tested": true,
     "Id": "command__b__fx4__off"
   },
   "command__c__fx4__off": {
@@ -1754,6 +1791,7 @@
     "Value": "0",
     "Control": "FX Unit 4 On",
     "ShortName": "fx4__off",
+    "Tested": true,
     "Id": "command__c__fx4__off"
   },
   "command__d__fx4__off": {
@@ -1766,6 +1804,7 @@
     "Value": "0",
     "Control": "FX Unit 4 On",
     "ShortName": "fx4__off",
+    "Tested": true,
     "Id": "command__d__fx4__off"
   },
   "command__fx4__unit__on": {
@@ -1951,6 +1990,7 @@
     "Value": "Single",
     "Control": "FX Unit Mode Selector",
     "ShortName": "fx_mode__single",
+    "Tested": true,
     "Id": "command__fx4__fx_mode__single"
   },
   "command__fx4__fx_mode__group": {
@@ -1963,6 +2003,7 @@
     "Value": "Group",
     "Control": "FX Unit Mode Selector",
     "ShortName": "fx_mode__group",
+    "Tested": true,
     "Id": "command__fx4__fx_mode__group"
   },
   "command__a__gain__{val}": {
@@ -1974,6 +2015,7 @@
     "Type": "Fader / Knob",
     "Control": "Gain Adjust (Mixer)",
     "ShortName": "gain__{val}",
+    "Tested": true,
     "Id": "command__a__gain__{val}"
   },
   "command__b__gain__{val}": {
@@ -1985,6 +2027,7 @@
     "Type": "Fader / Knob",
     "Control": "Gain Adjust (Mixer)",
     "ShortName": "gain__{val}",
+    "Tested": true,
     "Id": "command__b__gain__{val}"
   },
   "command__d__gain__{val}": {
@@ -1996,6 +2039,7 @@
     "Type": "Fader / Knob",
     "Control": "Gain Adjust (Mixer)",
     "ShortName": "gain__{val}",
+    "Tested": true,
     "Id": "command__d__gain__{val}"
   },
   "command__c__jump_next__trigger": {
@@ -2446,6 +2490,7 @@
     "Type": "Fader / Knob",
     "Control": "Filter Adjust",
     "ShortName": "filter__{val}",
+    "Tested": true,
     "Id": "command__a__filter__{val}"
   },
   "command__b__filter__{val}": {
@@ -2457,6 +2502,7 @@
     "Type": "Fader / Knob",
     "Control": "Filter Adjust",
     "ShortName": "filter__{val}",
+    "Tested": true,
     "Id": "command__b__filter__{val}"
   },
   "command__c__filter__{val}": {
@@ -2468,6 +2514,7 @@
     "Type": "Fader / Knob",
     "Control": "Filter Adjust",
     "ShortName": "filter__{val}",
+    "Tested": true,
     "Id": "command__c__filter__{val}"
   },
   "command__d__filter__{val}": {
@@ -2479,6 +2526,7 @@
     "Type": "Fader / Knob",
     "Control": "Filter Adjust",
     "ShortName": "filter__{val}",
+    "Tested": true,
     "Id": "command__d__filter__{val}"
   },
   "command__global__record__start": {
@@ -2515,6 +2563,7 @@
     "Value": "1",
     "Control": "Filter On",
     "ShortName": "filter__on",
+    "Tested": true,
     "Id": "command__a__filter__on"
   },
   "command__a__filter__off": {
@@ -2527,6 +2576,7 @@
     "Value": "0",
     "Control": "Filter On",
     "ShortName": "filter__off",
+    "Tested": true,
     "Id": "command__a__filter__off"
   },
   "command__b__filter__on": {
@@ -2539,6 +2589,7 @@
     "Value": "1",
     "Control": "Filter On",
     "ShortName": "filter__on",
+    "Tested": true,
     "Id": "command__b__filter__on"
   },
   "command__b__filter__off": {
@@ -2551,6 +2602,7 @@
     "Value": "0",
     "Control": "Filter On",
     "ShortName": "filter__off",
+    "Tested": true,
     "Id": "command__b__filter__off"
   },
   "command__c__filter__on": {
@@ -2563,6 +2615,7 @@
     "Value": "1",
     "Control": "Filter On",
     "ShortName": "filter__on",
+    "Tested": true,
     "Id": "command__c__filter__on"
   },
   "command__c__filter__off": {
@@ -2575,6 +2628,7 @@
     "Value": "0",
     "Control": "Filter On",
     "ShortName": "filter__off",
+    "Tested": true,
     "Id": "command__c__filter__off"
   },
   "command__d__filter__on": {
@@ -2587,6 +2641,7 @@
     "Value": "1",
     "Control": "Filter On",
     "ShortName": "filter__on",
+    "Tested": true,
     "Id": "command__d__filter__on"
   },
   "command__d__filter__off": {
@@ -2599,6 +2654,7 @@
     "Value": "0",
     "Control": "Filter On",
     "ShortName": "filter__off",
+    "Tested": true,
     "Id": "command__d__filter__off"
   }
 }
