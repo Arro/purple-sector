@@ -20,9 +20,11 @@ test("background", async (t) => {
   t.timeout(60_000)
   let result
 
-  result = await waitForValue("num_active_tests", "1", 5_000)
+  // wait for num_active_tests to go above 0 once
+  result = await waitForValue("num_active_tests", "0", 5_000, true)
   await t.true(result)
 
+  // and then wait for it to return to 0
   result = await waitForValue("num_active_tests", "0", 60_000)
   await t.true(result)
 })

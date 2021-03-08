@@ -9,156 +9,133 @@ const delay = async function (time) {
 }
 
 test.before(async (t) => {
+  t.timeout(10_000)
   t.context.redis = new Redis()
   t.context.redis_pub = new Redis()
-  t.context.redis.incr("num_active_tests")
-  await waitForValue("test_batch", "0", 10_000)
+  await waitForValue("test_batch", "0", 5_000)
+  await t.context.redis.incr("num_active_tests")
 })
 
-test.after("cleanup", (t) => {
-  t.context.redis.decr("num_active_tests")
+test.after.always(async (t) => {
+  await t.context.redis.decr("num_active_tests")
 })
 
 test("a filter", async (t) => {
-  const { redis, redis_pub } = t.context
-  let value
+  let result
+  const { redis_pub } = t.context
 
-  redis_pub.publish("purple-sector", "command__a__filter__0")
-  await delay(300)
-  redis_pub.publish("purple-sector", "command__a__filter__25")
-  await delay(300)
-  value = await redis.get("status__a__filter")
-  t.is(value, "26")
-  redis_pub.publish("purple-sector", "command__a__filter__124")
-  await delay(300)
-  value = await redis.get("status__a__filter")
-  t.is(value, "123")
-  redis_pub.publish("purple-sector", "command__a__filter__63")
-  await delay(300)
-  value = await redis.get("status__a__filter")
-  t.is(value, "63")
+  await redis_pub.publish("purple-sector", "command__a__filter__0")
+  await delay(100)
+  await redis_pub.publish("purple-sector", "command__a__filter__25")
+  result = await waitForValue("status__a__filter", "26", 1_000)
+  t.true(result)
+  await redis_pub.publish("purple-sector", "command__a__filter__124")
+  result = await waitForValue("status__a__filter", "123", 1_000)
+  t.true(result)
+  await redis_pub.publish("purple-sector", "command__a__filter__63")
+  result = await waitForValue("status__a__filter", "63", 1_000)
+  t.true(result)
 })
 
 test("b filter", async (t) => {
-  const { redis, redis_pub } = t.context
-  let value
+  let result
+  const { redis_pub } = t.context
 
-  redis_pub.publish("purple-sector", "command__b__filter__0")
-  await delay(300)
-  redis_pub.publish("purple-sector", "command__b__filter__25")
-  await delay(300)
-  value = await redis.get("status__b__filter")
-  t.is(value, "26")
-  redis_pub.publish("purple-sector", "command__b__filter__124")
-  await delay(300)
-  value = await redis.get("status__b__filter")
-  t.is(value, "123")
-  redis_pub.publish("purple-sector", "command__b__filter__63")
-  await delay(300)
-  value = await redis.get("status__b__filter")
-  t.is(value, "63")
+  await redis_pub.publish("purple-sector", "command__b__filter__0")
+  await delay(100)
+  await redis_pub.publish("purple-sector", "command__b__filter__25")
+  result = await waitForValue("status__b__filter", "26", 1_000)
+  t.true(result)
+  await redis_pub.publish("purple-sector", "command__b__filter__124")
+  result = await waitForValue("status__b__filter", "123", 1_000)
+  t.true(result)
+  await redis_pub.publish("purple-sector", "command__b__filter__63")
+  result = await waitForValue("status__b__filter", "63", 1_000)
+  t.true(result)
 })
 
 test("c filter", async (t) => {
-  const { redis, redis_pub } = t.context
-  let value
+  let result
+  const { redis_pub } = t.context
 
-  redis_pub.publish("purple-sector", "command__c__filter__0")
-  await delay(300)
-  redis_pub.publish("purple-sector", "command__c__filter__25")
-  await delay(300)
-  value = await redis.get("status__c__filter")
-  t.is(value, "26")
-  redis_pub.publish("purple-sector", "command__c__filter__124")
-  await delay(300)
-  value = await redis.get("status__c__filter")
-  t.is(value, "123")
-  redis_pub.publish("purple-sector", "command__c__filter__63")
-  await delay(300)
-  value = await redis.get("status__c__filter")
-  t.is(value, "63")
+  await redis_pub.publish("purple-sector", "command__c__filter__0")
+  await delay(100)
+  await redis_pub.publish("purple-sector", "command__c__filter__25")
+  result = await waitForValue("status__c__filter", "26", 1_000)
+  t.true(result)
+  await redis_pub.publish("purple-sector", "command__c__filter__124")
+  result = await waitForValue("status__c__filter", "123", 1_000)
+  t.true(result)
+  await redis_pub.publish("purple-sector", "command__c__filter__63")
+  result = await waitForValue("status__c__filter", "63", 1_000)
+  t.true(result)
 })
 
 test("d filter", async (t) => {
-  const { redis, redis_pub } = t.context
-  let value
+  let result
+  const { redis_pub } = t.context
 
-  redis_pub.publish("purple-sector", "command__d__filter__0")
-  await delay(300)
-  redis_pub.publish("purple-sector", "command__d__filter__25")
-  await delay(300)
-  value = await redis.get("status__d__filter")
-  t.is(value, "26")
-  redis_pub.publish("purple-sector", "command__d__filter__124")
-  await delay(300)
-  value = await redis.get("status__d__filter")
-  t.is(value, "123")
-  redis_pub.publish("purple-sector", "command__d__filter__63")
-  await delay(300)
-  value = await redis.get("status__d__filter")
-  t.is(value, "63")
+  await redis_pub.publish("purple-sector", "command__d__filter__0")
+  await delay(100)
+  await redis_pub.publish("purple-sector", "command__d__filter__25")
+  result = await waitForValue("status__d__filter", "26", 1_000)
+  t.true(result)
+  await redis_pub.publish("purple-sector", "command__d__filter__124")
+  result = await waitForValue("status__d__filter", "123", 1_000)
+  t.true(result)
+  await redis_pub.publish("purple-sector", "command__d__filter__63")
+  result = await waitForValue("status__d__filter", "63", 1_000)
+  t.true(result)
 })
 
 test("a filter on/off", async (t) => {
-  const { redis, redis_pub } = t.context
-  let value
-
-  redis_pub.publish("purple-sector", "command__a__filter__off")
-  await delay(300)
-  redis_pub.publish("purple-sector", "command__a__filter__on")
-  await delay(300)
-  value = await redis.get("status__a__filter_on_off")
-  t.is(value, "true")
-  redis_pub.publish("purple-sector", "command__a__filter__off")
-  await delay(300)
-  value = await redis.get("status__a__filter_on_off")
-  t.is(value, "false")
+  let result
+  const { redis_pub } = t.context
+  await redis_pub.publish("purple-sector", "command__a__filter__off")
+  await delay(100)
+  await redis_pub.publish("purple-sector", "command__a__filter__on")
+  result = await waitForValue("status__a__filter_on_off", "true", 1_000)
+  t.true(result)
+  await redis_pub.publish("purple-sector", "command__a__filter__off")
+  result = await waitForValue("status__a__filter_on_off", "false", 1_000)
+  t.true(result)
 })
 
 test("b filter on/off", async (t) => {
-  const { redis, redis_pub } = t.context
-  let value
-
-  redis_pub.publish("purple-sector", "command__b__filter__off")
-  await delay(300)
-  redis_pub.publish("purple-sector", "command__b__filter__on")
-  await delay(300)
-  value = await redis.get("status__b__filter_on_off")
-  t.is(value, "true")
-  redis_pub.publish("purple-sector", "command__b__filter__off")
-  await delay(300)
-  value = await redis.get("status__b__filter_on_off")
-  t.is(value, "false")
+  let result
+  const { redis_pub } = t.context
+  await redis_pub.publish("purple-sector", "command__b__filter__off")
+  await delay(100)
+  await redis_pub.publish("purple-sector", "command__b__filter__on")
+  result = await waitForValue("status__b__filter_on_off", "true", 1_000)
+  t.true(result)
+  await redis_pub.publish("purple-sector", "command__b__filter__off")
+  result = await waitForValue("status__b__filter_on_off", "false", 1_000)
+  t.true(result)
 })
 
 test("c filter on/off", async (t) => {
-  const { redis, redis_pub } = t.context
-  let value
-
-  redis_pub.publish("purple-sector", "command__c__filter__off")
-  await delay(300)
-  redis_pub.publish("purple-sector", "command__c__filter__on")
-  await delay(300)
-  value = await redis.get("status__c__filter_on_off")
-  t.is(value, "true")
-  redis_pub.publish("purple-sector", "command__c__filter__off")
-  await delay(300)
-  value = await redis.get("status__c__filter_on_off")
-  t.is(value, "false")
+  let result
+  const { redis_pub } = t.context
+  await redis_pub.publish("purple-sector", "command__c__filter__off")
+  await delay(100)
+  await redis_pub.publish("purple-sector", "command__c__filter__on")
+  result = await waitForValue("status__c__filter_on_off", "true", 1_000)
+  t.true(result)
+  await redis_pub.publish("purple-sector", "command__c__filter__off")
+  result = await waitForValue("status__c__filter_on_off", "false", 1_000)
+  t.true(result)
 })
 
 test("d filter on/off", async (t) => {
-  const { redis, redis_pub } = t.context
-  let value
-
-  redis_pub.publish("purple-sector", "command__d__filter__off")
-  await delay(300)
-  redis_pub.publish("purple-sector", "command__d__filter__on")
-  await delay(300)
-  value = await redis.get("status__d__filter_on_off")
-  t.is(value, "true")
-  redis_pub.publish("purple-sector", "command__d__filter__off")
-  await delay(300)
-  value = await redis.get("status__d__filter_on_off")
-  t.is(value, "false")
+  let result
+  const { redis_pub } = t.context
+  await redis_pub.publish("purple-sector", "command__d__filter__off")
+  await delay(100)
+  await redis_pub.publish("purple-sector", "command__d__filter__on")
+  result = await waitForValue("status__d__filter_on_off", "true", 1_000)
+  t.true(result)
+  await redis_pub.publish("purple-sector", "command__d__filter__off")
+  result = await waitForValue("status__d__filter_on_off", "false", 1_000)
+  t.true(result)
 })

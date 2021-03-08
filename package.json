@@ -46,7 +46,9 @@
     "babel": true,
     "files": [
       "test/background.js",
-      "test/monitor.js"
+      "test/monitor.js",
+      "test/deck_fx_on_off.js",
+      "test/filter.js"
     ],
     "require": [
       "@babel/register"
