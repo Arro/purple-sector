@@ -12,12 +12,7 @@ test.before(async (t) => {
   t.timeout(10_000)
   t.context.redis = new Redis()
   t.context.redis_pub = new Redis()
-  await waitForValue("test_batch", "0", 5_000)
-  await t.context.redis.incr("num_active_tests")
-})
-
-test.after.always(async (t) => {
-  await t.context.redis.decr("num_active_tests")
+  await waitForValue("stage", "first_wave", 5_000)
 })
 
 test("a fx1", async (t) => {
