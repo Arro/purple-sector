@@ -1,5 +1,6 @@
 import test from "ava"
 import Redis from "ioredis"
+import waitForValue from "src/wait-for-value"
 
 const delay = async function (time) {
   return new Promise(function (resolve) {
@@ -10,9 +11,8 @@ const delay = async function (time) {
 test.before(async (t) => {
   t.context.redis = new Redis()
   t.context.redis_pub = new Redis()
-  await delay(100)
   t.context.redis.incr("num_active_tests")
-  await delay(3000)
+  await waitForValue("test_batch", "0", 10_000)
 })
 
 test.after("cleanup", (t) => {

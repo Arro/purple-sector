@@ -1,44 +1,28 @@
 import test from "ava"
 import { spawn } from "child_process"
 import Redis from "ioredis"
-
-const delay = async function (time) {
-  return new Promise(function (resolve) {
-    setTimeout(resolve, time)
-  })
-}
-
-const waitForValue = async function (redis, redis_sub) {
-  await redis_sub.subscribe("__keyspace@0__:num_active_tests")
-  return new Promise(function (resolve) {
-    redis_sub.on("message", async () => {
-      const num_active_tests = await redis.get("num_active_tests")
-      if (num_active_tests === "0") {
-        resolve()
-      }
-    })
-
-    setTimeout(resolve, 60_000)
-  })
-}
+import waitForValue from "src/wait-for-value"
 
 test.before(async (t) => {
   t.context.purple = spawn("./dist/cli.js", [], {})
-  t.context.redis_sub = new Redis()
-  t.context.redis = new Redis()
-  t.context.redis.set("num_active_tests", 0)
-  await delay(2000)
+  const redis = new Redis()
+  await redis.set("num_active_tests", 0)
+  await redis.set("test_batch", 0)
 })
 
-test.after("cleanup", async (t) => {
-  await delay(1000)
+test.after.always(async (t) => {
+  const redis = new Redis()
+  await redis.set("test_batch", null)
   t.context.purple.kill()
 })
 
 test("background", async (t) => {
   t.timeout(60_000)
-  const { redis_sub, redis } = t.context
+  let result
 
-  await waitForValue(redis, redis_sub)
-  await t.pass()
+  result = await waitForValue("num_active_tests", "1", 5_000)
+  await t.true(result)
+
+  result = await waitForValue("num_active_tests", "0", 60_000)
+  await t.true(result)
 })
