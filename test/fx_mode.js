@@ -10,7 +10,7 @@ const delay = async function (time) {
 test.before(async (t) => {
   t.context.redis = new Redis()
   t.context.redis_pub = new Redis()
-  await delay(2000)
+  await delay(3000)
 })
 
 test("fx1 mode", async (t) => {

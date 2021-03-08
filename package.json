@@ -1,6 +1,6 @@
 {
   "name": "purple-sector",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "description": "An API for DJ software",
   "author": "Phil Deschaine",
   "repository": {
@@ -34,7 +34,7 @@
     "pulldown": "babel-node src/pulldown.js",
     "listen": "babel-node src/listen.js",
     "build": "babel src/listen.js --out-file dist/cli.js && chmod +x dist/cli.js",
-    "test": "npx ava"
+    "test": "npx ava --verbose"
   },
   "engines": {
     "node": ">=14.0.0"

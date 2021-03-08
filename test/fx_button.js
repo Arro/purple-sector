@@ -10,7 +10,13 @@ const delay = async function (time) {
 test.before(async (t) => {
   t.context.redis = new Redis()
   t.context.redis_pub = new Redis()
+  await delay(100)
+  t.context.redis.incr("num_active_tests")
   await delay(5000)
+})
+
+test.after("cleanup", (t) => {
+  t.context.redis.decr("num_active_tests")
 })
 
 test("fx1 button 2", async (t) => {

@@ -11,6 +11,9 @@ import ora from "ora"
   const input = new midi.Input()
   const redis = new Redis()
   const redis_sub = new Redis()
+  const redis_key = new Redis()
+
+  redis.config("set", "notify-keyspace-events", "KEA")
 
   const spinner = ora()
   const active_message = "listening for midi / redis"
@@ -52,6 +55,7 @@ import ora from "ora"
     }
 
     spinner.info(`id: ${status.Id}, val: ${val}`)
+    spinner.start(active_message)
 
     redis.set(status.Id, val)
   })
@@ -61,6 +65,12 @@ import ora from "ora"
 
   const output = new midi.Output()
   output.openPort(1)
+
+  await redis_key.subscribe("__keyevent@0__:set")
+  redis_key.on("message", (channel, key) => {
+    spinner.info(`Receive redis (2) message ${key}`)
+    spinner.start(active_message)
+  })
 
   await redis_sub.subscribe("purple-sector")
   redis_sub.on("message", (channel, key) => {

@@ -10,7 +10,13 @@ const delay = async function (time) {
 test.before(async (t) => {
   t.context.redis = new Redis()
   t.context.redis_pub = new Redis()
+  await delay(100)
+  t.context.redis.incr("num_active_tests")
   await delay(3000)
+})
+
+test.after("cleanup", (t) => {
+  t.context.redis.decr("num_active_tests")
 })
 
 test("load into a", async (t) => {
@@ -20,7 +26,7 @@ test("load into a", async (t) => {
   redis_pub.publish("purple-sector", "command__a__unload__trigger")
 
   await delay(300)
-  value = await redis.get("status__a__is_loaded")
+  value = await redis.get("status__a__load")
   t.is(value, "false")
 
   redis_pub.publish("purple-sector", "command__global__select__top")
@@ -33,9 +39,8 @@ test("load into a", async (t) => {
   redis_pub.publish("purple-sector", "command__a__load__trigger")
 
   await delay(500)
-  redis_pub.publish("purple-sector", "command__a__jump_next__trigger")
 
-  value = await redis.get("status__a__is_loaded")
+  value = await redis.get("status__a__load")
   t.is(value, "true")
 })
 
@@ -44,7 +49,7 @@ test("load into b", async (t) => {
   let value
   redis_pub.publish("purple-sector", "command__b__unload__trigger")
   await delay(300)
-  value = await redis.get("status__b__is_loaded")
+  value = await redis.get("status__b__load")
   t.is(value, "false")
 
   await delay(3000)
@@ -57,9 +62,7 @@ test("load into b", async (t) => {
 
   redis_pub.publish("purple-sector", "command__b__load__trigger")
   await delay(500)
-  redis_pub.publish("purple-sector", "command__b__jump_next__trigger")
-
-  value = await redis.get("status__b__is_loaded")
+  value = await redis.get("status__b__load")
   t.is(value, "true")
 })
 
@@ -68,7 +71,7 @@ test("load into c", async (t) => {
   let value
   redis_pub.publish("purple-sector", "command__c__unload__trigger")
   await delay(300)
-  value = await redis.get("status__c__is_loaded")
+  value = await redis.get("status__c__load")
   t.is(value, "false")
 
   await delay(6000)
@@ -81,9 +84,7 @@ test("load into c", async (t) => {
 
   redis_pub.publish("purple-sector", "command__c__load__trigger")
   await delay(500)
-  redis_pub.publish("purple-sector", "command__c__jump_next__trigger")
-
-  value = await redis.get("status__c__is_loaded")
+  value = await redis.get("status__c__load")
   t.is(value, "true")
 })
 
@@ -92,7 +93,7 @@ test("load into d", async (t) => {
   let value
   redis_pub.publish("purple-sector", "command__d__unload__trigger")
   await delay(300)
-  value = await redis.get("status__d__is_loaded")
+  value = await redis.get("status__d__load")
   t.is(value, "false")
 
   await delay(9000)
@@ -105,8 +106,7 @@ test("load into d", async (t) => {
 
   redis_pub.publish("purple-sector", "command__d__load__trigger")
   await delay(500)
-  redis_pub.publish("purple-sector", "command__d__jump_next__trigger")
 
-  value = await redis.get("status__d__is_loaded")
+  value = await redis.get("status__d__load")
   t.is(value, "true")
 })

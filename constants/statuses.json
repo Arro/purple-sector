@@ -8,9 +8,10 @@
     "Type": "LED",
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Deck Is Loaded",
-    "ShortName": "is_loaded",
+    "ShortName": "load",
     "Is Binary": true,
-    "Id": "status__a__is_loaded"
+    "Tested": true,
+    "Id": "status__a__load"
   },
   "01-121": {
     "IO": "status",
@@ -21,9 +22,10 @@
     "Type": "LED",
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Deck Is Loaded",
-    "ShortName": "is_loaded",
+    "ShortName": "load",
     "Is Binary": true,
-    "Id": "status__b__is_loaded"
+    "Tested": true,
+    "Id": "status__b__load"
   },
   "05-000": {
     "IO": "status",
@@ -320,7 +322,7 @@
     "Channel": "09",
     "CC": "004",
     "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
+    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync",
     "Is Binary": true,
@@ -333,7 +335,7 @@
     "Channel": "09",
     "CC": "005",
     "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
+    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync",
     "Is Binary": true,
@@ -348,9 +350,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Monitor Cue On",
-    "ShortName": "is_cued",
+    "ShortName": "cue",
     "Is Binary": true,
-    "Id": "status__a__is_cued"
+    "Id": "status__a__cue"
   },
   "09-007": {
     "IO": "status",
@@ -361,9 +363,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Monitor Cue On",
-    "ShortName": "is_cued",
+    "ShortName": "cue",
     "Is Binary": true,
-    "Id": "status__b__is_cued"
+    "Id": "status__b__cue"
   },
   "09-008": {
     "IO": "status",
@@ -437,9 +439,10 @@
     "Type": "LED",
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Deck Is Loaded",
-    "ShortName": "is_loaded",
+    "ShortName": "load",
     "Is Binary": true,
-    "Id": "status__c__is_loaded"
+    "Tested": true,
+    "Id": "status__c__load"
   },
   "01-105": {
     "IO": "status",
@@ -450,9 +453,10 @@
     "Type": "LED",
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Deck Is Loaded",
-    "ShortName": "is_loaded",
+    "ShortName": "load",
     "Is Binary": true,
-    "Id": "status__d__is_loaded"
+    "Tested": true,
+    "Id": "status__d__load"
   },
   "01-106": {
     "IO": "status",
@@ -555,9 +559,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Monitor Cue On",
-    "ShortName": "is_cued",
+    "ShortName": "cue",
     "Is Binary": true,
-    "Id": "status__c__is_cued"
+    "Id": "status__c__cue"
   },
   "01-114": {
     "IO": "status",
@@ -568,9 +572,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Monitor Cue On",
-    "ShortName": "is_cued",
+    "ShortName": "cue",
     "Is Binary": true,
-    "Id": "status__d__is_cued"
+    "Id": "status__d__cue"
   },
   "01-115": {
     "IO": "status",
@@ -616,7 +620,7 @@
     "Channel": "01",
     "CC": "118",
     "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
+    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync",
     "Is Binary": true,
@@ -629,7 +633,7 @@
     "Channel": "01",
     "CC": "119",
     "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
+    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync",
     "Is Binary": true,
@@ -1096,6 +1100,7 @@
     "Type": "LED",
     "Control": "Volume Adjust",
     "ShortName": "volume",
+    "Tested": true,
     "Id": "status__a__volume"
   },
   "03-119": {
@@ -1107,6 +1112,7 @@
     "Type": "LED",
     "Control": "Volume Adjust",
     "ShortName": "volume",
+    "Tested": true,
     "Id": "status__b__volume"
   },
   "03-120": {
@@ -1118,6 +1124,7 @@
     "Type": "LED",
     "Control": "Volume Adjust",
     "ShortName": "volume",
+    "Tested": true,
     "Id": "status__c__volume"
   },
   "03-121": {
@@ -1129,6 +1136,7 @@
     "Type": "LED",
     "Control": "Volume Adjust",
     "ShortName": "volume",
+    "Tested": true,
     "Id": "status__d__volume"
   }
 }

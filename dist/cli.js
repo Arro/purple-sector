@@ -19,6 +19,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   const input = new _midi.default.Input();
   const redis = new _ioredis.default();
   const redis_sub = new _ioredis.default();
+  const redis_key = new _ioredis.default();
+  redis.config("set", "notify-keyspace-events", "KEA");
   const spinner = (0, _ora.default)();
   const active_message = "listening for midi / redis";
   spinner.start(active_message);
@@ -59,12 +61,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     }
 
     spinner.info(`id: ${status.Id}, val: ${val}`);
+    spinner.start(active_message);
     redis.set(status.Id, val);
   });
   let commands = await _fsExtra.default.readFile("./constants/commands.json", "utf-8");
   commands = JSON.parse(commands);
   const output = new _midi.default.Output();
   output.openPort(1);
+  await redis_key.subscribe("__keyevent@0__:set");
+  redis_key.on("message", (channel, key) => {
+    spinner.info(`Receive redis (2) message ${key}`);
+    spinner.start(active_message);
+  });
   await redis_sub.subscribe("purple-sector");
   redis_sub.on("message", (channel, key) => {
     spinner.info(`Receive redis message ${key}`);

@@ -95,6 +95,7 @@
     "CC": "010",
     "Type": "Button",
     "Value": "Back",
+    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__back",
     "Id": "command__a__move__back"
@@ -107,6 +108,7 @@
     "CC": "011",
     "Type": "Button",
     "Value": "Back",
+    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__back",
     "Id": "command__b__move__back"
@@ -119,6 +121,7 @@
     "CC": "012",
     "Type": "Button",
     "Value": "Forward",
+    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__forward",
     "Id": "command__a__move__forward"
@@ -131,6 +134,7 @@
     "CC": "013",
     "Type": "Button",
     "Value": "Forward",
+    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__forward",
     "Id": "command__b__move__forward"
@@ -203,6 +207,7 @@
     "Type": "Button",
     "Control": "Load Selected (Deck Common)",
     "ShortName": "load__trigger",
+    "Tested": true,
     "Id": "command__a__load__trigger"
   },
   "command__b__load__trigger": {
@@ -214,6 +219,7 @@
     "Type": "Button",
     "Control": "Load Selected (Deck Common)",
     "ShortName": "load__trigger",
+    "Tested": true,
     "Id": "command__b__load__trigger"
   },
   "command__a__play__start": {
@@ -294,6 +300,7 @@
     "CC": "047",
     "Type": "Button",
     "Value": "1",
+    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__off",
     "Id": "command__a__sync__off"
@@ -306,6 +313,7 @@
     "CC": "048",
     "Type": "Button",
     "Value": "1",
+    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__off",
     "Id": "command__b__sync__off"
@@ -319,6 +327,7 @@
     "Type": "Button",
     "Control": "Load Selected (Deck Common)",
     "ShortName": "load__trigger",
+    "Tested": true,
     "Id": "command__c__load__trigger"
   },
   "command__a__tempo__inc": {
@@ -427,6 +436,7 @@
     "CC": "067",
     "Type": "Button",
     "Value": "0",
+    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__on",
     "Id": "command__a__sync__on"
@@ -439,6 +449,7 @@
     "CC": "068",
     "Type": "Button",
     "Value": "0",
+    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__on",
     "Id": "command__b__sync__on"
@@ -487,6 +498,7 @@
     "Type": "Button",
     "Control": "Unload (Deck Common)",
     "ShortName": "unload__trigger",
+    "Tested": true,
     "Id": "command__a__unload__trigger"
   },
   "command__b__unload__trigger": {
@@ -498,6 +510,7 @@
     "Type": "Button",
     "Control": "Unload (Deck Common)",
     "ShortName": "unload__trigger",
+    "Tested": true,
     "Id": "command__b__unload__trigger"
   },
   "command__c__unload__trigger": {
@@ -509,6 +522,7 @@
     "Type": "Button",
     "Control": "Unload (Deck Common)",
     "ShortName": "unload__trigger",
+    "Tested": true,
     "Id": "command__c__unload__trigger"
   },
   "command__d__unload__trigger": {
@@ -520,6 +534,7 @@
     "Type": "Button",
     "Control": "Unload (Deck Common)",
     "ShortName": "unload__trigger",
+    "Tested": true,
     "Id": "command__d__unload__trigger"
   },
   "command__a__tempo__reset": {
@@ -556,6 +571,7 @@
     "CC": "070",
     "Type": "Button",
     "Value": "1",
+    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__on",
     "Id": "command__fx1__unit__on"
@@ -568,6 +584,7 @@
     "CC": "071",
     "Type": "Button",
     "Value": "0",
+    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__off",
     "Id": "command__fx1__unit__off"
@@ -756,6 +773,7 @@
     "CC": "103",
     "Type": "Button",
     "Value": "1",
+    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__on",
     "Id": "command__a__cue__on"
@@ -768,6 +786,7 @@
     "CC": "104",
     "Type": "Button",
     "Value": "1",
+    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__on",
     "Id": "command__b__cue__on"
@@ -780,6 +799,7 @@
     "CC": "105",
     "Type": "Button",
     "Value": "0",
+    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__off",
     "Id": "command__a__cue__off"
@@ -792,6 +812,7 @@
     "CC": "106",
     "Type": "Button",
     "Value": "0",
+    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__off",
     "Id": "command__b__cue__off"
@@ -804,6 +825,7 @@
     "CC": "107",
     "Type": "Button",
     "Value": "1",
+    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__on",
     "Id": "command__c__cue__on"
@@ -816,6 +838,7 @@
     "CC": "108",
     "Type": "Button",
     "Value": "0",
+    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__off",
     "Id": "command__c__cue__off"
@@ -828,6 +851,7 @@
     "CC": "109",
     "Type": "Button",
     "Value": "1",
+    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__on",
     "Id": "command__d__cue__on"
@@ -840,6 +864,7 @@
     "CC": "110",
     "Type": "Button",
     "Value": "0",
+    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__off",
     "Id": "command__d__cue__off"
@@ -902,6 +927,7 @@
     "Value": "1",
     "Control": "Button 1",
     "ShortName": "button_1__on",
+    "Untestable": true,
     "Id": "command__fx1__button_1__on"
   },
   "command__fx1__button_1__off": {
@@ -914,6 +940,7 @@
     "Value": "0",
     "Control": "Button 1",
     "ShortName": "button_1__off",
+    "Untestable": true,
     "Id": "command__fx1__button_1__off"
   },
   "command__fx1__button_2__on": {
@@ -1037,6 +1064,7 @@
     "Value": "Bottom",
     "Control": "Select Top/Bottom",
     "ShortName": "select__top",
+    "Untestable": true,
     "Id": "command__global__select__top"
   },
   "command__global__search__trigger": {
@@ -1070,6 +1098,7 @@
     "Type": "Fader / Knob",
     "Control": "Volume Adjust",
     "ShortName": "volume__{val}",
+    "Tested": true,
     "Id": "command__a__volume__{val}"
   },
   "command__b__volume__{val}": {
@@ -1081,6 +1110,7 @@
     "Type": "Fader / Knob",
     "Control": "Volume Adjust",
     "ShortName": "volume__{val}",
+    "Tested": true,
     "Id": "command__b__volume__{val}"
   },
   "command__c__volume__{val}": {
@@ -1092,6 +1122,7 @@
     "Type": "Fader / Knob",
     "Control": "Volume Adjust",
     "ShortName": "volume__{val}",
+    "Tested": true,
     "Id": "command__c__volume__{val}"
   },
   "command__d__volume__{val}": {
@@ -1103,6 +1134,7 @@
     "Type": "Fader / Knob",
     "Control": "Volume Adjust",
     "ShortName": "volume__{val}",
+    "Tested": true,
     "Id": "command__d__volume__{val}"
   },
   "command__a__fx2__on": {
@@ -1217,6 +1249,7 @@
     "CC": "042",
     "Type": "Button",
     "Value": "1",
+    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__on",
     "Id": "command__fx2__unit__on"
@@ -1229,6 +1262,7 @@
     "CC": "043",
     "Type": "Button",
     "Value": "0",
+    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__off",
     "Id": "command__fx2__unit__off"
@@ -1291,6 +1325,7 @@
     "Value": "1",
     "Control": "Button 1",
     "ShortName": "button_1__on",
+    "Untestable": true,
     "Id": "command__fx2__button_1__on"
   },
   "command__fx2__button_1__off": {
@@ -1303,6 +1338,7 @@
     "Value": "0",
     "Control": "Button 1",
     "ShortName": "button_1__off",
+    "Untestable": true,
     "Id": "command__fx2__button_1__off"
   },
   "command__fx2__button_2__on": {
@@ -1528,6 +1564,7 @@
     "CC": "067",
     "Type": "Button",
     "Value": "1",
+    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__on",
     "Id": "command__fx3__unit__on"
@@ -1540,6 +1577,7 @@
     "CC": "068",
     "Type": "Button",
     "Value": "0",
+    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__off",
     "Id": "command__fx3__unit__off"
@@ -1602,6 +1640,7 @@
     "Value": "1",
     "Control": "Button 1",
     "ShortName": "button_1__on",
+    "Untestable": true,
     "Id": "command__fx3__button_1__on"
   },
   "command__fx3__button_1__off": {
@@ -1614,6 +1653,7 @@
     "Value": "0",
     "Control": "Button 1",
     "ShortName": "button_1__off",
+    "Untestable": true,
     "Id": "command__fx3__button_1__off"
   },
   "command__fx3__button_2__on": {
@@ -1839,6 +1879,7 @@
     "CC": "092",
     "Type": "Button",
     "Value": "1",
+    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__on",
     "Id": "command__fx4__unit__on"
@@ -1851,6 +1892,7 @@
     "CC": "093",
     "Type": "Button",
     "Value": "0",
+    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__off",
     "Id": "command__fx4__unit__off"
@@ -1913,6 +1955,7 @@
     "Value": "1",
     "Control": "Button 1",
     "ShortName": "button_1__on",
+    "Untestable": true,
     "Id": "command__fx4__button_1__on"
   },
   "command__fx4__button_1__off": {
@@ -1925,6 +1968,7 @@
     "Value": "0",
     "Control": "Button 1",
     "ShortName": "button_1__off",
+    "Untestable": true,
     "Id": "command__fx4__button_1__off"
   },
   "command__fx4__button_2__on": {
@@ -2107,6 +2151,7 @@
     "Type": "Button",
     "Control": "Load Selected (Deck Common)",
     "ShortName": "load__trigger",
+    "Tested": true,
     "Id": "command__d__load__trigger"
   },
   "command__d__loop_active__toggle": {
@@ -2220,6 +2265,7 @@
     "CC": "032",
     "Type": "Button",
     "Value": "Back",
+    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__back",
     "Id": "command__c__move__back"
@@ -2232,6 +2278,7 @@
     "CC": "033",
     "Type": "Button",
     "Value": "Back",
+    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__back",
     "Id": "command__d__move__back"
@@ -2244,6 +2291,7 @@
     "CC": "034",
     "Type": "Button",
     "Value": "Forward",
+    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__forward",
     "Id": "command__c__move__forward"
@@ -2256,6 +2304,7 @@
     "CC": "035",
     "Type": "Button",
     "Value": "Forward",
+    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__forward",
     "Id": "command__d__move__forward"
@@ -2347,6 +2396,7 @@
     "CC": "062",
     "Type": "Button",
     "Value": "0",
+    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__on",
     "Id": "command__c__sync__on"
@@ -2359,6 +2409,7 @@
     "CC": "063",
     "Type": "Button",
     "Value": "1",
+    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__off",
     "Id": "command__c__sync__off"
@@ -2371,6 +2422,7 @@
     "CC": "069",
     "Type": "Button",
     "Value": "0",
+    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__on",
     "Id": "command__d__sync__on"
@@ -2383,6 +2435,7 @@
     "CC": "071",
     "Type": "Button",
     "Value": "1",
+    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__off",
     "Id": "command__d__sync__off"
@@ -2699,6 +2752,7 @@
     "Value": "Top",
     "Control": "Select Top/Bottom",
     "ShortName": "select__bottom",
+    "Untestable": true,
     "Id": "command__global__select__bottom"
   },
   "command__global__select__down": {
@@ -2711,6 +2765,7 @@
     "Value": "Down",
     "Control": "Select Top/Bottom",
     "ShortName": "select__down",
+    "Untestable": true,
     "Id": "command__global__select__down"
   },
   "command__global__select__up": {
@@ -2723,6 +2778,7 @@
     "Value": "Up",
     "Control": "Select Top/Bottom",
     "ShortName": "select__up",
+    "Untestable": true,
     "Id": "command__global__select__up"
   }
 }
