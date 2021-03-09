@@ -1,6 +1,6 @@
 import Redis from "ioredis"
 
-export default async function (key, target, timeout, negate) {
+export default async function (key, target, timeout) {
   const redis = new Redis()
   const redis_sub = new Redis()
 
@@ -9,11 +9,8 @@ export default async function (key, target, timeout, negate) {
 
   let value = await redis.get(key)
   let evaluation = value === target
-  if (negate) {
-    evaluation = !evaluation
-  }
 
-  return new Promise(function (resolve) {
+  return new Promise(function (resolve, reject) {
     if (evaluation) {
       resolve(true)
       return
@@ -22,9 +19,6 @@ export default async function (key, target, timeout, negate) {
     redis_sub.on("message", async () => {
       value = await redis.get(key)
       let evaluation = value === target
-      if (negate) {
-        evaluation = !evaluation
-      }
       if (evaluation) {
         redis_sub.unsubscribe(ks)
         resolve(true)
@@ -34,7 +28,7 @@ export default async function (key, target, timeout, negate) {
 
     setTimeout(() => {
       redis_sub.unsubscribe(ks)
-      resolve(false)
+      reject(value)
     }, timeout)
   })
 }

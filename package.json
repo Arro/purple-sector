@@ -1,6 +1,6 @@
 {
   "name": "purple-sector",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "An API for DJ software",
   "author": "Phil Deschaine",
   "repository": {
@@ -51,7 +51,9 @@
       "test/filter.js",
       "test/fx_button.js",
       "test/fx_mode.js",
-      "test/fx_dry_wet.js"
+      "test/fx_dry_wet.js",
+      "test/volume.js",
+      "test/gain.js"
     ],
     "require": [
       "@babel/register"

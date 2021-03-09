@@ -12,12 +12,14 @@ test.before(async (t) => {
   t.timeout(10_000)
   t.context.redis = new Redis()
   t.context.redis_pub = new Redis()
-  await waitForValue("stage", "second_wave", 5_000)
+  await waitForValue("stage", "first_wave", 5_000)
 })
 
 test("a cue", async (t) => {
   let result
   const { redis_pub } = t.context
+  await redis_pub.publish("purple-sector", "command__a__cue__on")
+  await delay(100)
   await redis_pub.publish("purple-sector", "command__a__cue__off")
   await delay(100)
   await redis_pub.publish("purple-sector", "command__a__cue__on")
@@ -31,6 +33,8 @@ test("a cue", async (t) => {
 test("b cue", async (t) => {
   let result
   const { redis_pub } = t.context
+  await redis_pub.publish("purple-sector", "command__b__cue__on")
+  await delay(100)
   await redis_pub.publish("purple-sector", "command__b__cue__off")
   await delay(100)
   await redis_pub.publish("purple-sector", "command__b__cue__on")
@@ -44,6 +48,8 @@ test("b cue", async (t) => {
 test("c cue", async (t) => {
   let result
   const { redis_pub } = t.context
+  await redis_pub.publish("purple-sector", "command__c__cue__on")
+  await delay(100)
   await redis_pub.publish("purple-sector", "command__c__cue__off")
   await delay(100)
   await redis_pub.publish("purple-sector", "command__c__cue__on")
@@ -57,6 +63,8 @@ test("c cue", async (t) => {
 test("d cue", async (t) => {
   let result
   const { redis_pub } = t.context
+  await redis_pub.publish("purple-sector", "command__d__cue__on")
+  await delay(100)
   await redis_pub.publish("purple-sector", "command__d__cue__off")
   await delay(100)
   await redis_pub.publish("purple-sector", "command__d__cue__on")
