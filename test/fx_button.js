@@ -16,13 +16,11 @@ test.before(async (t) => {
   await waitForValue("stage", "third_wave", 5_000)
 })
 
-test.after.always(async (t) => {
-  await t.context.redis.set("stage", "done")
-})
-
 test("fx1 button 2", async (t) => {
   let result
   const { redis_pub } = t.context
+  await redis_pub.publish("purple-sector", "command__fx1__button_2__on")
+  await delay(100)
   await redis_pub.publish("purple-sector", "command__fx1__button_2__off")
   await delay(100)
   await redis_pub.publish("purple-sector", "command__fx1__button_2__on")

@@ -15,6 +15,11 @@ test.before(async (t) => {
   await waitForValue("stage", "first_wave", 5_000)
 })
 
+test.after.always(async (t) => {
+  await delay(1000)
+  await t.context.redis.set("stage", "second_wave")
+})
+
 test("a fx1", async (t) => {
   let result
   const { redis_pub } = t.context

@@ -15,14 +15,11 @@ test.before(async (t) => {
   await waitForValue("stage", "first_wave", 5_000)
 })
 
-test.after.always(async (t) => {
-  await delay(500)
-  await t.context.redis.set("stage", "second_wave")
-})
-
 test("fx1 mode", async (t) => {
   let result
   const { redis_pub } = t.context
+  await redis_pub.publish("purple-sector", "command__fx1__fx_mode__group")
+  await delay(100)
   await redis_pub.publish("purple-sector", "command__fx1__fx_mode__single")
   await delay(100)
   await redis_pub.publish("purple-sector", "command__fx1__fx_mode__group")
@@ -36,6 +33,8 @@ test("fx1 mode", async (t) => {
 test("fx2 mode", async (t) => {
   let result
   const { redis_pub } = t.context
+  await redis_pub.publish("purple-sector", "command__fx2__fx_mode__group")
+  await delay(100)
   await redis_pub.publish("purple-sector", "command__fx2__fx_mode__single")
   await delay(100)
   await redis_pub.publish("purple-sector", "command__fx2__fx_mode__group")
@@ -49,6 +48,8 @@ test("fx2 mode", async (t) => {
 test("fx3 mode", async (t) => {
   let result
   const { redis_pub } = t.context
+  await redis_pub.publish("purple-sector", "command__fx3__fx_mode__group")
+  await delay(100)
   await redis_pub.publish("purple-sector", "command__fx3__fx_mode__single")
   await delay(100)
   await redis_pub.publish("purple-sector", "command__fx3__fx_mode__group")
@@ -62,6 +63,8 @@ test("fx3 mode", async (t) => {
 test("fx4 mode", async (t) => {
   let result
   const { redis_pub } = t.context
+  await redis_pub.publish("purple-sector", "command__fx4__fx_mode__group")
+  await delay(100)
   await redis_pub.publish("purple-sector", "command__fx4__fx_mode__single")
   await delay(100)
   await redis_pub.publish("purple-sector", "command__fx4__fx_mode__group")
