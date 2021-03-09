@@ -352,6 +352,7 @@
     "Control": "Monitor Cue On",
     "ShortName": "cue",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__a__cue"
   },
   "09-007": {
@@ -365,6 +366,7 @@
     "Control": "Monitor Cue On",
     "ShortName": "cue",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__b__cue"
   },
   "09-008": {
@@ -561,6 +563,7 @@
     "Control": "Monitor Cue On",
     "ShortName": "cue",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__c__cue"
   },
   "01-114": {
@@ -574,6 +577,7 @@
     "Control": "Monitor Cue On",
     "ShortName": "cue",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__d__cue"
   },
   "01-115": {
@@ -1138,5 +1142,57 @@
     "ShortName": "volume",
     "Tested": true,
     "Id": "status__d__volume"
+  },
+  "02-000": {
+    "IO": "status",
+    "Deck": "fx1",
+    "Mode": "Output",
+    "Channel": "02",
+    "CC": "000",
+    "Type": "LED",
+    "Control": "Unit On",
+    "ShortName": "unit_on_off",
+    "Is Binary": true,
+    "Id": "status__fx1__unit_on_off",
+    "Tested": true
+  },
+  "02-001": {
+    "IO": "status",
+    "Deck": "fx2",
+    "Mode": "Output",
+    "Channel": "02",
+    "CC": "001",
+    "Type": "LED",
+    "Control": "Unit On",
+    "ShortName": "unit_on_off",
+    "Is Binary": true,
+    "Id": "status__fx2__unit_on_off",
+    "Tested": true
+  },
+  "02-002": {
+    "IO": "status",
+    "Deck": "fx3",
+    "Mode": "Output",
+    "Channel": "02",
+    "CC": "002",
+    "Type": "LED",
+    "Control": "Unit On",
+    "ShortName": "unit_on_off",
+    "Is Binary": true,
+    "Id": "status__fx3__unit_on_off",
+    "Tested": true
+  },
+  "02-003": {
+    "IO": "status",
+    "Deck": "fx4",
+    "Mode": "Output",
+    "Channel": "02",
+    "CC": "003",
+    "Type": "LED",
+    "Control": "Unit On",
+    "ShortName": "unit_on_off",
+    "Is Binary": true,
+    "Id": "status__fx4__unit_on_off",
+    "Tested": true
   }
 }

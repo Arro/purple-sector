@@ -46,15 +46,17 @@
     "babel": true,
     "files": [
       "test/background.js",
-      "test/monitor.js",
       "test/deck_fx_on_off.js",
       "test/filter.js",
       "test/fx_button.js",
-      "test/fx_mode.js",
       "test/fx_dry_wet.js",
-      "test/volume.js",
+      "test/fx_mode.js",
       "test/gain.js",
-      "test/select-and-load.js"
+      "test/monitor.js",
+      "test/select-and-load.js",
+      "test/sync.js",
+      "test/unit_on_off.js",
+      "test/volume.js"
     ],
     "require": [
       "@babel/register"

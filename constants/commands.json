@@ -292,7 +292,7 @@
     "ShortName": "play__stop",
     "Id": "command__c__play__stop"
   },
-  "command__a__sync__off": {
+  "command__a__sync__on": {
     "IO": "command",
     "Deck": "a",
     "Mode": "Direct",
@@ -302,10 +302,10 @@
     "Value": "1",
     "Note": "need to test",
     "Control": "Sync On",
-    "ShortName": "sync__off",
-    "Id": "command__a__sync__off"
+    "ShortName": "sync__on",
+    "Id": "command__a__sync__on"
   },
-  "command__b__sync__off": {
+  "command__b__sync__on": {
     "IO": "command",
     "Deck": "b",
     "Mode": "Direct",
@@ -315,8 +315,8 @@
     "Value": "1",
     "Note": "need to test",
     "Control": "Sync On",
-    "ShortName": "sync__off",
-    "Id": "command__b__sync__off"
+    "ShortName": "sync__on",
+    "Id": "command__b__sync__on"
   },
   "command__c__load__trigger": {
     "IO": "command",
@@ -428,7 +428,7 @@
     "ShortName": "jump_next__trigger",
     "Id": "command__b__jump_next__trigger"
   },
-  "command__a__sync__on": {
+  "command__a__sync__off": {
     "IO": "command",
     "Deck": "a",
     "Mode": "Direct",
@@ -438,10 +438,10 @@
     "Value": "0",
     "Note": "need to test",
     "Control": "Sync On",
-    "ShortName": "sync__on",
-    "Id": "command__a__sync__on"
+    "ShortName": "sync__off",
+    "Id": "command__a__sync__off"
   },
-  "command__b__sync__on": {
+  "command__b__sync__off": {
     "IO": "command",
     "Deck": "b",
     "Mode": "Direct",
@@ -451,8 +451,8 @@
     "Value": "0",
     "Note": "need to test",
     "Control": "Sync On",
-    "ShortName": "sync__on",
-    "Id": "command__b__sync__on"
+    "ShortName": "sync__off",
+    "Id": "command__b__sync__off"
   },
   "command__c__position__{val}": {
     "IO": "command",
@@ -571,10 +571,10 @@
     "CC": "070",
     "Type": "Button",
     "Value": "1",
-    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__on",
-    "Id": "command__fx1__unit__on"
+    "Id": "command__fx1__unit__on",
+    "Tested": true
   },
   "command__fx1__unit__off": {
     "IO": "command",
@@ -584,10 +584,10 @@
     "CC": "071",
     "Type": "Button",
     "Value": "0",
-    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__off",
-    "Id": "command__fx1__unit__off"
+    "Id": "command__fx1__unit__off",
+    "Tested": true
   },
   "command__c__gain__{val}": {
     "IO": "command",
@@ -776,6 +776,7 @@
     "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__on",
+    "Tested": true,
     "Id": "command__a__cue__on"
   },
   "command__b__cue__on": {
@@ -789,6 +790,7 @@
     "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__on",
+    "Tested": true,
     "Id": "command__b__cue__on"
   },
   "command__a__cue__off": {
@@ -802,6 +804,7 @@
     "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__off",
+    "Tested": true,
     "Id": "command__a__cue__off"
   },
   "command__b__cue__off": {
@@ -815,6 +818,7 @@
     "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__off",
+    "Tested": true,
     "Id": "command__b__cue__off"
   },
   "command__c__cue__on": {
@@ -828,6 +832,7 @@
     "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__on",
+    "Tested": true,
     "Id": "command__c__cue__on"
   },
   "command__c__cue__off": {
@@ -841,6 +846,7 @@
     "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__off",
+    "Tested": true,
     "Id": "command__c__cue__off"
   },
   "command__d__cue__on": {
@@ -854,6 +860,7 @@
     "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__on",
+    "Tested": true,
     "Id": "command__d__cue__on"
   },
   "command__d__cue__off": {
@@ -867,6 +874,7 @@
     "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__off",
+    "Tested": true,
     "Id": "command__d__cue__off"
   },
   "command__fx1__dry_wet__{val}": {
@@ -1249,10 +1257,10 @@
     "CC": "042",
     "Type": "Button",
     "Value": "1",
-    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__on",
-    "Id": "command__fx2__unit__on"
+    "Id": "command__fx2__unit__on",
+    "Tested": true
   },
   "command__fx2__unit__off": {
     "IO": "command",
@@ -1262,10 +1270,10 @@
     "CC": "043",
     "Type": "Button",
     "Value": "0",
-    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__off",
-    "Id": "command__fx2__unit__off"
+    "Id": "command__fx2__unit__off",
+    "Tested": true
   },
   "command__fx2__dry_wet__{val}": {
     "IO": "command",
@@ -1564,10 +1572,10 @@
     "CC": "067",
     "Type": "Button",
     "Value": "1",
-    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__on",
-    "Id": "command__fx3__unit__on"
+    "Id": "command__fx3__unit__on",
+    "Tested": true
   },
   "command__fx3__unit__off": {
     "IO": "command",
@@ -1577,10 +1585,10 @@
     "CC": "068",
     "Type": "Button",
     "Value": "0",
-    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__off",
-    "Id": "command__fx3__unit__off"
+    "Id": "command__fx3__unit__off",
+    "Tested": true
   },
   "command__fx3__dry_wet__{val}": {
     "IO": "command",
@@ -1879,10 +1887,10 @@
     "CC": "092",
     "Type": "Button",
     "Value": "1",
-    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__on",
-    "Id": "command__fx4__unit__on"
+    "Id": "command__fx4__unit__on",
+    "Tested": true
   },
   "command__fx4__unit__off": {
     "IO": "command",
@@ -1892,10 +1900,10 @@
     "CC": "093",
     "Type": "Button",
     "Value": "0",
-    "Note": "need to test",
     "Control": "Unit On",
     "ShortName": "unit__off",
-    "Id": "command__fx4__unit__off"
+    "Id": "command__fx4__unit__off",
+    "Tested": true
   },
   "command__fx4__dry_wet__{val}": {
     "IO": "command",
@@ -2388,7 +2396,7 @@
     "ShortName": "size__{val}",
     "Id": "command__d__size__{val}"
   },
-  "command__c__sync__on": {
+  "command__c__sync__off": {
     "IO": "command",
     "Deck": "c",
     "Mode": "Direct",
@@ -2398,10 +2406,10 @@
     "Value": "0",
     "Note": "need to test",
     "Control": "Sync On",
-    "ShortName": "sync__on",
-    "Id": "command__c__sync__on"
+    "ShortName": "sync__off",
+    "Id": "command__c__sync__off"
   },
-  "command__c__sync__off": {
+  "command__c__sync__on": {
     "IO": "command",
     "Deck": "c",
     "Mode": "Direct",
@@ -2411,10 +2419,10 @@
     "Value": "1",
     "Note": "need to test",
     "Control": "Sync On",
-    "ShortName": "sync__off",
-    "Id": "command__c__sync__off"
+    "ShortName": "sync__on",
+    "Id": "command__c__sync__on"
   },
-  "command__d__sync__on": {
+  "command__d__sync__off": {
     "IO": "command",
     "Deck": "d",
     "Mode": "Direct",
@@ -2424,10 +2432,10 @@
     "Value": "0",
     "Note": "need to test",
     "Control": "Sync On",
-    "ShortName": "sync__on",
-    "Id": "command__d__sync__on"
+    "ShortName": "sync__off",
+    "Id": "command__d__sync__off"
   },
-  "command__d__sync__off": {
+  "command__d__sync__on": {
     "IO": "command",
     "Deck": "d",
     "Mode": "Direct",
@@ -2437,8 +2445,8 @@
     "Value": "1",
     "Note": "need to test",
     "Control": "Sync On",
-    "ShortName": "sync__off",
-    "Id": "command__d__sync__off"
+    "ShortName": "sync__on",
+    "Id": "command__d__sync__on"
   },
   "command__c__tempo__dec": {
     "IO": "command",
