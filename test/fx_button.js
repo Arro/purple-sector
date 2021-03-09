@@ -1,19 +1,24 @@
 import test from "ava"
 import Redis from "ioredis"
 import waitForValue from "src/wait-for-value"
+import path from "path"
+import delay from "src/delay"
+import { registerSharedWorker } from "ava/plugin"
+import { SharedContext } from "@ava/cooperate"
 
-const delay = async function (time) {
-  return new Promise(function (resolve) {
-    setTimeout(resolve, time)
-  })
-}
+registerSharedWorker({
+  filename: path.resolve(__dirname, "worker.js"),
+  supportedProtocols: ["experimental"]
+})
 
 test.before(async (t) => {
   t.timeout(10_000)
   t.context.redis = new Redis()
   t.context.redis_pub = new Redis()
-  await delay(500)
-  await waitForValue("stage", "third_wave", 10_000)
+
+  const context = new SharedContext("purple")
+  const lock = context.createLock("fx")
+  await lock.acquire()
 })
 
 test("fx1 button 2", async (t) => {
