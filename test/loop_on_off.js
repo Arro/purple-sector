@@ -12,7 +12,6 @@ registerSharedWorker({
 
 test.before(async (t) => {
   t.timeout(10_000)
-  t.context.redis = new Redis()
   t.context.redis_pub = new Redis()
 })
 

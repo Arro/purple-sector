@@ -1,6 +1,6 @@
 {
   "name": "purple-sector",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "An API for DJ software",
   "author": "Phil Deschaine",
   "repository": {
@@ -45,30 +45,8 @@
   },
   "ava": {
     "babel": true,
-    "files1": [
-      "test/background.js",
-      "test/filter.js",
-      "test/fx_button.js",
-      "test/fx_dry_wet.js",
-      "test/fx_mode.js",
-      "test/gain.js",
-      "test/loop_on_off.js",
-      "test/monitor.js",
-      "test/select-and-load.js",
-      "test/sync.js",
-      "test/unit_on_off.js",
-      "test/volume.js"
-    ],
     "files": [
-      "test/loop_on_off.js",
-      "test/sync.js",
-      "test/fx_mode.js",
-      "test/fx_button.js",
-      "test/fx_dry_wet.js",
-      "test/deck_fx_on_off.js",
-      "test/deck_fx_on_off_b.js",
-      "test/deck_fx_on_off_part_2.js",
-      "test/deck_fx_on_off_d.js"
+      "test/(?!worker)*.js"
     ],
     "require": [
       "@babel/register"

@@ -4,6 +4,7 @@ import waitForValue from "src/wait-for-value"
 import path from "path"
 import delay from "src/delay"
 import { registerSharedWorker } from "ava/plugin"
+import { SharedContext } from "@ava/cooperate"
 
 registerSharedWorker({
   filename: path.resolve(__dirname, "worker.js"),
@@ -12,8 +13,10 @@ registerSharedWorker({
 
 test.before(async (t) => {
   t.timeout(10_000)
-  t.context.redis = new Redis()
   t.context.redis_pub = new Redis()
+  const context = new SharedContext("purple")
+  const lock = context.createLock("deck")
+  await lock.acquire()
 })
 
 test("a sync", async (t) => {
