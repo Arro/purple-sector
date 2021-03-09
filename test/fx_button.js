@@ -13,7 +13,7 @@ test.before(async (t) => {
   t.context.redis = new Redis()
   t.context.redis_pub = new Redis()
   await delay(500)
-  await waitForValue("stage", "third_wave", 5_000)
+  await waitForValue("stage", "third_wave", 10_000)
 })
 
 test("fx1 button 2", async (t) => {

@@ -43,27 +43,29 @@
     "ShortName": "size__{val}",
     "Id": "command__b__size__{val}"
   },
-  "command__a__loop_active__toggle": {
+  "command__a__loop__off": {
     "IO": "command",
     "Deck": "a",
-    "Mode": "Toggle",
+    "Mode": "Direct",
     "Channel": "01",
     "CC": "006",
     "Type": "Button",
     "Control": "Loop Active On",
-    "ShortName": "loop_active__toggle",
-    "Id": "command__a__loop_active__toggle"
+    "ShortName": "loop__off",
+    "Id": "command__a__loop__off",
+    "Value": "0"
   },
-  "command__b__loop_active__toggle": {
+  "command__b__loop__off": {
     "IO": "command",
     "Deck": "b",
-    "Mode": "Toggle",
+    "Mode": "Direct",
     "Channel": "01",
     "CC": "007",
     "Type": "Button",
     "Control": "Loop Active On",
-    "ShortName": "loop_active__toggle",
-    "Id": "command__b__loop_active__toggle"
+    "ShortName": "loop__off",
+    "Id": "command__b__loop__off",
+    "Value": "0"
   },
   "command__a__loop_size_alt__{val}": {
     "IO": "command",
@@ -187,16 +189,17 @@
     "ShortName": "mode__beatjump",
     "Id": "command__b__mode__beatjump"
   },
-  "command__c__loop_active__toggle": {
+  "command__c__loop__off": {
     "IO": "command",
     "Deck": "c",
-    "Mode": "Toggle",
+    "Mode": "Direct",
     "Channel": "01",
     "CC": "020",
     "Type": "Button",
     "Control": "Loop Active On",
-    "ShortName": "loop_active__toggle",
-    "Id": "command__c__loop_active__toggle"
+    "ShortName": "loop__off",
+    "Id": "command__c__loop__off",
+    "Value": "0"
   },
   "command__a__load__trigger": {
     "IO": "command",
@@ -300,9 +303,9 @@
     "CC": "047",
     "Type": "Button",
     "Value": "1",
-    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__on",
+    "Tested": true,
     "Id": "command__a__sync__on"
   },
   "command__b__sync__on": {
@@ -313,9 +316,9 @@
     "CC": "048",
     "Type": "Button",
     "Value": "1",
-    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__on",
+    "Tested": true,
     "Id": "command__b__sync__on"
   },
   "command__c__load__trigger": {
@@ -436,9 +439,9 @@
     "CC": "067",
     "Type": "Button",
     "Value": "0",
-    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__off",
+    "Tested": true,
     "Id": "command__a__sync__off"
   },
   "command__b__sync__off": {
@@ -449,9 +452,9 @@
     "CC": "068",
     "Type": "Button",
     "Value": "0",
-    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__off",
+    "Tested": true,
     "Id": "command__b__sync__off"
   },
   "command__c__position__{val}": {
@@ -573,8 +576,8 @@
     "Value": "1",
     "Control": "Unit On",
     "ShortName": "unit__on",
-    "Id": "command__fx1__unit__on",
-    "Tested": true
+    "Tested": true,
+    "Id": "command__fx1__unit__on"
   },
   "command__fx1__unit__off": {
     "IO": "command",
@@ -586,8 +589,8 @@
     "Value": "0",
     "Control": "Unit On",
     "ShortName": "unit__off",
-    "Id": "command__fx1__unit__off",
-    "Tested": true
+    "Tested": true,
+    "Id": "command__fx1__unit__off"
   },
   "command__c__gain__{val}": {
     "IO": "command",
@@ -1259,8 +1262,8 @@
     "Value": "1",
     "Control": "Unit On",
     "ShortName": "unit__on",
-    "Id": "command__fx2__unit__on",
-    "Tested": true
+    "Tested": true,
+    "Id": "command__fx2__unit__on"
   },
   "command__fx2__unit__off": {
     "IO": "command",
@@ -1272,8 +1275,8 @@
     "Value": "0",
     "Control": "Unit On",
     "ShortName": "unit__off",
-    "Id": "command__fx2__unit__off",
-    "Tested": true
+    "Tested": true,
+    "Id": "command__fx2__unit__off"
   },
   "command__fx2__dry_wet__{val}": {
     "IO": "command",
@@ -1574,8 +1577,8 @@
     "Value": "1",
     "Control": "Unit On",
     "ShortName": "unit__on",
-    "Id": "command__fx3__unit__on",
-    "Tested": true
+    "Tested": true,
+    "Id": "command__fx3__unit__on"
   },
   "command__fx3__unit__off": {
     "IO": "command",
@@ -1587,8 +1590,8 @@
     "Value": "0",
     "Control": "Unit On",
     "ShortName": "unit__off",
-    "Id": "command__fx3__unit__off",
-    "Tested": true
+    "Tested": true,
+    "Id": "command__fx3__unit__off"
   },
   "command__fx3__dry_wet__{val}": {
     "IO": "command",
@@ -1889,8 +1892,8 @@
     "Value": "1",
     "Control": "Unit On",
     "ShortName": "unit__on",
-    "Id": "command__fx4__unit__on",
-    "Tested": true
+    "Tested": true,
+    "Id": "command__fx4__unit__on"
   },
   "command__fx4__unit__off": {
     "IO": "command",
@@ -1902,8 +1905,8 @@
     "Value": "0",
     "Control": "Unit On",
     "ShortName": "unit__off",
-    "Id": "command__fx4__unit__off",
-    "Tested": true
+    "Tested": true,
+    "Id": "command__fx4__unit__off"
   },
   "command__fx4__dry_wet__{val}": {
     "IO": "command",
@@ -2162,16 +2165,17 @@
     "Tested": true,
     "Id": "command__d__load__trigger"
   },
-  "command__d__loop_active__toggle": {
+  "command__d__loop__off": {
     "IO": "command",
     "Deck": "d",
-    "Mode": "Toggle",
+    "Mode": "Direct",
     "Channel": "01",
     "CC": "023",
     "Type": "Button",
     "Control": "Loop Active On",
-    "ShortName": "loop_active__toggle",
-    "Id": "command__d__loop_active__toggle"
+    "ShortName": "loop__off",
+    "Id": "command__d__loop__off",
+    "Value": "0"
   },
   "command__c__loop_size_alt__{val}": {
     "IO": "command",
@@ -2404,9 +2408,9 @@
     "CC": "062",
     "Type": "Button",
     "Value": "0",
-    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__off",
+    "Tested": true,
     "Id": "command__c__sync__off"
   },
   "command__c__sync__on": {
@@ -2417,9 +2421,9 @@
     "CC": "063",
     "Type": "Button",
     "Value": "1",
-    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__on",
+    "Tested": true,
     "Id": "command__c__sync__on"
   },
   "command__d__sync__off": {
@@ -2430,9 +2434,9 @@
     "CC": "069",
     "Type": "Button",
     "Value": "0",
-    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__off",
+    "Tested": true,
     "Id": "command__d__sync__off"
   },
   "command__d__sync__on": {
@@ -2443,9 +2447,9 @@
     "CC": "071",
     "Type": "Button",
     "Value": "1",
-    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync__on",
+    "Tested": true,
     "Id": "command__d__sync__on"
   },
   "command__c__tempo__dec": {
@@ -2788,5 +2792,53 @@
     "ShortName": "select__up",
     "Untestable": true,
     "Id": "command__global__select__up"
+  },
+  "command__a__loop__on": {
+    "IO": "command",
+    "Deck": "a",
+    "Mode": "Direct",
+    "Channel": "02",
+    "CC": "004",
+    "Type": "Button",
+    "Value": "1",
+    "Control": "Loop Active On",
+    "ShortName": "loop__on",
+    "Id": "command__a__loop__on"
+  },
+  "command__b__loop__on": {
+    "IO": "command",
+    "Deck": "b",
+    "Mode": "Direct",
+    "Channel": "02",
+    "CC": "005",
+    "Type": "Button",
+    "Value": "1",
+    "Control": "Loop Active On",
+    "ShortName": "loop__on",
+    "Id": "command__b__loop__on"
+  },
+  "command__c__loop__on": {
+    "IO": "command",
+    "Deck": "c",
+    "Mode": "Direct",
+    "Channel": "02",
+    "CC": "006",
+    "Type": "Button",
+    "Value": "1",
+    "Control": "Loop Active On",
+    "ShortName": "loop__on",
+    "Id": "command__c__loop__on"
+  },
+  "command__d__loop__on": {
+    "IO": "command",
+    "Deck": "d",
+    "Mode": "Direct",
+    "Channel": "02",
+    "CC": "007",
+    "Type": "Button",
+    "Value": "1",
+    "Control": "Loop Active On",
+    "ShortName": "loop__on",
+    "Id": "command__d__loop__on"
   }
 }

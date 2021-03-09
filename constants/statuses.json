@@ -322,10 +322,10 @@
     "Channel": "09",
     "CC": "004",
     "Type": "LED",
-    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__a__sync"
   },
   "09-005": {
@@ -335,10 +335,10 @@
     "Channel": "09",
     "CC": "005",
     "Type": "LED",
-    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__b__sync"
   },
   "09-006": {
@@ -376,10 +376,10 @@
     "Channel": "09",
     "CC": "008",
     "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Loop Active On",
-    "ShortName": "is_looping",
-    "Id": "status__a__is_looping"
+    "ShortName": "loop_on_off",
+    "Id": "status__a__loop_on_off",
+    "Is Binary": true
   },
   "09-009": {
     "IO": "status",
@@ -388,11 +388,10 @@
     "Channel": "09",
     "CC": "009",
     "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Loop Active On",
-    "ShortName": "is_looping",
+    "ShortName": "loop_on_off",
     "Is Binary": true,
-    "Id": "status__b__is_looping"
+    "Id": "status__b__loop_on_off"
   },
   "09-010": {
     "IO": "status",
@@ -467,11 +466,10 @@
     "Channel": "01",
     "CC": "106",
     "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Loop Active On",
-    "ShortName": "is_looping",
+    "ShortName": "loop_on_off",
     "Is Binary": true,
-    "Id": "status__c__is_looping"
+    "Id": "status__c__loop_on_off"
   },
   "01-107": {
     "IO": "status",
@@ -480,11 +478,10 @@
     "Channel": "01",
     "CC": "107",
     "Type": "LED",
-    "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Loop Active On",
-    "ShortName": "is_looping",
+    "ShortName": "loop_on_off",
     "Is Binary": true,
-    "Id": "status__d__is_looping"
+    "Id": "status__d__loop_on_off"
   },
   "01-108": {
     "IO": "status",
@@ -624,10 +621,10 @@
     "Channel": "01",
     "CC": "118",
     "Type": "LED",
-    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__c__sync"
   },
   "01-119": {
@@ -637,10 +634,10 @@
     "Channel": "01",
     "CC": "119",
     "Type": "LED",
-    "Note": "need to test",
     "Control": "Sync On",
     "ShortName": "sync",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__d__sync"
   },
   "03-000": {
@@ -1153,8 +1150,8 @@
     "Control": "Unit On",
     "ShortName": "unit_on_off",
     "Is Binary": true,
-    "Id": "status__fx1__unit_on_off",
-    "Tested": true
+    "Tested": true,
+    "Id": "status__fx1__unit_on_off"
   },
   "02-001": {
     "IO": "status",
@@ -1166,8 +1163,8 @@
     "Control": "Unit On",
     "ShortName": "unit_on_off",
     "Is Binary": true,
-    "Id": "status__fx2__unit_on_off",
-    "Tested": true
+    "Tested": true,
+    "Id": "status__fx2__unit_on_off"
   },
   "02-002": {
     "IO": "status",
@@ -1179,8 +1176,8 @@
     "Control": "Unit On",
     "ShortName": "unit_on_off",
     "Is Binary": true,
-    "Id": "status__fx3__unit_on_off",
-    "Tested": true
+    "Tested": true,
+    "Id": "status__fx3__unit_on_off"
   },
   "02-003": {
     "IO": "status",
@@ -1192,7 +1189,7 @@
     "Control": "Unit On",
     "ShortName": "unit_on_off",
     "Is Binary": true,
-    "Id": "status__fx4__unit_on_off",
-    "Tested": true
+    "Tested": true,
+    "Id": "status__fx4__unit_on_off"
   }
 }

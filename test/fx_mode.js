@@ -12,7 +12,12 @@ test.before(async (t) => {
   t.timeout(10_000)
   t.context.redis = new Redis()
   t.context.redis_pub = new Redis()
-  await waitForValue("stage", "first_wave", 5_000)
+  await waitForValue("stage", "fourth_wave", 20_000)
+})
+
+test.after.always(async (t) => {
+  await delay(1000)
+  await t.context.redis.set("stage", "done")
 })
 
 test("fx1 mode", async (t) => {

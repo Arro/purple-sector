@@ -52,6 +52,7 @@
       "test/fx_dry_wet.js",
       "test/fx_mode.js",
       "test/gain.js",
+      "test/loop_on_off.js",
       "test/monitor.js",
       "test/select-and-load.js",
       "test/sync.js",

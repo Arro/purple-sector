@@ -9,14 +9,14 @@ const delay = async function (time) {
 }
 
 test.before(async (t) => {
-  t.timeout(10_000)
+  t.timeout(15_000)
   t.context.redis = new Redis()
   t.context.redis_pub = new Redis()
-  await waitForValue("stage", "first_wave", 5_000)
+  await waitForValue("stage", "first_wave", 15_000)
 })
 
 test.after.always(async (t) => {
-  await delay(1000)
+  await delay(2_000)
   await t.context.redis.set("stage", "second_wave")
 })
 

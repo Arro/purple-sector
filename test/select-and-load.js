@@ -12,12 +12,12 @@ test.before(async (t) => {
   t.timeout(20_000)
   t.context.redis = new Redis()
   t.context.redis_pub = new Redis()
-  await waitForValue("stage", "third_wave", 5_000)
+  await waitForValue("stage", "third_wave", 20_000)
 })
 
 test.after.always(async (t) => {
   await delay(1000)
-  await t.context.redis.set("stage", "done")
+  await t.context.redis.set("stage", "fourth_wave")
 })
 
 test.serial("load into a", async (t) => {

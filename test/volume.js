@@ -12,7 +12,8 @@ test.before(async (t) => {
   t.timeout(10_000)
   t.context.redis = new Redis()
   t.context.redis_pub = new Redis()
-  await waitForValue("stage", "first_wave", 5_000)
+  await delay(500)
+  await waitForValue("stage", "second_wave", 10_000)
 })
 
 test("a volume", async (t) => {
