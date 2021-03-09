@@ -16,7 +16,7 @@ test.before(async (t) => {
 })
 
 test.after.always(async (t) => {
-  await delay(1000)
+  await delay(500)
   await t.context.redis.set("stage", "second_wave")
 })
 
