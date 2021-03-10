@@ -50,10 +50,11 @@
     "Channel": "01",
     "CC": "006",
     "Type": "Button",
+    "Value": "0",
     "Control": "Loop Active On",
     "ShortName": "loop__off",
-    "Id": "command__a__loop__off",
-    "Value": "0"
+    "Tested": true,
+    "Id": "command__a__loop__off"
   },
   "command__b__loop__off": {
     "IO": "command",
@@ -62,10 +63,11 @@
     "Channel": "01",
     "CC": "007",
     "Type": "Button",
+    "Value": "0",
     "Control": "Loop Active On",
     "ShortName": "loop__off",
-    "Id": "command__b__loop__off",
-    "Value": "0"
+    "Tested": true,
+    "Id": "command__b__loop__off"
   },
   "command__a__loop_size_alt__{val}": {
     "IO": "command",
@@ -196,10 +198,11 @@
     "Channel": "01",
     "CC": "020",
     "Type": "Button",
+    "Value": "0",
     "Control": "Loop Active On",
     "ShortName": "loop__off",
-    "Id": "command__c__loop__off",
-    "Value": "0"
+    "Tested": true,
+    "Id": "command__c__loop__off"
   },
   "command__a__load__trigger": {
     "IO": "command",
@@ -1087,6 +1090,7 @@
     "Type": "Button",
     "Control": "Search",
     "ShortName": "search__trigger",
+    "Untestable": true,
     "Id": "command__global__search__trigger"
   },
   "command__global__search_clear__trigger": {
@@ -1098,6 +1102,7 @@
     "Type": "Button",
     "Control": "Search Clear",
     "ShortName": "search_clear__trigger",
+    "Untestable": true,
     "Id": "command__global__search_clear__trigger"
   },
   "command__a__volume__{val}": {
@@ -2172,10 +2177,11 @@
     "Channel": "01",
     "CC": "023",
     "Type": "Button",
+    "Value": "0",
     "Control": "Loop Active On",
     "ShortName": "loop__off",
-    "Id": "command__d__loop__off",
-    "Value": "0"
+    "Tested": true,
+    "Id": "command__d__loop__off"
   },
   "command__c__loop_size_alt__{val}": {
     "IO": "command",
@@ -2636,6 +2642,7 @@
     "Value": "1",
     "Control": "Record/Stop",
     "ShortName": "record__start",
+    "Untestable": true,
     "Id": "command__global__record__start"
   },
   "command__global__record__stop": {
@@ -2648,6 +2655,7 @@
     "Value": "0",
     "Control": "Record/Stop",
     "ShortName": "record__stop",
+    "Untestable": true,
     "Id": "command__global__record__stop"
   },
   "command__a__filter__on": {
@@ -2803,6 +2811,7 @@
     "Value": "1",
     "Control": "Loop Active On",
     "ShortName": "loop__on",
+    "Tested": true,
     "Id": "command__a__loop__on"
   },
   "command__b__loop__on": {
@@ -2815,6 +2824,7 @@
     "Value": "1",
     "Control": "Loop Active On",
     "ShortName": "loop__on",
+    "Tested": true,
     "Id": "command__b__loop__on"
   },
   "command__c__loop__on": {
@@ -2827,6 +2837,7 @@
     "Value": "1",
     "Control": "Loop Active On",
     "ShortName": "loop__on",
+    "Tested": true,
     "Id": "command__c__loop__on"
   },
   "command__d__loop__on": {
@@ -2839,6 +2850,7 @@
     "Value": "1",
     "Control": "Loop Active On",
     "ShortName": "loop__on",
+    "Tested": true,
     "Id": "command__d__loop__on"
   }
 }

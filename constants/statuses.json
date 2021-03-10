@@ -298,9 +298,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Play/Pause (Deck Common)",
-    "ShortName": "is_playing",
+    "ShortName": "play",
     "Is Binary": true,
-    "Id": "status__a__is_playing"
+    "Id": "status__a__play"
   },
   "09-003": {
     "IO": "status",
@@ -311,9 +311,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Play/Pause (Deck Common)",
-    "ShortName": "is_playing",
+    "ShortName": "play",
     "Is Binary": true,
-    "Id": "status__b__is_playing"
+    "Id": "status__b__play"
   },
   "09-004": {
     "IO": "status",
@@ -378,8 +378,9 @@
     "Type": "LED",
     "Control": "Loop Active On",
     "ShortName": "loop_on_off",
-    "Id": "status__a__loop_on_off",
-    "Is Binary": true
+    "Is Binary": true,
+    "Tested": true,
+    "Id": "status__a__loop_on_off"
   },
   "09-009": {
     "IO": "status",
@@ -391,6 +392,7 @@
     "Control": "Loop Active On",
     "ShortName": "loop_on_off",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__b__loop_on_off"
   },
   "09-010": {
@@ -427,9 +429,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Play/Pause (Deck Common)",
-    "ShortName": "is_playing",
+    "ShortName": "play",
     "Is Binary": true,
-    "Id": "status__c__is_playing"
+    "Id": "status__c__play"
   },
   "01-104": {
     "IO": "status",
@@ -469,6 +471,7 @@
     "Control": "Loop Active On",
     "ShortName": "loop_on_off",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__c__loop_on_off"
   },
   "01-107": {
@@ -481,6 +484,7 @@
     "Control": "Loop Active On",
     "ShortName": "loop_on_off",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__d__loop_on_off"
   },
   "01-108": {
@@ -586,9 +590,9 @@
     "Type": "LED",
     "Note": "Controller Range 0-1, Midi Range 0-127",
     "Control": "Play/Pause (Deck Common)",
-    "ShortName": "is_playing",
+    "ShortName": "play",
     "Is Binary": true,
-    "Id": "status__d__is_playing"
+    "Id": "status__d__play"
   },
   "01-116": {
     "IO": "status",

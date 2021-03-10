@@ -19,62 +19,19 @@ test.before(async (t) => {
   await lock.acquire()
 })
 
-test("a cue", async (t) => {
-  let result
-  const { redis_pub } = t.context
-  await redis_pub.publish("purple-sector", "command__a__cue__on")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__a__cue__off")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__a__cue__on")
-  result = await waitForValue("status__a__cue", "true", 1_000)
-  t.true(result)
-  await redis_pub.publish("purple-sector", "command__a__cue__off")
-  result = await waitForValue("status__a__cue", "false", 1_000)
-  t.true(result)
-})
-
-test("b cue", async (t) => {
-  let result
-  const { redis_pub } = t.context
-  await redis_pub.publish("purple-sector", "command__b__cue__on")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__b__cue__off")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__b__cue__on")
-  result = await waitForValue("status__b__cue", "true", 1_000)
-  t.true(result)
-  await redis_pub.publish("purple-sector", "command__b__cue__off")
-  result = await waitForValue("status__b__cue", "false", 1_000)
-  t.true(result)
-})
-
-test("c cue", async (t) => {
-  let result
-  const { redis_pub } = t.context
-  await redis_pub.publish("purple-sector", "command__c__cue__on")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__c__cue__off")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__c__cue__on")
-  result = await waitForValue("status__c__cue", "true", 1_000)
-  t.true(result)
-  await redis_pub.publish("purple-sector", "command__c__cue__off")
-  result = await waitForValue("status__c__cue", "false", 1_000)
-  t.true(result)
-})
-
-test("d cue", async (t) => {
-  let result
-  const { redis_pub } = t.context
-  await redis_pub.publish("purple-sector", "command__d__cue__on")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__d__cue__off")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__d__cue__on")
-  result = await waitForValue("status__d__cue", "true", 1_000)
-  t.true(result)
-  await redis_pub.publish("purple-sector", "command__d__cue__off")
-  result = await waitForValue("status__d__cue", "false", 1_000)
-  t.true(result)
-})
+for (const deck of ["a", "b", "c", "d"]) {
+  test(`${deck} cue`, async (t) => {
+    let result
+    const { redis_pub } = t.context
+    await redis_pub.publish("purple-sector", `command__${deck}__cue__on`)
+    await delay(100)
+    await redis_pub.publish("purple-sector", `command__${deck}__cue__off`)
+    await delay(100)
+    await redis_pub.publish("purple-sector", `command__${deck}__cue__on`)
+    result = await waitForValue(`status__${deck}__cue`, "true", 1_000)
+    t.true(result)
+    await redis_pub.publish("purple-sector", `command__${deck}__cue__off`)
+    result = await waitForValue(`status__${deck}__cue`, "false", 1_000)
+    t.true(result)
+  })
+}
