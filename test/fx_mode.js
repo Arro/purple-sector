@@ -21,7 +21,7 @@ test.before(async (t) => {
 })
 
 for (const unit of ["fx1", "fx2", "fx3", "fx4"]) {
-  test(`${unit} mode`, async (t) => {
+  test.serial(`${unit} mode`, async (t) => {
     let result
     const { redis_pub } = t.context
     await redis_pub.publish("purple-sector", `command__${unit}__fx_mode__group`)

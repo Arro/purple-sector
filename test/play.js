@@ -23,7 +23,7 @@ for (const deck of ["a", "b", "c", "d"]) {
   test(`${deck} play`, async (t) => {
     let result
     const { redis_pub } = t.context
-    await redis_pub.publish("purple-sector", "command__a__volume__0")
+    await redis_pub.publish("purple-sector", `command__${deck}__volume__0`)
     await redis_pub.publish("purple-sector", "command__global__select__top")
     await delay(40)
 
@@ -40,6 +40,6 @@ for (const deck of ["a", "b", "c", "d"]) {
     await redis_pub.publish("purple-sector", `command__${deck}__play__stop`)
     result = await waitForValue(`status__${deck}__play`, "false", 1_000)
     t.true(result)
-    await redis_pub.publish("purple-sector", "command__a__volume__110")
+    await redis_pub.publish("purple-sector", `command__${deck}__volume__110`)
   })
 }

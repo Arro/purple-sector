@@ -20,66 +20,20 @@ test.before(async (t) => {
   await lock.acquire()
 })
 
-test("fx1 unit on/off", async (t) => {
-  let result
-  const { redis_pub } = t.context
+for (const unit of ["fx1", "fx2", "fx3", "fx4"]) {
+  test(`${unit} unit on/off`, async (t) => {
+    let result
+    const { redis_pub } = t.context
 
-  await redis_pub.publish("purple-sector", "command__fx1__unit__on")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__fx1__unit__off")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__fx1__unit__on")
-  result = await waitForValue("status__fx1__unit_on_off", "true", 1_000)
-  t.true(result)
-  await redis_pub.publish("purple-sector", "command__fx1__unit__off")
-  result = await waitForValue("status__fx1__unit_on_off", "true", 1_000)
-  t.true(result)
-})
-
-test("fx2 unit on/off", async (t) => {
-  let result
-  const { redis_pub } = t.context
-
-  await redis_pub.publish("purple-sector", "command__fx2__unit__on")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__fx2__unit__off")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__fx2__unit__on")
-  result = await waitForValue("status__fx2__unit_on_off", "true", 1_000)
-  t.true(result)
-  await redis_pub.publish("purple-sector", "command__fx2__unit__off")
-  result = await waitForValue("status__fx2__unit_on_off", "true", 1_000)
-  t.true(result)
-})
-
-test("fx3 unit on/off", async (t) => {
-  let result
-  const { redis_pub } = t.context
-
-  await redis_pub.publish("purple-sector", "command__fx3__unit__on")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__fx3__unit__off")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__fx3__unit__on")
-  result = await waitForValue("status__fx3__unit_on_off", "true", 1_000)
-  t.true(result)
-  await redis_pub.publish("purple-sector", "command__fx3__unit__off")
-  result = await waitForValue("status__fx3__unit_on_off", "true", 1_000)
-  t.true(result)
-})
-
-test("fx4 unit on/off", async (t) => {
-  let result
-  const { redis_pub } = t.context
-
-  await redis_pub.publish("purple-sector", "command__fx4__unit__on")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__fx4__unit__off")
-  await delay(100)
-  await redis_pub.publish("purple-sector", "command__fx4__unit__on")
-  result = await waitForValue("status__fx4__unit_on_off", "true", 1_000)
-  t.true(result)
-  await redis_pub.publish("purple-sector", "command__fx4__unit__off")
-  result = await waitForValue("status__fx4__unit_on_off", "true", 1_000)
-  t.true(result)
-})
+    await redis_pub.publish("purple-sector", `command__${unit}__unit__on`)
+    await delay(100)
+    await redis_pub.publish("purple-sector", `command__${unit}__unit__off`)
+    await delay(100)
+    await redis_pub.publish("purple-sector", `command__${unit}__unit__on`)
+    result = await waitForValue(`status__${unit}__unit_on_off`, "true", 1_000)
+    t.true(result)
+    await redis_pub.publish("purple-sector", `command__${unit}__unit__off`)
+    result = await waitForValue(`status__${unit}__unit_on_off`, "true", 1_000)
+    t.true(result)
+  })
+}

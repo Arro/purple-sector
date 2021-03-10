@@ -21,7 +21,7 @@ test.before(async (t) => {
 })
 
 for (const unit of ["fx1", "fx2", "fx3", "fx4"]) {
-  test(`${unit} dry/wet`, async (t) => {
+  test.serial(`${unit} dry/wet`, async (t) => {
     let result
     const { redis_pub } = t.context
 

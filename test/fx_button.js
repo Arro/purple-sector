@@ -22,7 +22,7 @@ test.before(async (t) => {
 
 for (const unit of ["fx1", "fx2", "fx3", "fx4"]) {
   for (const button of ["2", "3"]) {
-    test(`${unit} button ${button}`, async (t) => {
+    test.serial(`${unit} button ${button}`, async (t) => {
       let result
       const { redis_pub } = t.context
       await redis_pub.publish(
