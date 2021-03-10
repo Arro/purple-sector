@@ -300,6 +300,7 @@
     "Control": "Play/Pause (Deck Common)",
     "ShortName": "play",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__a__play"
   },
   "09-003": {
@@ -313,6 +314,7 @@
     "Control": "Play/Pause (Deck Common)",
     "ShortName": "play",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__b__play"
   },
   "09-004": {
@@ -431,6 +433,7 @@
     "Control": "Play/Pause (Deck Common)",
     "ShortName": "play",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__c__play"
   },
   "01-104": {
@@ -592,6 +595,7 @@
     "Control": "Play/Pause (Deck Common)",
     "ShortName": "play",
     "Is Binary": true,
+    "Tested": true,
     "Id": "status__d__play"
   },
   "01-116": {
@@ -1195,5 +1199,53 @@
     "Is Binary": true,
     "Tested": true,
     "Id": "status__fx4__unit_on_off"
+  },
+  "02-008": {
+    "IO": "status",
+    "Deck": "a",
+    "Mode": "Output",
+    "Channel": "02",
+    "CC": "008",
+    "Type": "LED",
+    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
+    "Control": "Size Selector",
+    "ShortName": "size",
+    "Id": "status__a__size"
+  },
+  "02-009": {
+    "IO": "status",
+    "Deck": "b",
+    "Mode": "Output",
+    "Channel": "02",
+    "CC": "009",
+    "Type": "LED",
+    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
+    "Control": "Size Selector",
+    "ShortName": "size",
+    "Id": "status__b__size"
+  },
+  "02-010": {
+    "IO": "status",
+    "Deck": "c",
+    "Mode": "Output",
+    "Channel": "02",
+    "CC": "010",
+    "Type": "LED",
+    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
+    "Control": "Size Selector",
+    "ShortName": "size",
+    "Id": "status__c__size"
+  },
+  "02-011": {
+    "IO": "status",
+    "Deck": "d",
+    "Mode": "Output",
+    "Channel": "02",
+    "CC": "011",
+    "Type": "LED",
+    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
+    "Control": "Size Selector",
+    "ShortName": "size",
+    "Id": "status__d__size"
   }
 }

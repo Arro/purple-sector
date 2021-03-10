@@ -20,9 +20,14 @@ test.before(async (t) => {
 })
 
 for (const deck of ["a", "b", "c", "d"]) {
-  test(`${deck} play`, async (t) => {
+  test.serial(`${deck} play`, async (t) => {
     let result
     const { redis_pub } = t.context
+    await redis_pub.publish(
+      "purple-sector",
+      `command__${deck}__unload__trigger`
+    )
+    await delay(100)
     await redis_pub.publish("purple-sector", `command__${deck}__volume__0`)
     await redis_pub.publish("purple-sector", "command__global__select__top")
     await delay(40)

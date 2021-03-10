@@ -238,6 +238,7 @@
     "Value": "1",
     "Control": "Play/Pause (Deck Common)",
     "ShortName": "play__start",
+    "Tested": true,
     "Id": "command__a__play__start"
   },
   "command__b__play__start": {
@@ -250,6 +251,7 @@
     "Value": "1",
     "Control": "Play/Pause (Deck Common)",
     "ShortName": "play__start",
+    "Tested": true,
     "Id": "command__b__play__start"
   },
   "command__a__position__{val}": {
@@ -284,6 +286,7 @@
     "Value": "1",
     "Control": "Play/Pause (Deck Common)",
     "ShortName": "play__start",
+    "Tested": true,
     "Id": "command__c__play__start"
   },
   "command__c__play__stop": {
@@ -296,6 +299,7 @@
     "Value": "0",
     "Control": "Play/Pause (Deck Common)",
     "ShortName": "play__stop",
+    "Tested": true,
     "Id": "command__c__play__stop"
   },
   "command__a__sync__on": {
@@ -481,6 +485,7 @@
     "Value": "0",
     "Control": "Play/Pause (Deck Common)",
     "ShortName": "play__stop",
+    "Tested": true,
     "Id": "command__a__play__stop"
   },
   "command__b__play__stop": {
@@ -493,6 +498,7 @@
     "Value": "0",
     "Control": "Play/Pause (Deck Common)",
     "ShortName": "play__stop",
+    "Tested": true,
     "Id": "command__b__play__stop"
   },
   "command__a__unload__trigger": {
@@ -2337,6 +2343,7 @@
     "Value": "0",
     "Control": "Play/Pause (Deck Common)",
     "ShortName": "play__stop",
+    "Tested": true,
     "Id": "command__d__play__stop"
   },
   "command__d__play__start": {
@@ -2349,6 +2356,7 @@
     "Value": "1",
     "Control": "Play/Pause (Deck Common)",
     "ShortName": "play__start",
+    "Tested": true,
     "Id": "command__d__play__start"
   },
   "command__d__position__{val}": {

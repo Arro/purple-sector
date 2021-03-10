@@ -83,7 +83,7 @@ import ora from "ora"
       return
     }
 
-    if (parseInt(val)) {
+    if (parseInt(val) || val === "0") {
       key = `command__${deck}__${short_name}__{val}`
       val = parseInt(val)
     } else {
