@@ -28,7 +28,9 @@ export default async function (key, target, timeout) {
 
     setTimeout(() => {
       redis_sub.unsubscribe(ks)
-      reject(value)
+      reject(
+        `waited ${timeout}ms on key ${key}, wanted ${target} and got ${value}`
+      )
     }, timeout)
   })
 }
