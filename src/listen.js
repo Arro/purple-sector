@@ -2,12 +2,10 @@
 import midi from "midi"
 import fs from "fs-extra"
 import { val_to_size } from "constants/conversions"
+import { statuses } from "constants/statuses.json"
 import Redis from "ioredis"
 import ora from "ora"
 ;(async function () {
-  let statuses = await fs.readFile("./constants/statuses.json", "utf-8")
-  statuses = JSON.parse(statuses)
-
   const input = new midi.Input()
   const redis = new Redis()
   const redis_sub = new Redis()

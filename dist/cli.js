@@ -7,6 +7,8 @@ var _fsExtra = _interopRequireDefault(require("fs-extra"));
 
 var _conversions = require("../constants/conversions");
 
+var _statuses = require("../constants/statuses.json");
+
 var _ioredis = _interopRequireDefault(require("ioredis"));
 
 var _ora = _interopRequireDefault(require("ora"));
@@ -14,8 +16,6 @@ var _ora = _interopRequireDefault(require("ora"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (async function () {
-  let statuses = await _fsExtra.default.readFile("./constants/statuses.json", "utf-8");
-  statuses = JSON.parse(statuses);
   const input = new _midi.default.Input();
   const redis = new _ioredis.default();
   const redis_sub = new _ioredis.default();
@@ -42,7 +42,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     }
 
     const key = `${channel}-${cc}`;
-    const status = statuses[key];
+    const status = _statuses.statuses[key];
     spinner.info(`Receive midi message ${key}`);
 
     if (!status) {
