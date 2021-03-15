@@ -275,6 +275,7 @@
     "Note": "Controller Range 0-1, Midi Range 0-127, Blend On",
     "Control": "Seek Position (Deck Common)",
     "ShortName": "position",
+    "Tested": true,
     "Id": "status__a__position"
   },
   "09-001": {
@@ -287,6 +288,7 @@
     "Note": "Controller Range 0-1, Midi Range 0-127, Blend On",
     "Control": "Seek Position (Deck Common)",
     "ShortName": "position",
+    "Tested": true,
     "Id": "status__b__position"
   },
   "09-002": {
@@ -608,6 +610,7 @@
     "Note": "Controller Range 0-1, Midi Range 0-127, Blend On",
     "Control": "Seek Position (Deck Common)",
     "ShortName": "position",
+    "Tested": true,
     "Id": "status__c__position"
   },
   "01-117": {
@@ -620,6 +623,7 @@
     "Note": "Controller Range 0-1, Midi Range 0-127, Blend On",
     "Control": "Seek Position (Deck Common)",
     "ShortName": "position",
+    "Tested": true,
     "Id": "status__d__position"
   },
   "01-118": {
@@ -1210,6 +1214,7 @@
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Size Selector",
     "ShortName": "size",
+    "Tested": true,
     "Id": "status__a__size"
   },
   "02-009": {
@@ -1222,6 +1227,7 @@
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Size Selector",
     "ShortName": "size",
+    "Tested": true,
     "Id": "status__b__size"
   },
   "02-010": {
@@ -1234,6 +1240,7 @@
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Size Selector",
     "ShortName": "size",
+    "Tested": true,
     "Id": "status__c__size"
   },
   "02-011": {
@@ -1246,6 +1253,7 @@
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Size Selector",
     "ShortName": "size",
+    "Tested": true,
     "Id": "status__d__size"
   }
 }

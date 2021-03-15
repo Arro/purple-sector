@@ -30,6 +30,7 @@
     "Type": "Fader / Knob",
     "Control": "Size Selector",
     "ShortName": "size__{val}",
+    "Tested": true,
     "Id": "command__a__size__{val}"
   },
   "command__b__size__{val}": {
@@ -41,6 +42,7 @@
     "Type": "Fader / Knob",
     "Control": "Size Selector",
     "ShortName": "size__{val}",
+    "Tested": true,
     "Id": "command__b__size__{val}"
   },
   "command__a__loop__off": {
@@ -99,9 +101,9 @@
     "CC": "010",
     "Type": "Button",
     "Value": "Back",
-    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__back",
+    "Tested": true,
     "Id": "command__a__move__back"
   },
   "command__b__move__back": {
@@ -112,9 +114,9 @@
     "CC": "011",
     "Type": "Button",
     "Value": "Back",
-    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__back",
+    "Tested": true,
     "Id": "command__b__move__back"
   },
   "command__a__move__forward": {
@@ -125,9 +127,9 @@
     "CC": "012",
     "Type": "Button",
     "Value": "Forward",
-    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__forward",
+    "Tested": true,
     "Id": "command__a__move__forward"
   },
   "command__b__move__forward": {
@@ -138,9 +140,9 @@
     "CC": "013",
     "Type": "Button",
     "Value": "Forward",
-    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__forward",
+    "Tested": true,
     "Id": "command__b__move__forward"
   },
   "command__a__mode__loop": {
@@ -153,6 +155,7 @@
     "Value": "Loop",
     "Control": "Mode Selector",
     "ShortName": "mode__loop",
+    "Tested": true,
     "Id": "command__a__mode__loop"
   },
   "command__b__mode__loop": {
@@ -263,6 +266,7 @@
     "Type": "Fader / Knob",
     "Control": "Seek Position (Deck Common)",
     "ShortName": "position__{val}",
+    "Tested": true,
     "Id": "command__a__position__{val}"
   },
   "command__b__position__{val}": {
@@ -274,6 +278,7 @@
     "Type": "Fader / Knob",
     "Control": "Seek Position (Deck Common)",
     "ShortName": "position__{val}",
+    "Tested": true,
     "Id": "command__b__position__{val}"
   },
   "command__c__play__start": {
@@ -424,6 +429,7 @@
     "Value": "Next",
     "Control": "Jump to Next/Prev Cue/Loop",
     "ShortName": "jump_next__trigger",
+    "Tested": true,
     "Id": "command__a__jump_next__trigger"
   },
   "command__b__jump_next__trigger": {
@@ -436,6 +442,7 @@
     "Value": "Next",
     "Control": "Jump to Next/Prev Cue/Loop",
     "ShortName": "jump_next__trigger",
+    "Tested": true,
     "Id": "command__b__jump_next__trigger"
   },
   "command__a__sync__off": {
@@ -473,6 +480,7 @@
     "Type": "Fader / Knob",
     "Control": "Seek Position (Deck Common)",
     "ShortName": "position__{val}",
+    "Tested": true,
     "Id": "command__c__position__{val}"
   },
   "command__a__play__stop": {
@@ -785,7 +793,6 @@
     "CC": "103",
     "Type": "Button",
     "Value": "1",
-    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__on",
     "Tested": true,
@@ -799,7 +806,6 @@
     "CC": "104",
     "Type": "Button",
     "Value": "1",
-    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__on",
     "Tested": true,
@@ -813,7 +819,6 @@
     "CC": "105",
     "Type": "Button",
     "Value": "0",
-    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__off",
     "Tested": true,
@@ -827,7 +832,6 @@
     "CC": "106",
     "Type": "Button",
     "Value": "0",
-    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__off",
     "Tested": true,
@@ -841,7 +845,6 @@
     "CC": "107",
     "Type": "Button",
     "Value": "1",
-    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__on",
     "Tested": true,
@@ -855,7 +858,6 @@
     "CC": "108",
     "Type": "Button",
     "Value": "0",
-    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__off",
     "Tested": true,
@@ -869,7 +871,6 @@
     "CC": "109",
     "Type": "Button",
     "Value": "1",
-    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__on",
     "Tested": true,
@@ -883,7 +884,6 @@
     "CC": "110",
     "Type": "Button",
     "Value": "0",
-    "Note": "need to test",
     "Control": "Monitor Cue On",
     "ShortName": "cue__off",
     "Tested": true,
@@ -2150,6 +2150,7 @@
     "Value": "Next",
     "Control": "Jump to Next/Prev Cue/Loop",
     "ShortName": "jump_next__trigger",
+    "Tested": true,
     "Id": "command__c__jump_next__trigger"
   },
   "command__d__jump_next__trigger": {
@@ -2162,6 +2163,7 @@
     "Value": "Next",
     "Control": "Jump to Next/Prev Cue/Loop",
     "ShortName": "jump_next__trigger",
+    "Tested": true,
     "Id": "command__d__jump_next__trigger"
   },
   "command__d__load__trigger": {
@@ -2289,9 +2291,9 @@
     "CC": "032",
     "Type": "Button",
     "Value": "Back",
-    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__back",
+    "Tested": true,
     "Id": "command__c__move__back"
   },
   "command__d__move__back": {
@@ -2302,9 +2304,9 @@
     "CC": "033",
     "Type": "Button",
     "Value": "Back",
-    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__back",
+    "Tested": true,
     "Id": "command__d__move__back"
   },
   "command__c__move__forward": {
@@ -2315,9 +2317,9 @@
     "CC": "034",
     "Type": "Button",
     "Value": "Forward",
-    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__forward",
+    "Tested": true,
     "Id": "command__c__move__forward"
   },
   "command__d__move__forward": {
@@ -2328,9 +2330,9 @@
     "CC": "035",
     "Type": "Button",
     "Value": "Forward",
-    "Note": "need to test",
     "Control": "Move",
     "ShortName": "move__forward",
+    "Tested": true,
     "Id": "command__d__move__forward"
   },
   "command__d__play__stop": {
@@ -2368,6 +2370,7 @@
     "Type": "Fader / Knob",
     "Control": "Seek Position (Deck Common)",
     "ShortName": "position__{val}",
+    "Tested": true,
     "Id": "command__d__position__{val}"
   },
   "command__c__master__trigger": {
@@ -2401,6 +2404,7 @@
     "Type": "Fader / Knob",
     "Control": "Size Selector",
     "ShortName": "size__{val}",
+    "Tested": true,
     "Id": "command__c__size__{val}"
   },
   "command__d__size__{val}": {
@@ -2412,6 +2416,7 @@
     "Type": "Fader / Knob",
     "Control": "Size Selector",
     "ShortName": "size__{val}",
+    "Tested": true,
     "Id": "command__d__size__{val}"
   },
   "command__c__sync__off": {
@@ -2860,5 +2865,31 @@
     "ShortName": "loop__on",
     "Tested": true,
     "Id": "command__d__loop__on"
+  },
+  "command__global__select__down_10": {
+    "IO": "command",
+    "Deck": "global",
+    "Mode": "Direct",
+    "Channel": "03",
+    "CC": "125",
+    "Type": "Button",
+    "Value": "10",
+    "Control": "Select Top/Bottom",
+    "ShortName": "select__down_10",
+    "Untestable": true,
+    "Id": "command__global__select__down_10"
+  },
+  "command__global__select__down_100": {
+    "IO": "command",
+    "Deck": "global",
+    "Mode": "Direct",
+    "Channel": "03",
+    "CC": "126",
+    "Type": "Button",
+    "Value": "100",
+    "Control": "Select Top/Bottom",
+    "ShortName": "select__down_100",
+    "Untestable": true,
+    "Id": "command__global__select__down_100"
   }
 }

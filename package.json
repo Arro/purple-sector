@@ -1,13 +1,13 @@
 {
   "name": "purple-sector",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "description": "An API for DJ software",
   "author": "Phil Deschaine",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Arro/purple-sector"
   },
-  "main": "dist/listen.js",
+  "main": "dist/index.js",
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.9.1",
@@ -34,8 +34,8 @@
   },
   "scripts": {
     "pulldown": "babel-node src/pulldown.js",
-    "listen": "babel-node src/listen.js",
-    "build": "babel src/listen.js --out-file dist/cli.js && chmod +x dist/cli.js",
+    "start": "babel-node src/index.js",
+    "build": "babel src --out-dir dist && chmod +x dist/cli.js",
     "test": "npx ava --verbose"
   },
   "engines": {

@@ -1,12 +1,18 @@
+#!/usr/bin/env node
 "use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = _default;
 
 var _midi = _interopRequireDefault(require("midi"));
 
-var _lodash = require("lodash");
-
-var _fsExtra = _interopRequireDefault(require("fs-extra"));
-
 var _conversions = require("../constants/conversions");
+
+var _statuses = _interopRequireDefault(require("../constants/statuses.json"));
+
+var _commands = _interopRequireDefault(require("../constants/commands.json"));
 
 var _ioredis = _interopRequireDefault(require("ioredis"));
 
@@ -14,15 +20,15 @@ var _ora = _interopRequireDefault(require("ora"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(async function () {
-  let commands = await _fsExtra.default.readFile("./constants/commands.json", "utf-8");
-  commands = JSON.parse(commands);
-  commands = (0, _lodash.keyBy)(commands, cmd => {
-    return `${cmd.Channel}-${cmd.CC}`;
-  });
+async function _default() {
   const input = new _midi.default.Input();
   const redis = new _ioredis.default();
-  (0, _ora.default)().start("listening for midi from the DJ software");
+  const redis_sub = new _ioredis.default();
+  const redis_key = new _ioredis.default();
+  redis.config("set", "notify-keyspace-events", "KEA");
+  const spinner = (0, _ora.default)();
+  const active_message = "listening for midi / redis";
+  spinner.start(active_message);
   input.openPort(0);
   input.on(`message`, (delta_time, message) => {
     let channel = message[0] - 175;
@@ -41,29 +47,64 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     }
 
     const key = `${channel}-${cc}`;
-    const command = commands[key];
-    /*
-    if (!command) {
-      console.log(`--key: ${key}`)
-      console.log(`not found :(`)
+    const status = _statuses.default[key];
+    spinner.info(`Receive midi message ${key}`);
+
+    if (!status) {
+      spinner.fail(`We don't have a status for that key`);
+      spinner.start(active_message);
+      return;
     }
-    */
 
-    if (command) {
-      let val = message[2];
+    console.log(message);
+    let val = message[2];
 
-      if (command[`Is Conversion`]) {
-        val = _conversions.val_to_size[message[2]];
-      } else if (command[`Is Binary`]) {
-        val = message[2] === 127;
-      } else if (command[`Is Fraction`]) {
-        val = message[2] / 127;
-      }
-
-      const deck = _conversions.deck_transform[command.Assignment];
-      const short_name = command[`Short Name`];
-      const redis_key = `${deck}__${short_name}`;
-      redis.set(redis_key, val);
+    if (status[`Is Conversion`]) {
+      val = _conversions.val_to_size[message[2]];
+    } else if (status[`Is Binary`]) {
+      val = message[2] === 127;
     }
+
+    spinner.info(`id: ${status.Id}, val: ${val}`);
+    spinner.start(active_message);
+    redis.set(status.Id, val);
   });
-})();
+  const output = new _midi.default.Output();
+  output.openPort(1);
+  await redis_key.subscribe("__keyevent@0__:set");
+  redis_key.on("message", (channel, key) => {
+    spinner.info(`Receive redis (2) message ${key}`);
+    spinner.start(active_message);
+  });
+  await redis_sub.subscribe("purple-sector");
+  redis_sub.on("message", (channel, key) => {
+    spinner.info(`Receive redis message ${key}`);
+    let [, deck, short_name, val] = key.split("__");
+
+    if (val === "{val}") {
+      spinner.fail("Don't pass in {val} like that in the key");
+      spinner.start(active_message);
+      return;
+    }
+
+    if (parseInt(val) || val === "0") {
+      key = `command__${deck}__${short_name}__{val}`;
+      val = parseInt(val);
+    } else {
+      val = 127;
+    }
+
+    const command = _commands.default[key];
+
+    if (!command) {
+      spinner.fail(`We don't have a command for that redis message`);
+      spinner.start(active_message);
+      return;
+    }
+
+    const midi_message = [175 + parseInt(command.Channel), parseInt(command.CC), val];
+    spinner.info(`sending ${JSON.stringify(midi_message)}`);
+    output.sendMessage(midi_message);
+    spinner.start(active_message);
+  });
+}

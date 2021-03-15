@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 import midi from "midi"
-import fs from "fs-extra"
 import { val_to_size } from "constants/conversions"
-import { statuses } from "constants/statuses.json"
+import statuses from "constants/statuses.json"
+import commands from "constants/commands.json"
 import Redis from "ioredis"
 import ora from "ora"
-;(async function () {
+export default async function () {
   const input = new midi.Input()
   const redis = new Redis()
   const redis_sub = new Redis()
@@ -58,9 +58,6 @@ import ora from "ora"
     redis.set(status.Id, val)
   })
 
-  let commands = await fs.readFile("./constants/commands.json", "utf-8")
-  commands = JSON.parse(commands)
-
   const output = new midi.Output()
   output.openPort(1)
 
@@ -106,4 +103,4 @@ import ora from "ora"
 
     spinner.start(active_message)
   })
-})()
+}
