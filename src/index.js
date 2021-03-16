@@ -1,7 +1,9 @@
+/*
 import listen from "src/listen"
-import waitForValue from "src/wait-for-value"
 ;(async function () {
   return await listen()
 })()
+*/
 
+import waitForValue from "src/wait-for-value"
 exports.waitForValue = waitForValue
