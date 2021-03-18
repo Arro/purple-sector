@@ -1,6 +1,6 @@
 {
   "name": "purple-sector",
-  "version": "0.5.12",
+  "version": "0.5.13",
   "description": "An API for DJ software",
   "author": "Phil Deschaine",
   "repository": {
@@ -46,10 +46,10 @@
   },
   "ava": {
     "babel": true,
-    "_files": [
+    "files": [
       "test/(?!worker)*.js"
     ],
-    "files": [
+    "_files": [
       "test/move.js",
       "test/move_size.js"
     ],

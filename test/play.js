@@ -23,25 +23,25 @@ for (const deck of ["a", "b", "c", "d"]) {
   test.serial(`${deck} play`, async (t) => {
     let result
     const { redis } = t.context
-    await redis.publish("purple-sector", `command__${deck}__unload__trigger`)
+    redis.publish("purple-sector", `command__${deck}__unload__trigger`)
     await delay(100)
-    await redis.publish("purple-sector", `command__${deck}__volume__0`)
-    await redis.publish("purple-sector", "command__global__select__top")
+    redis.publish("purple-sector", `command__${deck}__volume__0`)
+    redis.publish("purple-sector", "command__global__select__top")
     await delay(40)
 
-    await redis.publish("purple-sector", `command__${deck}__load__trigger`)
+    redis.publish("purple-sector", `command__${deck}__load__trigger`)
     await waitForValue(`status__${deck}__load`, "true", 3_000)
 
-    await redis.publish("purple-sector", `command__${deck}__play__start`)
+    redis.publish("purple-sector", `command__${deck}__play__start`)
     await delay(100)
-    await redis.publish("purple-sector", `command__${deck}__play__stop`)
+    redis.publish("purple-sector", `command__${deck}__play__stop`)
     await delay(100)
-    await redis.publish("purple-sector", `command__${deck}__play__start`)
+    redis.publish("purple-sector", `command__${deck}__play__start`)
     result = await waitForValue(`status__${deck}__play`, "true", 1_000)
     t.true(result)
-    await redis.publish("purple-sector", `command__${deck}__play__stop`)
+    redis.publish("purple-sector", `command__${deck}__play__stop`)
     result = await waitForValue(`status__${deck}__play`, "false", 1_000)
     t.true(result)
-    await redis.publish("purple-sector", `command__${deck}__volume__110`)
+    redis.publish("purple-sector", `command__${deck}__volume__110`)
   })
 }

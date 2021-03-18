@@ -24,12 +24,12 @@ for (const deck of ["a", "b", "c", "d"]) {
   test(`${deck} move`, async (t) => {
     const { redis } = t.context
 
-    await redis.publish("purple-sector", `command__${deck}__size__1`)
+    redis.publish("purple-sector", `command__${deck}__size__1`)
     await delay(100)
-    await redis.publish("purple-sector", `command__${deck}__size__1_64`)
+    redis.publish("purple-sector", `command__${deck}__size__1_64`)
     await delay(100)
     for (const size in size_to_value) {
-      await redis.publish("purple-sector", `command__${deck}__size__${size}`)
+      redis.publish("purple-sector", `command__${deck}__size__${size}`)
 
       await waitForValue(`status__${deck}__size`, `${size}`, 1_000)
     }

@@ -24,38 +24,39 @@ for (const deck of ["a", "b", "c", "d"]) {
     let result
     const { redis } = t.context
     await delay(100)
-    await redis.publish("purple-sector", "command__global__select__top")
+    redis.publish("purple-sector", "command__global__select__top")
 
     await delay(100)
-    await redis.publish("purple-sector", `command__${deck}__unload__trigger`)
+    redis.publish("purple-sector", `command__${deck}__unload__trigger`)
     await delay(100)
 
-    await redis.publish("purple-sector", `command__${deck}__load__trigger`)
+    redis.publish("purple-sector", `command__${deck}__load__trigger`)
     await waitForValue(`status__${deck}__load`, "true", 3_000)
 
-    await redis.publish("purple-sector", `command__${deck}__position__0`)
+    redis.publish("purple-sector", `command__${deck}__position__6`)
+    result = await waitForValue(`status__${deck}__position`, "6", 1_000)
+
+    redis.publish("purple-sector", `command__${deck}__position__0`)
     result = await waitForValue(`status__${deck}__position`, "0", 1_000)
     t.true(result)
 
-    await redis.publish("purple-sector", `command__${deck}__jump_next__trigger`)
+    redis.publish("purple-sector", `command__${deck}__jump_next__trigger`)
     await delay(100)
 
-    await redis.publish("purple-sector", `command__${deck}__mode__loop`)
+    redis.publish("purple-sector", `command__${deck}__mode__loop`)
     await delay(100)
-    await redis.publish("purple-sector", `command__${deck}__mode__beatjump`)
+    redis.publish("purple-sector", `command__${deck}__mode__beatjump`)
     await delay(100)
-    await redis.publish("purple-sector", `command__${deck}__size__8`)
+    redis.publish("purple-sector", `command__${deck}__size__8`)
     await delay(100)
-    await redis.publish("purple-sector", `command__${deck}__size__16`)
+    redis.publish("purple-sector", `command__${deck}__size__16`)
 
     await waitForValue(`status__${deck}__size`, "16", 1_000)
 
-    await redis.publish("purple-sector", `command__${deck}__move__forward`)
+    redis.publish("purple-sector", `command__${deck}__move__forward`)
 
-    await waitForValue(`status__${deck}__position`, "6", 1_000)
+    await waitForValue(`status__${deck}__position`, "8", 1_000)
 
-    await redis.publish("purple-sector", `command__${deck}__move__back`)
-    await waitForValue(`status__${deck}__position`, "0", 1_000)
     t.pass()
   })
 }

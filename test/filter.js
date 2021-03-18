@@ -13,7 +13,7 @@ registerSharedWorker({
 
 test.before(async (t) => {
   t.timeout(10_000)
-  t.context.redis_pub = new Redis()
+  t.context.redis = new Redis()
   const context = new SharedContext("purple")
   const lock = context.createLock("mixer")
   await lock.acquire()
@@ -22,32 +22,32 @@ test.before(async (t) => {
 for (const deck of ["a", "b", "c", "d"]) {
   test(`${deck} filter`, async (t) => {
     let result
-    const { redis_pub } = t.context
+    const { redis } = t.context
 
-    await redis_pub.publish("purple-sector", `command__${deck}__filter__0`)
+    redis.publish("purple-sector", `command__${deck}__filter__0`)
     await delay(100)
-    await redis_pub.publish("purple-sector", `command__${deck}__filter__25`)
+    redis.publish("purple-sector", `command__${deck}__filter__25`)
     result = await waitForValue(`status__${deck}__filter`, "26", 1_000)
     t.true(result)
-    await redis_pub.publish("purple-sector", `command__${deck}__filter__124`)
+    redis.publish("purple-sector", `command__${deck}__filter__124`)
     result = await waitForValue(`status__${deck}__filter`, "123", 1_000)
     t.true(result)
-    await redis_pub.publish("purple-sector", `command__${deck}__filter__63`)
+    redis.publish("purple-sector", `command__${deck}__filter__63`)
     result = await waitForValue(`status__${deck}__filter`, "63", 1_000)
     t.true(result)
   })
 
   test(`${deck} filter on/off`, async (t) => {
     let result
-    const { redis_pub } = t.context
-    await redis_pub.publish("purple-sector", `command__${deck}__filter__on`)
+    const { redis } = t.context
+    redis.publish("purple-sector", `command__${deck}__filter__on`)
     await delay(100)
-    await redis_pub.publish("purple-sector", `command__${deck}__filter__off`)
+    redis.publish("purple-sector", `command__${deck}__filter__off`)
     await delay(100)
-    await redis_pub.publish("purple-sector", `command__${deck}__filter__on`)
+    redis.publish("purple-sector", `command__${deck}__filter__on`)
     result = await waitForValue(`status__${deck}__filter_on_off`, "true", 1_000)
     t.true(result)
-    await redis_pub.publish("purple-sector", `command__${deck}__filter__off`)
+    redis.publish("purple-sector", `command__${deck}__filter__off`)
     result = await waitForValue(
       `status__${deck}__filter_on_off`,
       "false",
