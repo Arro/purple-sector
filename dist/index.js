@@ -2,12 +2,11 @@
 
 var _waitForValue = _interopRequireDefault(require("./wait-for-value"));
 
+var _waitForBeat = _interopRequireDefault(require("./wait-for-beat"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/*
-import listen from "src/listen"
-;(async function () {
-  return await listen()
-})()
-*/
-exports.waitForValue = _waitForValue.default;
+module.exports = {
+  waitForValue: _waitForValue.default,
+  waitForBeat: _waitForBeat.default
+};

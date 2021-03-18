@@ -1255,5 +1255,49 @@
     "ShortName": "size",
     "Tested": true,
     "Id": "status__d__size"
+  },
+  "05-016": {
+    "IO": "status",
+    "Deck": "a",
+    "Mode": "Output",
+    "Channel": "05",
+    "CC": "016",
+    "Type": "LED",
+    "Control": "Beat Phase",
+    "ShortName": "beat_phase",
+    "Id": "status__a__beat_phase"
+  },
+  "05-017": {
+    "IO": "status",
+    "Deck": "b",
+    "Mode": "Output",
+    "Channel": "05",
+    "CC": "017",
+    "Type": "LED",
+    "Control": "Beat Phase",
+    "ShortName": "beat_phase",
+    "Id": "status__b__beat_phase"
+  },
+  "05-018": {
+    "IO": "status",
+    "Deck": "c",
+    "Mode": "Output",
+    "Channel": "05",
+    "CC": "018",
+    "Type": "LED",
+    "Control": "Beat Phase",
+    "ShortName": "beat_phase",
+    "Id": "status__c__beat_phase"
+  },
+  "05-019": {
+    "IO": "status",
+    "Deck": "d",
+    "Mode": "Output",
+    "Channel": "05",
+    "CC": "019",
+    "Type": "LED",
+    "Control": "Beat Phase",
+    "ShortName": "beat_phase",
+    "Id": "status__d__beat_phase"
   }
 }

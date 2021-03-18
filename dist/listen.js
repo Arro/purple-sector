@@ -48,6 +48,12 @@ async function _default() {
 
     const key = `${channel}-${cc}`;
     const status = _statuses.default[key];
+
+    if (status?.ShortName === "beat_phase") {
+      redis.publish("purple-sector-beat", `${status.Deck}__${message[2]}`);
+      return;
+    }
+
     spinner.info(`Receive midi message ${key}`);
 
     if (!status) {

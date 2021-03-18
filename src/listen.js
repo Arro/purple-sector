@@ -36,6 +36,16 @@ export default async function () {
 
     const status = statuses[key]
 
+    if (status?.ShortName === "beat_phase") {
+      redis.publish("purple-sector-beat", `${status.Deck}__${message[2]}`)
+      return
+    }
+    /*
+    if (status?.ShortName === "position" && message[2] === "0") {
+      redis.set(`status__${status.Deck}__beats`, 0)
+    }
+   */
+
     spinner.info(`Receive midi message ${key}`)
     if (!status) {
       spinner.fail(`We don't have a status for that key`)
