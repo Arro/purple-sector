@@ -12,7 +12,7 @@ registerSharedWorker({
 })
 
 test.before(async (t) => {
-  t.timeout(10_000)
+  t.timeout(20_000)
   t.context.redis = new Redis()
 
   const context = new SharedContext("purple")

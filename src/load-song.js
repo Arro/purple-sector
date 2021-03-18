@@ -1,6 +1,6 @@
 import Redis from "ioredis"
 import delay from "./delay"
-import { waitForValue } from "src/wait-for-value"
+import waitForValue from "src/wait-for-value"
 
 export default async function (num, deck) {
   const redis = new Redis()

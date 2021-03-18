@@ -1,6 +1,7 @@
 import test from "ava"
 import Redis from "ioredis"
 import waitForValue from "src/wait-for-value"
+import loadSong from "src/load-song"
 import path from "path"
 import delay from "src/delay"
 import { registerSharedWorker } from "ava/plugin"
@@ -23,13 +24,7 @@ for (const deck of ["a", "b", "c", "d"]) {
   test.serial(`${deck} play`, async (t) => {
     let result
     const { redis } = t.context
-    redis.publish("purple-sector", `command__${deck}__unload__trigger`)
-    await delay(100)
-    redis.publish("purple-sector", `command__${deck}__volume__0`)
-    redis.publish("purple-sector", "command__global__select__top")
-    await delay(40)
-
-    redis.publish("purple-sector", `command__${deck}__load__trigger`)
+    await loadSong(0, deck)
     await waitForValue(`status__${deck}__load`, "true", 3_000)
 
     redis.publish("purple-sector", `command__${deck}__play__start`)
@@ -42,6 +37,5 @@ for (const deck of ["a", "b", "c", "d"]) {
     redis.publish("purple-sector", `command__${deck}__play__stop`)
     result = await waitForValue(`status__${deck}__play`, "false", 1_000)
     t.true(result)
-    redis.publish("purple-sector", `command__${deck}__volume__110`)
   })
 }
