@@ -1,5 +1,6 @@
 import waitForValue from "src/wait-for-value"
 import moveToBeat from "src/move-to-beat"
+import moveByBeats from "src/move-by-beats"
 import loadSong from "src/load-song"
 
 import { spawn } from "child_process"
@@ -17,6 +18,7 @@ function listen() {
 module.exports = {
   waitForValue,
   moveToBeat,
+  moveByBeats,
   loadSong,
   listen
 }

@@ -1,9 +1,9 @@
 import test from "ava"
-import Redis from "ioredis"
 import waitForValue from "src/wait-for-value"
 import loadSong from "src/load-song"
+import moveToBeat from "src/move-to-beat"
+import moveByBeats from "src/move-by-beats"
 import path from "path"
-import delay from "src/delay"
 import { registerSharedWorker } from "ava/plugin"
 import { SharedContext } from "@ava/cooperate"
 
@@ -14,7 +14,6 @@ registerSharedWorker({
 
 test.before(async (t) => {
   t.timeout(10_000)
-  t.context.redis = new Redis()
   const context = new SharedContext("purple")
   const lock = context.createLock("deck")
   await lock.acquire()
@@ -22,33 +21,15 @@ test.before(async (t) => {
 
 for (const deck of ["a", "b", "c", "d"]) {
   test.serial(`${deck} move`, async (t) => {
-    let result
-    const { redis } = t.context
     await loadSong(0, deck)
 
-    redis.publish("purple-sector", `command__${deck}__position__6`)
-    result = await waitForValue(`status__${deck}__position`, "6", 1_000)
+    await moveToBeat(16, deck)
 
-    redis.publish("purple-sector", `command__${deck}__position__0`)
-    result = await waitForValue(`status__${deck}__position`, "0", 1_000)
-    t.true(result)
+    await waitForValue(`status__${deck}__beats`, "16", 1_000)
 
-    redis.publish("purple-sector", `command__${deck}__jump_next__trigger`)
-    await delay(100)
+    await moveByBeats(16, deck)
 
-    redis.publish("purple-sector", `command__${deck}__mode__loop`)
-    await delay(100)
-    redis.publish("purple-sector", `command__${deck}__mode__beatjump`)
-    await delay(100)
-    redis.publish("purple-sector", `command__${deck}__size__8`)
-    await delay(100)
-    redis.publish("purple-sector", `command__${deck}__size__16`)
-
-    await waitForValue(`status__${deck}__size`, "16", 1_000)
-
-    redis.publish("purple-sector", `command__${deck}__move__forward`)
-
-    await waitForValue(`status__${deck}__position`, "8", 1_000)
+    await waitForValue(`status__${deck}__beats`, "32", 1_000)
 
     t.pass()
   })

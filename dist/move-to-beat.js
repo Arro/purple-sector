@@ -17,6 +17,9 @@ async function _default(beat, deck) {
   const redis = new _ioredis.default();
   redis.publish("purple-sector", `command__${deck}__size__4`);
   await (0, _delay.default)(40);
+  redis.publish("purple-sector", `command__${deck}__mode__loop`);
+  await (0, _delay.default)(40);
+  redis.publish("purple-sector", `command__${deck}__mode__beatjump`);
   let current_beat = 0;
 
   while (current_beat !== beat) {

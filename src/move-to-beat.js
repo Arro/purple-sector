@@ -7,6 +7,10 @@ export default async function (beat, deck) {
   redis.publish("purple-sector", `command__${deck}__size__4`)
   await delay(40)
 
+  redis.publish("purple-sector", `command__${deck}__mode__loop`)
+  await delay(40)
+  redis.publish("purple-sector", `command__${deck}__mode__beatjump`)
+
   let current_beat = 0
   while (current_beat !== beat) {
     if (beat - current_beat >= 16) {
