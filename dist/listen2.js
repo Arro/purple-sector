@@ -1,9 +1,7 @@
 "use strict";
 
-var _listen = _interopRequireDefault(require("./listen"));
+var _index = require("./index");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-(async function () {
-  return await (0, _listen.default)();
+(function () {
+  (0, _index.listen)();
 })();

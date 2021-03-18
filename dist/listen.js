@@ -100,7 +100,7 @@ async function _default() {
       return;
     }
 
-    if (val.indexOf("_") !== -1) {
+    if (val.indexOf("1_") !== -1) {
       key = `command__${deck}__${short_name}__{val}`;
     } else if (parseInt(val) || val === "0") {
       key = `command__${deck}__${short_name}__{val}`;
@@ -109,6 +109,7 @@ async function _default() {
       val = 127;
     }
 
+    console.log(key);
     const command = _commands.default[key];
 
     if (!command) {
