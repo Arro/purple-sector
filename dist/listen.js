@@ -53,14 +53,13 @@ async function _default() {
 
     if (status?.ShortName === "beat_phase") {
       redis.publish("purple-sector-beat", `${status.Deck}__${message[2]}`);
+
+      if (message[2] === 8) {
+        redis.incr(`status__${status.Deck}__beats`);
+      }
+
       return;
     }
-    /*
-    if (status?.ShortName === "position" && message[2] === "0") {
-      redis.set(`status__${status.Deck}__beats`, 0)
-    }
-    */
-
 
     spinner.info(`Receive midi message ${key}`);
 
@@ -85,6 +84,7 @@ async function _default() {
   const output = new _midi.default.Output();
   output.openPort(1);
   await redis_key.subscribe("__keyevent@0__:set");
+  await redis_key.subscribe("__keyevent@0__:incrby");
   redis_key.on("message", (channel, key) => {
     spinner.info(`Receive redis (2) message ${key}`);
     spinner.start(active_message);

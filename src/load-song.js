@@ -29,4 +29,6 @@ export default async function (num, deck) {
   }
   redis.publish("purple-sector", `command__${deck}__load__trigger`)
   await waitForValue(`status__${deck}__load`, "true", 3_000)
+  redis.publish("purple-sector", `command__${deck}__jump_next__trigger`)
+  redis.set(`status__${deck}__beats`, 0)
 }
