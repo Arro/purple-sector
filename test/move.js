@@ -44,11 +44,11 @@ for (const deck of ["a", "b", "c", "d"]) {
     await delay(100)
     await redis.publish("purple-sector", `command__${deck}__mode__beatjump`)
     await delay(100)
-    await redis.publish("purple-sector", `command__${deck}__size__0`)
+    await redis.publish("purple-sector", `command__${deck}__size__8`)
     await delay(100)
-    await redis.publish("purple-sector", `command__${deck}__size__105`)
+    await redis.publish("purple-sector", `command__${deck}__size__16`)
 
-    await waitForValue(`status__${deck}__size`, "105", 1_000)
+    await waitForValue(`status__${deck}__size`, "16", 1_000)
 
     await redis.publish("purple-sector", `command__${deck}__move__forward`)
 

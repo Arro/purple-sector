@@ -5,7 +5,7 @@ import path from "path"
 import delay from "src/delay"
 import { registerSharedWorker } from "ava/plugin"
 import { SharedContext } from "@ava/cooperate"
-import { move_size_to_val } from "constants/conversions"
+import size_to_value from "constants/size-to-value.json"
 
 registerSharedWorker({
   filename: path.resolve(__dirname, "worker.js"),
@@ -24,15 +24,14 @@ for (const deck of ["a", "b", "c", "d"]) {
   test(`${deck} move`, async (t) => {
     const { redis } = t.context
 
-    await redis.publish("purple-sector", `command__${deck}__size__63`)
+    await redis.publish("purple-sector", `command__${deck}__size__1`)
     await delay(100)
-    await redis.publish("purple-sector", `command__${deck}__size__0`)
+    await redis.publish("purple-sector", `command__${deck}__size__1_64`)
     await delay(100)
-    for (const size in move_size_to_val) {
-      const val = move_size_to_val[size]
-      await redis.publish("purple-sector", `command__${deck}__size__${val}`)
+    for (const size in size_to_value) {
+      await redis.publish("purple-sector", `command__${deck}__size__${size}`)
 
-      await waitForValue(`status__${deck}__size`, `${val}`, 1_000)
+      await waitForValue(`status__${deck}__size`, `${size}`, 1_000)
     }
 
     t.pass()

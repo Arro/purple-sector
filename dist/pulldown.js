@@ -44,4 +44,25 @@ _dotenv.default.config();
   });
   await _fsExtra.default.writeFile("./constants/statuses.json", JSON.stringify(statuses, null, 2), "utf-8");
   spinner.succeed("Wrote statuses to constants folder");
+  spinner.start("Pulling down conversions from Airtable");
+  let conversions = await (0, _airtableJson.default)({
+    auth_key: process.env.airtable_key,
+    base_name: process.env.airtable_base,
+    primary: "Conversions",
+    view: "Main"
+  });
+  spinner.succeed(`Pulled down ${conversions.length} conversions from Airtable`);
+  let size_to_value = {};
+  let value_to_size = {};
+  conversions.forEach(({
+    Size,
+    Value
+  }) => {
+    size_to_value[Size] = Value;
+    value_to_size[Value] = Size;
+  });
+  spinner.start("Writing conversions to constants folder");
+  await _fsExtra.default.writeFile("./constants/size-to-value.json", JSON.stringify(size_to_value, null, 2), "utf-8");
+  await _fsExtra.default.writeFile("./constants/value-to-size.json", JSON.stringify(value_to_size, null, 2), "utf-8");
+  spinner.succeed("Wrote statuses to constants folder");
 })();

@@ -46,4 +46,33 @@ dotenv.config()
     "utf-8"
   )
   spinner.succeed("Wrote statuses to constants folder")
+
+  spinner.start("Pulling down conversions from Airtable")
+  let conversions = await airtableJson({
+    auth_key: process.env.airtable_key,
+    base_name: process.env.airtable_base,
+    primary: "Conversions",
+    view: "Main"
+  })
+  spinner.succeed(`Pulled down ${conversions.length} conversions from Airtable`)
+
+  let size_to_value = {}
+  let value_to_size = {}
+  conversions.forEach(({ Size, Value }) => {
+    size_to_value[Size] = Value
+    value_to_size[Value] = Size
+  })
+
+  spinner.start("Writing conversions to constants folder")
+  await fs.writeFile(
+    "./constants/size-to-value.json",
+    JSON.stringify(size_to_value, null, 2),
+    "utf-8"
+  )
+  await fs.writeFile(
+    "./constants/value-to-size.json",
+    JSON.stringify(value_to_size, null, 2),
+    "utf-8"
+  )
+  spinner.succeed("Wrote statuses to constants folder")
 })()

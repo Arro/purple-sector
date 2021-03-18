@@ -409,7 +409,6 @@
     "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
     "Control": "Loop Size Selector",
     "ShortName": "loop_size",
-    "Is Convert": true,
     "Id": "status__a__loop_size"
   },
   "09-011": {
@@ -1211,11 +1210,12 @@
     "Channel": "02",
     "CC": "008",
     "Type": "LED",
-    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
+    "Note": "Controller Range 0-12, Midi Range 0-127, Blend On",
     "Control": "Size Selector",
     "ShortName": "size",
     "Tested": true,
-    "Id": "status__a__size"
+    "Id": "status__a__size",
+    "Convert": true
   },
   "02-009": {
     "IO": "status",
@@ -1224,11 +1224,12 @@
     "Channel": "02",
     "CC": "009",
     "Type": "LED",
-    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
+    "Note": "Controller Range 0-12, Midi Range 0-127, Blend On",
     "Control": "Size Selector",
     "ShortName": "size",
     "Tested": true,
-    "Id": "status__b__size"
+    "Id": "status__b__size",
+    "Convert": true
   },
   "02-010": {
     "IO": "status",
@@ -1237,11 +1238,12 @@
     "Channel": "02",
     "CC": "010",
     "Type": "LED",
-    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
+    "Note": "Controller Range 0-12, Midi Range 0-127, Blend On",
     "Control": "Size Selector",
     "ShortName": "size",
     "Tested": true,
-    "Id": "status__c__size"
+    "Id": "status__c__size",
+    "Convert": true
   },
   "02-011": {
     "IO": "status",
@@ -1250,11 +1252,12 @@
     "Channel": "02",
     "CC": "011",
     "Type": "LED",
-    "Note": "Controller Range 0-10, Midi Range 0-127, Blend On",
+    "Note": "Controller Range 0-12, Midi Range 0-127, Blend On",
     "Control": "Size Selector",
     "ShortName": "size",
     "Tested": true,
-    "Id": "status__d__size"
+    "Id": "status__d__size",
+    "Convert": true
   },
   "05-016": {
     "IO": "status",

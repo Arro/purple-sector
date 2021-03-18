@@ -8,7 +8,9 @@ exports.default = _default;
 
 var _midi = _interopRequireDefault(require("midi"));
 
-var _conversions = require("../constants/conversions");
+var _valueToSize = _interopRequireDefault(require("../constants/value-to-size.json"));
+
+var _sizeToValue = _interopRequireDefault(require("../constants/size-to-value.json"));
 
 var _statuses = _interopRequireDefault(require("../constants/statuses.json"));
 
@@ -53,6 +55,12 @@ async function _default() {
       redis.publish("purple-sector-beat", `${status.Deck}__${message[2]}`);
       return;
     }
+    /*
+    if (status?.ShortName === "position" && message[2] === "0") {
+      redis.set(`status__${status.Deck}__beats`, 0)
+    }
+    */
+
 
     spinner.info(`Receive midi message ${key}`);
 
@@ -62,11 +70,10 @@ async function _default() {
       return;
     }
 
-    console.log(message);
     let val = message[2];
 
-    if (status[`Is Conversion`]) {
-      val = _conversions.val_to_size[message[2]];
+    if (status.Convert) {
+      val = _valueToSize.default?.[message[2]];
     } else if (status[`Is Binary`]) {
       val = message[2] === 127;
     }
@@ -93,7 +100,9 @@ async function _default() {
       return;
     }
 
-    if (parseInt(val) || val === "0") {
+    if (val.indexOf("_") !== -1) {
+      key = `command__${deck}__${short_name}__{val}`;
+    } else if (parseInt(val) || val === "0") {
       key = `command__${deck}__${short_name}__{val}`;
       val = parseInt(val);
     } else {
@@ -106,6 +115,10 @@ async function _default() {
       spinner.fail(`We don't have a command for that redis message`);
       spinner.start(active_message);
       return;
+    }
+
+    if (command.Convert) {
+      val = _sizeToValue.default?.[val];
     }
 
     const midi_message = [175 + parseInt(command.Channel), parseInt(command.CC), val];

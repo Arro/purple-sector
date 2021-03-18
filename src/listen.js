@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import midi from "midi"
-import { val_to_size } from "constants/conversions"
+import value_to_size from "constants/value-to-size.json"
+import size_to_value from "constants/size-to-value.json"
 import statuses from "constants/statuses.json"
 import commands from "constants/commands.json"
 import Redis from "ioredis"
@@ -53,11 +54,10 @@ export default async function () {
       return
     }
 
-    console.log(message)
     let val = message[2]
 
-    if (status[`Is Conversion`]) {
-      val = val_to_size[message[2]]
+    if (status.Convert) {
+      val = value_to_size?.[message[2]]
     } else if (status[`Is Binary`]) {
       val = message[2] === 127
     }
@@ -88,7 +88,9 @@ export default async function () {
       return
     }
 
-    if (parseInt(val) || val === "0") {
+    if (val.indexOf("_") !== -1) {
+      key = `command__${deck}__${short_name}__{val}`
+    } else if (parseInt(val) || val === "0") {
       key = `command__${deck}__${short_name}__{val}`
       val = parseInt(val)
     } else {
@@ -101,6 +103,10 @@ export default async function () {
       spinner.fail(`We don't have a command for that redis message`)
       spinner.start(active_message)
       return
+    }
+
+    if (command.Convert) {
+      val = size_to_value?.[val]
     }
 
     const midi_message = [
