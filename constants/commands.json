@@ -30,9 +30,9 @@
     "Type": "Fader / Knob",
     "Control": "Size Selector",
     "ShortName": "size__{val}",
+    "Convert": true,
     "Tested": true,
-    "Id": "command__a__size__{val}",
-    "Convert": true
+    "Id": "command__a__size__{val}"
   },
   "command__b__size__{val}": {
     "IO": "command",
@@ -43,9 +43,9 @@
     "Type": "Fader / Knob",
     "Control": "Size Selector",
     "ShortName": "size__{val}",
+    "Convert": true,
     "Tested": true,
-    "Id": "command__b__size__{val}",
-    "Convert": true
+    "Id": "command__b__size__{val}"
   },
   "command__a__loop__off": {
     "IO": "command",
@@ -2406,9 +2406,9 @@
     "Type": "Fader / Knob",
     "Control": "Size Selector",
     "ShortName": "size__{val}",
+    "Convert": true,
     "Tested": true,
-    "Id": "command__c__size__{val}",
-    "Convert": true
+    "Id": "command__c__size__{val}"
   },
   "command__d__size__{val}": {
     "IO": "command",
@@ -2419,9 +2419,9 @@
     "Type": "Fader / Knob",
     "Control": "Size Selector",
     "ShortName": "size__{val}",
+    "Convert": true,
     "Tested": true,
-    "Id": "command__d__size__{val}",
-    "Convert": true
+    "Id": "command__d__size__{val}"
   },
   "command__c__sync__off": {
     "IO": "command",

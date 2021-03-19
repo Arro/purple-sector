@@ -58,11 +58,14 @@ dotenv.config()
 
   let size_to_value = {}
   let value_to_size = {}
-  conversions.forEach(({ Size, Value }) => {
+  let real_size_to_size = []
+  conversions.forEach(({ Size, Value, RealSize }) => {
     size_to_value[Size] = Value
     value_to_size[Value] = Size
+    real_size_to_size.push([RealSize, Size])
   })
 
+  real_size_to_size.reverse()
   spinner.start("Writing conversions to constants folder")
   await fs.writeFile(
     "./constants/size-to-value.json",
@@ -72,6 +75,11 @@ dotenv.config()
   await fs.writeFile(
     "./constants/value-to-size.json",
     JSON.stringify(value_to_size, null, 2),
+    "utf-8"
+  )
+  await fs.writeFile(
+    "./constants/real-size-to-size.json",
+    JSON.stringify(real_size_to_size, null, 2),
     "utf-8"
   )
   spinner.succeed("Wrote statuses to constants folder")

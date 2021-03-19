@@ -52,8 +52,6 @@ async function _default() {
     const status = _statuses.default[key];
 
     if (status?.ShortName === "beat_phase") {
-      redis.publish("purple-sector-beat", `${status.Deck}__${message[2]}`);
-
       if (message[2] === 8) {
         redis.incr(`status__${status.Deck}__beats`);
       }

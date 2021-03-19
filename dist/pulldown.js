@@ -54,15 +54,20 @@ _dotenv.default.config();
   spinner.succeed(`Pulled down ${conversions.length} conversions from Airtable`);
   let size_to_value = {};
   let value_to_size = {};
+  let real_size_to_size = [];
   conversions.forEach(({
     Size,
-    Value
+    Value,
+    RealSize
   }) => {
     size_to_value[Size] = Value;
     value_to_size[Value] = Size;
+    real_size_to_size.push([RealSize, Size]);
   });
+  real_size_to_size.reverse();
   spinner.start("Writing conversions to constants folder");
   await _fsExtra.default.writeFile("./constants/size-to-value.json", JSON.stringify(size_to_value, null, 2), "utf-8");
   await _fsExtra.default.writeFile("./constants/value-to-size.json", JSON.stringify(value_to_size, null, 2), "utf-8");
+  await _fsExtra.default.writeFile("./constants/real-size-to-size.json", JSON.stringify(real_size_to_size, null, 2), "utf-8");
   spinner.succeed("Wrote statuses to constants folder");
 })();

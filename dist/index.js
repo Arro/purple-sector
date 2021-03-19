@@ -4,6 +4,8 @@ var _waitForValue = _interopRequireDefault(require("./wait-for-value"));
 
 var _moveToBeat = _interopRequireDefault(require("./move-to-beat"));
 
+var _moveByBeats = _interopRequireDefault(require("./move-by-beats"));
+
 var _loadSong = _interopRequireDefault(require("./load-song"));
 
 var _child_process = require("child_process");
@@ -25,6 +27,7 @@ function listen() {
 module.exports = {
   waitForValue: _waitForValue.default,
   moveToBeat: _moveToBeat.default,
+  moveByBeats: _moveByBeats.default,
   loadSong: _loadSong.default,
   listen
 };

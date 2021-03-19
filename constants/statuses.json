@@ -1213,9 +1213,9 @@
     "Note": "Controller Range 0-12, Midi Range 0-127, Blend On",
     "Control": "Size Selector",
     "ShortName": "size",
+    "Convert": true,
     "Tested": true,
-    "Id": "status__a__size",
-    "Convert": true
+    "Id": "status__a__size"
   },
   "02-009": {
     "IO": "status",
@@ -1227,9 +1227,9 @@
     "Note": "Controller Range 0-12, Midi Range 0-127, Blend On",
     "Control": "Size Selector",
     "ShortName": "size",
+    "Convert": true,
     "Tested": true,
-    "Id": "status__b__size",
-    "Convert": true
+    "Id": "status__b__size"
   },
   "02-010": {
     "IO": "status",
@@ -1241,9 +1241,9 @@
     "Note": "Controller Range 0-12, Midi Range 0-127, Blend On",
     "Control": "Size Selector",
     "ShortName": "size",
+    "Convert": true,
     "Tested": true,
-    "Id": "status__c__size",
-    "Convert": true
+    "Id": "status__c__size"
   },
   "02-011": {
     "IO": "status",
@@ -1255,9 +1255,9 @@
     "Note": "Controller Range 0-12, Midi Range 0-127, Blend On",
     "Control": "Size Selector",
     "ShortName": "size",
+    "Convert": true,
     "Tested": true,
-    "Id": "status__d__size",
-    "Convert": true
+    "Id": "status__d__size"
   },
   "05-016": {
     "IO": "status",
