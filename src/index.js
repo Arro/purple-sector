@@ -2,6 +2,8 @@ import waitForValue from "src/wait-for-value"
 import moveToBeat from "src/move-to-beat"
 import moveByBeats from "src/move-by-beats"
 import loadSong from "src/load-song"
+import issueCommand from "src/issue-command"
+import getValue from "src/get-value"
 
 import { spawn } from "child_process"
 import path from "path"
@@ -20,5 +22,7 @@ module.exports = {
   moveToBeat,
   moveByBeats,
   loadSong,
+  issueCommand,
+  getValue,
   listen
 }

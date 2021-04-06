@@ -94,7 +94,6 @@ export default async function () {
     } else {
       val = 127
     }
-    console.log(key)
 
     const command = commands[key]
 

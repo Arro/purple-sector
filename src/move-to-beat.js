@@ -36,4 +36,6 @@ export default async function (beat, deck) {
     }
   }
   redis.set(`status__${deck}__beats`, beat)
+  redis.disconnect()
+  redis_2.disconnect()
 }

@@ -2895,5 +2895,49 @@
     "ShortName": "select__down_100",
     "Untestable": true,
     "Id": "command__global__select__down_100"
+  },
+  "command__a__waveform_zoom__{val}": {
+    "Id": "command__a__waveform_zoom__{val}",
+    "IO": "command",
+    "Deck": "a",
+    "ShortName": "waveform_zoom__{val}",
+    "Control": "Waveform Zoom Adjust",
+    "Type": "Fader / Knob",
+    "Mode": "Direct",
+    "Channel": "02",
+    "CC": "012"
+  },
+  "command__b__waveform_zoom__{val}": {
+    "Id": "command__b__waveform_zoom__{val}",
+    "Deck": "b",
+    "IO": "command",
+    "Control": "Waveform Zoom Adjust",
+    "ShortName": "waveform_zoom__{val}",
+    "Type": "Fader / Knob",
+    "Mode": "Direct",
+    "Channel": "02",
+    "CC": "013"
+  },
+  "command__c__waveform_zoom__{val}": {
+    "Id": "command__c__waveform_zoom__{val}",
+    "Deck": "c",
+    "IO": "command",
+    "Control": "Waveform Zoom Adjust",
+    "ShortName": "waveform_zoom__{val}",
+    "Type": "Fader / Knob",
+    "Mode": "Direct",
+    "Channel": "02",
+    "CC": "014"
+  },
+  "command__d__waveform_zoom__{val}": {
+    "Id": "command__d__waveform_zoom__{val}",
+    "Deck": "d",
+    "IO": "command",
+    "Control": "Waveform Zoom Adjust",
+    "ShortName": "waveform_zoom__{val}",
+    "Type": "Fader / Knob",
+    "Mode": "Direct",
+    "Channel": "02",
+    "CC": "015"
   }
 }

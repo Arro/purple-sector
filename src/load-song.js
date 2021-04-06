@@ -29,6 +29,16 @@ export default async function (num, deck) {
   }
   redis.publish("purple-sector", `command__${deck}__load__trigger`)
   await waitForValue(`status__${deck}__load`, "true", 3_000)
+
+  redis.publish("purple-sector", `command__${deck}__waveform_zoom__0`)
+  await waitForValue(`status__${deck}__waveform_zoom`, "0", 3_000)
+
+  redis.publish("purple-sector", `command__${deck}__position__50`)
+  await waitForValue(`status__${deck}__position`, "50", 3_000)
+
+  redis.publish("purple-sector", `command__${deck}__position__0`)
+  await waitForValue(`status__${deck}__position`, "0", 3_000)
+
   redis.publish("purple-sector", `command__${deck}__jump_next__trigger`)
   redis.set(`status__${deck}__beats`, 0)
 }

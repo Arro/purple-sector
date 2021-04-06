@@ -12,25 +12,33 @@ export default async function (key, target, timeout) {
 
   return new Promise(function (resolve, reject) {
     if (evaluation) {
+      redis.disconnect()
+      redis_sub.disconnect()
       resolve(true)
       return
     }
 
     redis_sub.on("message", async () => {
       value = await redis.get(key)
-      let evaluation = value === target
+      evaluation = value === target
       if (evaluation) {
         redis_sub.unsubscribe(ks)
+        redis_sub.disconnect()
+        redis.disconnect()
         resolve(true)
         return
       }
     })
 
     setTimeout(() => {
-      redis_sub.unsubscribe(ks)
-      reject(
-        `waited ${timeout}ms on key ${key}, wanted ${target} and got ${value}`
-      )
+      if (!evaluation) {
+        redis_sub.unsubscribe(ks)
+        redis_sub.disconnect()
+        redis.disconnect()
+        reject(
+          `waited ${timeout}ms on key ${key}, wanted ${target} and got ${value}`
+        )
+      }
     }, timeout)
   })
 }

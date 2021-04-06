@@ -29,4 +29,5 @@ export default async function (beats, deck) {
   }
 
   redis.incrby(`status__${deck}__beats`, beats)
+  redis.disconnect()
 }

@@ -1302,5 +1302,49 @@
     "Control": "Beat Phase",
     "ShortName": "beat_phase",
     "Id": "status__d__beat_phase"
+  },
+  "02-016": {
+    "Id": "status__a__waveform_zoom",
+    "IO": "status",
+    "Deck": "a",
+    "Control": "Waveform Zoom Adjust",
+    "ShortName": "waveform_zoom",
+    "Type": "LED",
+    "Mode": "Direct",
+    "Channel": "02",
+    "CC": "016"
+  },
+  "02-017": {
+    "Id": "status__b__waveform_zoom",
+    "IO": "status",
+    "Deck": "b",
+    "Control": "Waveform Zoom Adjust",
+    "ShortName": "waveform_zoom",
+    "Type": "LED",
+    "Mode": "Direct",
+    "Channel": "02",
+    "CC": "017"
+  },
+  "02-018": {
+    "Id": "status__c__waveform_zoom",
+    "IO": "status",
+    "Deck": "c",
+    "Control": "Waveform Zoom Adjust",
+    "ShortName": "waveform_zoom",
+    "Type": "LED",
+    "Mode": "Direct",
+    "Channel": "02",
+    "CC": "018"
+  },
+  "02-019": {
+    "Id": "status__d__waveform_zoom",
+    "IO": "status",
+    "Deck": "d",
+    "Control": "Waveform Zoom Adjust",
+    "ShortName": "waveform_zoom",
+    "Type": "LED",
+    "Mode": "Direct",
+    "Channel": "02",
+    "CC": "019"
   }
 }
