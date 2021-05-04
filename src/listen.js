@@ -4,13 +4,11 @@ import value_to_size from "constants/value-to-size.json"
 import size_to_value from "constants/size-to-value.json"
 import statuses from "constants/statuses.json"
 import commands from "constants/commands.json"
-import Redis from "ioredis"
 import ora from "ora"
+import { redis, redis_sub, redis_key } from "./redis"
+
 export default async function () {
   const input = new midi.Input()
-  const redis = new Redis()
-  const redis_sub = new Redis()
-  const redis_key = new Redis()
 
   redis.config("set", "notify-keyspace-events", "KEA")
 

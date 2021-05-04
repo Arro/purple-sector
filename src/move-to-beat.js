@@ -1,11 +1,11 @@
-import Redis from "ioredis"
 import delay from "src/delay"
 import waitForValue from "src/wait-for-value"
 import realSizeToSize from "constants/real-size-to-size.json"
+import { redis, redis_2 } from "./redis"
 
 export default async function (beat, deck) {
-  const redis = new Redis()
-  const redis_2 = new Redis()
+  redis.publish("purple-sector", `command__${deck}__size__1`)
+  await delay(40)
   redis.publish("purple-sector", `command__${deck}__size__4`)
   await delay(40)
 
@@ -36,6 +36,4 @@ export default async function (beat, deck) {
     }
   }
   redis.set(`status__${deck}__beats`, beat)
-  redis.disconnect()
-  redis_2.disconnect()
 }

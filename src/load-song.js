@@ -1,10 +1,8 @@
-import Redis from "ioredis"
 import delay from "./delay"
 import waitForValue from "src/wait-for-value"
+import { redis } from "./redis"
 
 export default async function (num, deck) {
-  const redis = new Redis()
-
   await delay(100)
   redis.publish("purple-sector", `command__${deck}__unload__trigger`)
   await delay(40)

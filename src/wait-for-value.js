@@ -1,9 +1,6 @@
-import Redis from "ioredis"
+import { redis, redis_sub } from "./redis"
 
 export default async function (key, target, timeout) {
-  const redis = new Redis()
-  const redis_sub = new Redis()
-
   const ks = `__keyspace@0__:${key}`
   await redis_sub.subscribe(ks)
 
@@ -12,8 +9,6 @@ export default async function (key, target, timeout) {
 
   return new Promise(function (resolve, reject) {
     if (evaluation) {
-      redis.disconnect()
-      redis_sub.disconnect()
       resolve(true)
       return
     }
@@ -23,8 +18,6 @@ export default async function (key, target, timeout) {
       evaluation = value === target
       if (evaluation) {
         redis_sub.unsubscribe(ks)
-        redis_sub.disconnect()
-        redis.disconnect()
         resolve(true)
         return
       }
@@ -33,8 +26,6 @@ export default async function (key, target, timeout) {
     setTimeout(() => {
       if (!evaluation) {
         redis_sub.unsubscribe(ks)
-        redis_sub.disconnect()
-        redis.disconnect()
         reject(
           `waited ${timeout}ms on key ${key}, wanted ${target} and got ${value}`
         )

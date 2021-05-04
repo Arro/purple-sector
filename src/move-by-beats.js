@@ -1,10 +1,8 @@
-import Redis from "ioredis"
 import delay from "src/delay"
 import waitForValue from "src/wait-for-value"
+import { redis } from "./redis"
 
 export default async function (beats, deck) {
-  const redis = new Redis()
-
   redis.publish("purple-sector", `command__${deck}__size__4`)
   await delay(40)
 
@@ -29,5 +27,4 @@ export default async function (beats, deck) {
   }
 
   redis.incrby(`status__${deck}__beats`, beats)
-  redis.disconnect()
 }

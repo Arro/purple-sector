@@ -1,7 +1,4 @@
-import Redis from "ioredis"
+import { redis } from "./redis"
 export default async function (deck, short_name) {
-  const redis = new Redis()
-  const value = await redis.get(`status__${deck}__${short_name}`)
-  redis.disconnect()
-  return value
+  return await redis.get(`status__${deck}__${short_name}`)
 }
