@@ -5,12 +5,16 @@ import size_to_value from "constants/size-to-value.json"
 import statuses from "constants/statuses.json"
 import commands from "constants/commands.json"
 import ora from "ora"
-import { redis, redis_sub, redis_key } from "./redis"
+
+// import { redis, redis_sub, redis_key } from "./redis"
+import { singleton } from "./redis"
+const { redis, redis_sub, redis_key } = singleton
 
 export default async function () {
+  await singleton.go(statuses)
   const input = new midi.Input()
 
-  redis.config("set", "notify-keyspace-events", "KEA")
+  // redis.config("set", "notify-keyspace-events", "KEA")
 
   const spinner = ora()
   const active_message = "listening for midi / redis"
@@ -84,7 +88,7 @@ export default async function () {
       return
     }
 
-    if (val.indexOf("1_") !== -1) {
+    if (val?.indexOf("1_") !== -1) {
       key = `command__${deck}__${short_name}__{val}`
     } else if (parseInt(val) || val === "0") {
       key = `command__${deck}__${short_name}__{val}`

@@ -1,7 +1,10 @@
-import { redis, redis_sub } from "./redis"
+//import { redis, redis_sub } from "./redis"
+import { singleton } from "./redis"
+const { redis, redis_sub } = singleton
 
 export default async function (key, target, timeout) {
   const ks = `__keyspace@0__:${key}`
+  console.log(ks)
   await redis_sub.subscribe(ks)
 
   let value = await redis.get(key)
