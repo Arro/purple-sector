@@ -1,19 +1,11 @@
 import test from "ava"
-import Redis from "ioredis"
-import waitForValue from "src/wait-for-value"
-import path from "path"
 import delay from "src/delay"
-import { registerSharedWorker } from "ava/plugin"
 import { SharedContext } from "@ava/cooperate"
-
-registerSharedWorker({
-  filename: path.resolve(__dirname, "worker.js"),
-  supportedProtocols: ["experimental"]
-})
+import redis from "src/redis"
 
 test.before(async (t) => {
-  t.timeout(10_000)
-  t.context.redis = new Redis()
+  t.timeout(20_000)
+  await redis.init()
   const context = new SharedContext("purple")
   const lock = context.createLock("deck")
   await lock.acquire()
@@ -22,17 +14,14 @@ test.before(async (t) => {
 for (const deck of ["a", "b", "c", "d"]) {
   test(`${deck} sync`, async (t) => {
     let result
-    const { redis } = t.context
 
-    redis.publish("purple-sector", `command__${deck}__sync__on`)
+    redis.publish(`command__${deck}__sync__on`)
     await delay(100)
-    redis.publish("purple-sector", `command__${deck}__sync__off`)
-    await delay(100)
-    redis.publish("purple-sector", `command__${deck}__sync__on`)
-    result = await waitForValue(`status__${deck}__sync`, "true", 1_000)
+    redis.publish(`command__${deck}__sync__on`)
+    result = await redis.waitForValue(`status__${deck}__sync`, "true")
     t.true(result)
-    redis.publish("purple-sector", `command__${deck}__sync__off`)
-    result = await waitForValue(`status__${deck}__sync`, "false", 1_000)
+    redis.publish(`command__${deck}__sync__off`)
+    result = await redis.waitForValue(`status__${deck}__sync`, "false")
     t.true(result)
   })
 }

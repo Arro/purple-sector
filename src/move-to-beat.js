@@ -1,19 +1,20 @@
 import delay from "src/delay"
-import waitForValue from "src/wait-for-value"
 import realSizeToSize from "constants/real-size-to-size.json"
-import { redis, redis_2 } from "./redis"
+import redis from "src/redis"
 
 export default async function (beat, deck) {
-  redis.publish("purple-sector", `command__${deck}__size__1`)
+  await redis.init()
+
+  redis.publish(`command__${deck}__size__1`)
   await delay(40)
-  redis.publish("purple-sector", `command__${deck}__size__4`)
+  redis.publish(`command__${deck}__size__4`)
   await delay(40)
 
-  redis.publish("purple-sector", `command__${deck}__mode__loop`)
+  redis.publish(`command__${deck}__mode__loop`)
   await delay(40)
-  redis.publish("purple-sector", `command__${deck}__mode__beatjump`)
+  redis.publish(`command__${deck}__mode__beatjump`)
 
-  let current_beat = await redis_2.get(`status__${deck}__beats`)
+  let current_beat = await redis.get(`status__${deck}__beats`)
   current_beat = parseInt(current_beat)
   let move_direction = current_beat < beat ? "forward" : "back"
 
@@ -25,9 +26,9 @@ export default async function (beat, deck) {
         return current_beat - beat >= s[0]
       }
     })
-    redis.publish("purple-sector", `command__${deck}__size__${size_to_move}`)
-    await waitForValue(`status__${deck}__size`, size_to_move, 1_000)
-    redis.publish("purple-sector", `command__${deck}__move__${move_direction}`)
+    redis.publish(`command__${deck}__size__${size_to_move}`)
+    await redis.waitForValue(`status__${deck}__size`, size_to_move, 1_000)
+    redis.publish(`command__${deck}__move__${move_direction}`)
     await delay(40)
     if (move_direction === "forward") {
       current_beat += real_size
