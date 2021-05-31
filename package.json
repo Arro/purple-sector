@@ -1,13 +1,13 @@
 {
   "name": "purple-sector",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "An API for DJ software",
   "author": "Phil Deschaine",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Arro/purple-sector"
   },
-  "main": "dist/index.js",
+  "main": "dist/redis.js",
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.13.1",
