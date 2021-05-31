@@ -6,6 +6,11 @@ import size_to_value from "constants/size-to-value.json"
 import statuses from "constants/statuses.json"
 import commands from "constants/commands.json"
 
+import moveToBeat from "src/move-to-beat"
+import moveByBeats from "src/move-by-beats"
+import loadSong from "src/load-song"
+
+
 export default {
   targets: {},
   redis: new Redis(),
@@ -137,6 +142,10 @@ export default {
 
   async incrby(key, value) {
     return await this.redis.incrby(key, value)
-  }
+  },
+
+  moveByBeats,
+  moveToBeat,
+  loadSong
 }
 
