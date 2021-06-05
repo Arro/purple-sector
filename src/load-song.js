@@ -27,16 +27,16 @@ export default async function (num, deck) {
     await delay(40)
   }
   redis.publish(`command__${deck}__load__trigger`)
-  await redis.waitForValue(`status__${deck}__load`, "true", 3_000)
+  await redis.waitForValue(`status__${deck}__load`, "true")
 
   redis.publish(`command__${deck}__waveform_zoom__0`)
-  await redis.waitForValue(`status__${deck}__waveform_zoom`, "0", 3_000)
+  await redis.waitForValue(`status__${deck}__waveform_zoom`, "0")
 
   redis.publish(`command__${deck}__position__50`)
-  await redis.waitForValue(`status__${deck}__position`, "50", 3_000)
+  await redis.waitForValue(`status__${deck}__position`, "50")
 
   redis.publish(`command__${deck}__position__0`)
-  await redis.waitForValue(`status__${deck}__position`, "0", 3_000)
+  await redis.waitForValue(`status__${deck}__position`, "0")
 
   redis.publish(`command__${deck}__jump_next__trigger`)
   redis.set(`status__${deck}__beats`, 0)

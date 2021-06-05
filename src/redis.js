@@ -10,7 +10,6 @@ import moveToBeat from "src/move-to-beat"
 import moveByBeats from "src/move-by-beats"
 import loadSong from "src/load-song"
 
-
 export default {
   targets: {},
   redis: new Redis(),
@@ -112,7 +111,7 @@ export default {
     return delay(1000)
   },
 
-  waitForValue: async function(key, target) {
+  waitForValue: async function (key, target) {
     const value = await this.redis.get(key)
     if (value === target) {
       return new Promise((resolve) => {
@@ -128,11 +127,11 @@ export default {
     return new_promise
   },
 
-  publish: function(value) {
+  publish: function (value) {
     this.redis.publish("purple-sector", value)
   },
 
-  get: async function(value) {
+  get: async function (value) {
     return await this.redis.get(value)
   },
 
@@ -144,8 +143,15 @@ export default {
     return await this.redis.incrby(key, value)
   },
 
+  issueCommand: function (deck, short_name, val) {
+    this.publish(`command__${deck}__${short_name}__${val}`)
+  },
+
+  getValue: async function (deck, short_name) {
+    return await this.get(`status__${deck}__${short_name}`)
+  },
+
   moveByBeats,
   moveToBeat,
   loadSong
 }
-
