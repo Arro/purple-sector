@@ -24,7 +24,7 @@ export default {
     const input = new midi.Input()
 
     input.openPort(0)
-    input.on(`message`, (delta_time, message) => {
+    input.on(`message`, async (delta_time, message) => {
       let channel = message[0] - 175
       let cc = message[1]
 
@@ -44,7 +44,12 @@ export default {
 
       if (status?.ShortName === "beat_phase") {
         if (message[2] === 8) {
-          this.redis.incr(`status__${status.Deck}__beats`)
+          const beats = await this.redis.incr(`status__${status.Deck}__beats`)
+          const _key = `status__${status.Deck}__beats---${beats}`
+          if (this.targets[_key]) {
+            this.targets[_key](true)
+            delete this.targets[_key]
+          }
         }
         return
       }
@@ -120,7 +125,6 @@ export default {
     }
 
     const _key = `${key}---${target}`
-
     const new_promise = new Promise((resolve) => {
       this.targets[_key] = resolve
     })
