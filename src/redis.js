@@ -1,6 +1,8 @@
 import Redis from "ioredis"
 import delay from "src/delay"
 import midi from "midi"
+import EventEmitter from "events"
+
 import value_to_size from "constants/value-to-size.json"
 import size_to_value from "constants/size-to-value.json"
 import statuses from "constants/statuses.json"
@@ -15,6 +17,7 @@ export default {
   redis: new Redis(),
   redis_sub: new Redis(),
   initialized: false,
+  beat_emitter: new EventEmitter(),
 
   init: async function () {
     if (this.initialized) return
@@ -45,6 +48,7 @@ export default {
       if (status?.ShortName === "beat_phase") {
         if (message[2] === 8) {
           const beats = await this.redis.incr(`status__${status.Deck}__beats`)
+          this.beat_emitter.emit(status.Deck, beats)
           const _key = `status__${status.Deck}__beats---${beats}`
           if (this.targets[_key]) {
             this.targets[_key](true)
